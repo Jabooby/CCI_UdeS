@@ -1,0 +1,16 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d4a2b058-eaaa-4dd1-b7e5-ddaa3e2f0777")
+	(paper "A4")
+	(title_block
+		(title "V1_flappy_mouse")
+		(date "2024-06-07")
+		(rev "Rev . 1")
+		(company "CCI UdeS")
+		(comment 1 "Créer par:")
+		(comment 2 "Victor Larose & Jacob Turcotte")
+	)
+	(lib_symbols)
+)

@@ -1,0 +1,134 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c")
+	(paper "USLetter")
+	(title_block
+		(title "V1_flappy_mouse")
+		(date "2024-06-07")
+		(rev "Rev . 1")
+		(company "CCI UdeS")
+		(comment 1 "Créer par:")
+		(comment 2 "Victor Larose & Jacob Turcotte")
+	)
+	(lib_symbols)
+	(text "Pour t'aider à trouver des composantes:\n- Header : Conn_01x\n- On pourra utiliser un Header pour l'écran aussi (pour V1)\n- Points de test: Test point\n- Résistance: R_US\n"
+		(exclude_from_sim no)
+		(at 146.558 51.562 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left)
+		)
+		(uuid "711b065a-6811-4b16-994b-64dc74ed90f0")
+	)
+	(text "Tâche à faire:\n- Moitier de capacitive touche\n- Esp32-S3 Header\n- Écran (SPI)\n- Microphone*\n- Points de test (Je te rajoute cette section, mets des points de test \noù tu crois ça va nous être utile)"
+		(exclude_from_sim no)
+		(at 146.05 28.702 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "c043ccb6-4c36-424b-9e6d-e875c643197c")
+	)
+	(text "Tâche à faire:\n- Moitier de capacitive touche\n- Accéléromètre\n- Switch\n- Connexion Ordinateur\n- Alimentation*"
+		(exclude_from_sim no)
+		(at 15.24 26.67 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d673033e-e3ab-42c2-b006-a3efe91c2c30")
+	)
+	(sheet
+		(at 13.97 15.24)
+		(size 121.92 109.22)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c9bdbe16-fb84-44c9-b5f6-cb197b4bed59")
+		(property "Sheetname" "Section_Jacob"
+			(at 13.97 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section_JT.kicad_sch"
+			(at 13.97 125.0446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 143.51 15.24)
+		(size 121.92 109.22)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f86b3f71-a906-482f-8366-32910134182f")
+		(property "Sheetname" "Section_Victor"
+			(at 143.51 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Section_VL.kicad_sch"
+			(at 143.51 125.0446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
