@@ -1406,6 +1406,16 @@
 		)
 		(uuid "c09a3412-bb37-44d4-bebe-5cc52c325964")
 	)
+	(text "PINOUT OF THE TFT DISPLAY (CHIP ST7789)\nGND = GND\nVCC = 3.3V\nSCL = CLK = FSPICLK\nSDA = MOSI = FSPID\nRES = FSPIHD \nDC = FSPIWP\nCS = CS = FSPICS0\nBLK = NOTHING (USELESS)"
+		(exclude_from_sim no)
+		(at 42.672 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2709824b-1c77-488c-b5b4-a9e6604af47c")
+	)
 	(text "ILI9341 TFT DISPLAY PINOUT SPI\nTFT_CS = FSPICS0 = GPIO10\nTFT_MOSI = FSPID = GPIO11\nTFT_CLK = FSPICLK = GPIO12\nTFT_MISO = FSPIQ = GPIO13\n"
 		(exclude_from_sim no)
 		(at 43.942 82.55 0)
@@ -2883,6 +2893,11 @@
 					(unit 1)
 				)
 			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
 )
