@@ -1,0 +1,21 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x4037737c: bootloader_flash_execute_command_common at /home/charles/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:627
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x40375290: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x40375888: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x4037737c: bootloader_flash_execute_command_common at /home/charles/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:627
+[0m
+[0m
