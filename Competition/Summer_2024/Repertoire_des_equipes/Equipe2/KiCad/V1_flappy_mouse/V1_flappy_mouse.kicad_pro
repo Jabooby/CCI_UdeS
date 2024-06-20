@@ -586,6 +586,18 @@
     [
       "f86b3f71-a906-482f-8366-32910134182f",
       "Section_Victor"
+    ],
+    [
+      "8da9ad59-7512-4456-9860-bdbdb6695e69",
+      "ESP32_Pin_out"
+    ],
+    [
+      "38011fd2-8681-44cd-a9a6-def085c55ab3",
+      "TFT_DISPLAY"
+    ],
+    [
+      "e2168b0b-961b-4d52-811f-6c1c02bc3003",
+      "SOUND_SENSOR"
     ]
   ],
   "text_variables": {}
