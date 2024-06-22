@@ -1728,7 +1728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "059df49f-a917-4cc0-a125-b36c31326199")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0203"
 			(at 52.07 36.83 0)
 			(effects
 				(font
@@ -1778,7 +1778,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0202")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -1811,7 +1811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
 			(at 83.82 49.53 0)
 			(effects
 				(font
@@ -1893,7 +1893,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+		(property "Footprint" "Librairie_touchpad:Touchpad_slider"
 			(at 146.05 21.59 0)
 			(effects
 				(font
@@ -1960,7 +1960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+		(property "Footprint" "Librairie_touchpad:Touchpad_slider"
 			(at 167.64 21.59 0)
 			(effects
 				(font
@@ -2009,7 +2009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e2a9e33-1e55-4689-8c57-65eae8cad5cc")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR0205"
 			(at 82.55 15.24 0)
 			(effects
 				(font
@@ -2060,7 +2060,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0201")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -2075,7 +2075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f294256-edd0-41e0-9fbc-cbedb4a52340")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR0201"
 			(at 24.13 60.96 0)
 			(effects
 				(font
@@ -2125,7 +2125,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0204")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -2141,7 +2141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "526e77b6-38aa-4ad9-9fa9-5901d7f47302")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR0206"
 			(at 82.55 17.78 0)
 			(effects
 				(font
@@ -2192,7 +2192,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0203")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -2226,7 +2226,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+		(property "Footprint" "Librairie_touchpad:Touchpad_slider"
 			(at 189.23 21.59 0)
 			(effects
 				(font
@@ -2274,7 +2274,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab35e86f-f465-4e8b-a453-ec65f4ad1bca")
-		(property "Reference" "J201"
+		(property "Reference" "J202"
 			(at 81.28 32.766 0)
 			(effects
 				(font
@@ -2292,7 +2292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
 			(at 83.82 22.86 0)
 			(effects
 				(font
@@ -2343,7 +2343,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "J201")
+					(reference "J202")
 					(unit 1)
 				)
 			)
@@ -2359,7 +2359,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac07d92b-ef97-4f53-a19b-f21ccba186d5")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR0207"
 			(at 82.55 44.45 0)
 			(effects
 				(font
@@ -2410,7 +2410,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0206")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -2444,7 +2444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+		(property "Footprint" "Librairie_touchpad:Touchpad_biz_rect"
 			(at 121.92 21.59 0)
 			(effects
 				(font
@@ -2510,7 +2510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN"
+		(property "Footprint" "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN"
 			(at 30.48 48.26 0)
 			(effects
 				(font
@@ -2565,7 +2565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd07c393-4ddb-4f3d-be4b-ba2e08796bb1")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR0202"
 			(at 29.21 45.72 0)
 			(effects
 				(font
@@ -2616,7 +2616,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0205")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -2632,7 +2632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d575f24d-b665-44b2-9ffb-a65a00b49fbe")
-		(property "Reference" "J202"
+		(property "Reference" "J201"
 			(at 21.59 19.0499 0)
 			(effects
 				(font
@@ -2650,7 +2650,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
 			(at 19.05 20.32 0)
 			(effects
 				(font
@@ -2695,7 +2695,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "J202")
+					(reference "J201")
 					(unit 1)
 				)
 			)
@@ -2710,7 +2710,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f49fcb0d-4684-458c-84cb-0238e6cd099a")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR0204"
 			(at 77.47 67.31 0)
 			(effects
 				(font
@@ -2760,7 +2760,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/c9bdbe16-fb84-44c9-b5f6-cb197b4bed59"
-					(reference "#PWR0207")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,115 @@
+(footprint "Touchpad_slider"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -11.43 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "19c37b0b-e103-43a2-845b-436f5c3ed22a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Touchpad_slider"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9028ad2e-75b7-49a8-8870-9915c5d4d50e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "15267c66-6b02-433d-8d60-8aa4da90dfaa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6b0aed7-df9e-4ee4-9499-81101d94d155")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cacb1b80-94d6-4002-985f-c487dc86953a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -6.35 5.08) (xy -3.81 0) (xy -6.35 -5.08) (xy -1.27 -5.08) (xy 1.27 0) (xy -1.27 5.08)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "d7376a9f-13d1-43f9-b80a-dec43530b87d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0de21463-7e19-4a73-a1b2-f2eb5ed71c7c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at 0 0)
+		(size 2.286 2.286)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -20)
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -6.35 -5.08) (xy 0 -5.08) (xy 2.54 0) (xy 0 5.08) (xy -6.35 5.08) (xy -3.81 0)
+				)
+				(width 0.1)
+				(fill yes)
+			)
+		)
+		(uuid "903ad52e-1edd-4947-afc0-6256b8b7d064")
+	)
+)

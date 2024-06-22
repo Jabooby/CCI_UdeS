@@ -4589,7 +4589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0880fc66-fcf9-4a08-8a48-e3ee3d89a7b1")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR0307"
 			(at 99.06 83.82 0)
 			(effects
 				(font
@@ -4639,7 +4639,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR05")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -4655,7 +4655,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1240f462-665d-460d-bc67-8537bea96208")
-		(property "Reference" "U1"
+		(property "Reference" "U301"
 			(at 88.9 129.54 0)
 			(effects
 				(font
@@ -4725,7 +4725,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "U1")
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -4741,7 +4741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bcadb7a-6d07-49d3-9352-c70b82bbc04c")
-		(property "Reference" "R3"
+		(property "Reference" "R303"
 			(at 66.04 110.49 90)
 			(effects
 				(font
@@ -4793,7 +4793,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "R3")
+					(reference "R303")
 					(unit 1)
 				)
 			)
@@ -4809,7 +4809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3aa717c6-5044-4f83-9a57-e72cf5444209")
-		(property "Reference" "R2"
+		(property "Reference" "R305"
 			(at 129.54 105.4099 0)
 			(effects
 				(font
@@ -4863,7 +4863,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "R2")
+					(reference "R305")
 					(unit 1)
 				)
 			)
@@ -4879,7 +4879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cbdd1db-b6d3-4196-ae7a-ac76677eefd3")
-		(property "Reference" "R5"
+		(property "Reference" "R301"
 			(at 60.96 105.4099 0)
 			(effects
 				(font
@@ -4933,7 +4933,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "R5")
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -4950,7 +4950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4342f607-17ba-4a89-b032-630600570924")
-		(property "Reference" "RV1"
+		(property "Reference" "RV301"
 			(at 71.12 105.4099 0)
 			(effects
 				(font
@@ -5007,7 +5007,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "RV1")
+					(reference "RV301")
 					(unit 1)
 				)
 			)
@@ -5023,7 +5023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fea74fe-ee94-43b8-9b3f-f7aa84afe729")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0308"
 			(at 125.73 29.21 0)
 			(effects
 				(font
@@ -5073,7 +5073,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR07")
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -5089,7 +5089,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aff3058-f7e8-45cd-95db-d2b490b4b989")
-		(property "Reference" "J4"
+		(property "Reference" "J303"
 			(at 173.355 73.66 0)
 			(effects
 				(font
@@ -5147,7 +5147,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "J4")
+					(reference "J303")
 					(unit 1)
 				)
 			)
@@ -5169,7 +5169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d8847e3-f9d2-40dc-be20-7652991bb773")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0304"
 			(at 81.28 73.66 0)
 			(effects
 				(font
@@ -5220,7 +5220,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR03")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -5236,7 +5236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f34015b-6755-4644-94d2-9a01511e062c")
-		(property "Reference" "R1"
+		(property "Reference" "R304"
 			(at 115.57 105.4099 0)
 			(effects
 				(font
@@ -5290,7 +5290,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "R1")
+					(reference "R304")
 					(unit 1)
 				)
 			)
@@ -5306,7 +5306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fbbf36a-349c-44fd-9f14-62fb16391c21")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0305"
 			(at 93.98 105.41 0)
 			(effects
 				(font
@@ -5356,7 +5356,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR08")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -5372,7 +5372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66de442f-9160-42f4-ae38-01956dd1b6cd")
-		(property "Reference" "D1"
+		(property "Reference" "D301"
 			(at 115.57 111.6329 90)
 			(effects
 				(font
@@ -5426,7 +5426,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "D1")
+					(reference "D301")
 					(unit 1)
 				)
 			)
@@ -5442,7 +5442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73e9fa65-4346-4da3-b8ab-d2ba1653993c")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0302"
 			(at 81.28 22.86 0)
 			(effects
 				(font
@@ -5493,7 +5493,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR01")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -5509,7 +5509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76989888-db37-4726-a1ba-da7038beea30")
-		(property "Reference" "R4"
+		(property "Reference" "R302"
 			(at 60.96 132.0799 0)
 			(effects
 				(font
@@ -5563,7 +5563,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "R4")
+					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -5579,7 +5579,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f0b8fc4-d183-437a-ba47-c2bce3cc5996")
-		(property "Reference" "J3"
+		(property "Reference" "J304"
 			(at 193.675 30.48 0)
 			(effects
 				(font
@@ -5595,7 +5595,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 194.31 43.18 0)
 			(effects
 				(font
@@ -5649,7 +5649,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "J3")
+					(reference "J304")
 					(unit 1)
 				)
 			)
@@ -5665,7 +5665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "981d7462-6816-4bd3-a5dc-401a80e16bea")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR0301"
 			(at 76.2 83.82 0)
 			(effects
 				(font
@@ -5715,7 +5715,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR04")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -5731,7 +5731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adfaaf3b-7932-4213-a648-7b0f8d12e022")
-		(property "Reference" "MK1"
+		(property "Reference" "MK301"
 			(at 53.34 119.9514 0)
 			(effects
 				(font
@@ -5785,7 +5785,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "MK1")
+					(reference "MK301")
 					(unit 1)
 				)
 			)
@@ -5802,7 +5802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af788e3e-2ff7-46ab-8660-02406d98b214")
-		(property "Reference" "U1"
+		(property "Reference" "U301"
 			(at 105.41 120.65 0)
 			(effects
 				(font
@@ -5872,7 +5872,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "U1")
+					(reference "U301")
 					(unit 2)
 				)
 			)
@@ -5888,7 +5888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b44324fd-bf55-481f-8e49-b4134efa40fa")
-		(property "Reference" "D2"
+		(property "Reference" "D302"
 			(at 129.54 111.6329 90)
 			(effects
 				(font
@@ -5942,7 +5942,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "D2")
+					(reference "D302")
 					(unit 1)
 				)
 			)
@@ -5958,7 +5958,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cbd99ec4-9a69-429f-9d64-12a4edaf45d5")
-		(property "Reference" "J2"
+		(property "Reference" "J301"
 			(at 81.915 17.78 0)
 			(effects
 				(font
@@ -5974,7 +5974,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical"
 			(at 82.55 48.26 0)
 			(effects
 				(font
@@ -6070,7 +6070,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "J2")
+					(reference "J301")
 					(unit 1)
 				)
 			)
@@ -6086,7 +6086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1d2e2be-f5ed-46b4-9d4c-b64cbc9cf617")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0303"
 			(at 81.28 25.4 0)
 			(effects
 				(font
@@ -6137,7 +6137,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR02")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -6153,7 +6153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d231f530-0f08-46bb-8ce6-84330e63d702")
-		(property "Reference" "J1"
+		(property "Reference" "J302"
 			(at 93.345 17.78 0)
 			(effects
 				(font
@@ -6169,7 +6169,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x22_P2.54mm_Vertical"
 			(at 92.71 48.26 0)
 			(effects
 				(font
@@ -6265,7 +6265,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "J1")
+					(reference "J302")
 					(unit 1)
 				)
 			)
@@ -6281,7 +6281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f88f3d49-7bbf-47ff-a18d-048a3432f679")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0306"
 			(at 93.98 147.32 0)
 			(effects
 				(font
@@ -6331,7 +6331,7 @@
 		(instances
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "#PWR06")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)

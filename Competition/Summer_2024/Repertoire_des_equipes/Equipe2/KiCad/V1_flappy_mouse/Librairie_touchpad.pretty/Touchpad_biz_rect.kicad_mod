@@ -1,13 +1,13 @@
-(footprint "Touchpad_spiral"
+(footprint "Touchpad_biz_rect"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -15.24 0)
+		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "995d9f19-32ea-4578-ac5e-ef695c34965d")
+		(uuid "81ef2d27-b40d-4dda-b345-6ba53447cff2")
 		(effects
 			(font
 				(size 1 1)
@@ -15,11 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "Touchpad_spiral"
-		(at 0.0254 14.732 0)
+	(property "Value" "Touchpad_biz_rect"
+		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "f1585c34-e873-4541-a7c8-b97291b8bb0f")
+		(uuid "ad732fdd-c31f-482f-9ee7-c30d640d9e7e")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "53ba5806-887b-4fbc-aa3a-ad86eb0da4c9")
+		(uuid "012b8c7f-e285-425a-8f07-214a17619d0c")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "49c9730b-9e26-4595-b574-3add8c5b9dd7")
+		(uuid "cdee4418-b286-4436-9058-32ed96fd8c55")
 		(effects
 			(font
 				(size 1 1)
@@ -58,7 +58,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0f47914a-838d-4d42-b66e-31d8025281f2")
+		(uuid "2f281a8e-2b87-4083-8f5d-a437e0bcf1a0")
 		(effects
 			(font
 				(size 1 1)
@@ -68,10 +68,10 @@
 	)
 	(attr smd)
 	(fp_text user "${REFERENCE}"
-		(at 0.0508 15.875 0)
+		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "01d909cb-620d-4a71-806b-e7736d2f255c")
+		(uuid "18bbb8a1-4a3d-4a11-aa69-9ede7fdc8bec")
 		(effects
 			(font
 				(size 1 1)
@@ -79,12 +79,15 @@
 			)
 		)
 	)
-	(pad "1" smd circle
+	(pad "1" smd roundrect
 		(at 0 0)
-		(size 2 2)
-		(property pad_prop_heatsink)
+		(size 15 10)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin -10)
-		(uuid "c97b8973-2bc8-4612-a996-42728f808a01")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.15)
+		(chamfer top_left top_right bottom_left bottom_right)
+		(solder_mask_margin -20)
+		(thermal_bridge_angle 45)
+		(uuid "c55be209-5d6c-4ba4-a0f8-699bdf6548e0")
 	)
 )
