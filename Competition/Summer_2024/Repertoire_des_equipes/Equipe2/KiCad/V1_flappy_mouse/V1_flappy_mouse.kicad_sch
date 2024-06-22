@@ -37,9 +37,9 @@
 		)
 		(uuid "c043ccb6-4c36-424b-9e6d-e875c643197c")
 	)
-	(text "Tâche à faire:\n- Moitier de capacitive touche\n- Accéléromètre\n- Switch\n- Connexion Ordinateur\n- Alimentation*"
+	(text "Tâche à faire:\n- Moitier de capacitive touche \n- Accéléromètre ❎\n- Switch ❎ \n- Connexion Ordinateur (déjà sur le ESP32) ❎\n- Alimentation* (déjà sur le ESP32) ❎\n- Micro SD card reader"
 		(exclude_from_sim no)
-		(at 15.24 26.67 0)
+		(at 14.986 27.432 0)
 		(effects
 			(font
 				(size 2 2)

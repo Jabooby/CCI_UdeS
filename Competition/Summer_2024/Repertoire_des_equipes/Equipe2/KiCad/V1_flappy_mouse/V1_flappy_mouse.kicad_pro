@@ -577,7 +577,7 @@
   "sheets": [
     [
       "02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c",
-      "Root"
+      "Racine"
     ],
     [
       "c9bdbe16-fb84-44c9-b5f6-cb197b4bed59",
@@ -598,6 +598,10 @@
     [
       "e2168b0b-961b-4d52-811f-6c1c02bc3003",
       "SOUND_SENSOR"
+    ],
+    [
+      "fb5042cf-cc6b-4da3-9aa0-596af5a24146",
+      "CAPACITIVE_TOUCH"
     ]
   ],
   "text_variables": {}
