@@ -1,0 +1,90 @@
+(footprint "Touchpad_spiral"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -15.24 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "995d9f19-32ea-4578-ac5e-ef695c34965d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Touchpad_spiral"
+		(at 0.0254 14.732 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f1585c34-e873-4541-a7c8-b97291b8bb0f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53ba5806-887b-4fbc-aa3a-ad86eb0da4c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49c9730b-9e26-4595-b574-3add8c5b9dd7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f47914a-838d-4d42-b66e-31d8025281f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0.0508 15.875 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "01d909cb-620d-4a71-806b-e7736d2f255c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2 2)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin -10)
+		(uuid "c97b8973-2bc8-4612-a996-42728f808a01")
+	)
+)
