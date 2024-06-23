@@ -1,0 +1,571 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x23b0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x3270
+entry 0x403c895c
+[0;32mI (27) boot: ESP-IDF v5.4-dev-421-g4523f2d674 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 15 2024 20:45:15[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (32) bootloader_flash: non-XMC chip detected by SFDP Read (5E), skip.[0m
+D (38) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (45) boot: chip revision: v0.2[0m
+D (49) boot.esp32s3: magic e9[0m
+D (52) boot.esp32s3: segments 04[0m
+D (55) boot.esp32s3: spi_mode 02[0m
+D (58) boot.esp32s3: spi_speed 0f[0m
+D (62) boot.esp32s3: spi_size 04[0m
+[0;32mI (65) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (70) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (75) boot.esp32s3: SPI Flash Size : 16MB[0m
+D (79) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+D (89) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (98) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (109) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (115) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (120) boot: Partition Table:[0m
+[0;32mI (124) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (131) boot: load partition table entry 0x3c008000[0m
+D (136) boot: type=1 subtype=2[0m
+[0;32mI (139) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (147) boot: load partition table entry 0x3c008020[0m
+D (152) boot: type=1 subtype=1[0m
+[0;32mI (155) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (162) boot: load partition table entry 0x3c008040[0m
+D (167) boot: type=0 subtype=0[0m
+[0;32mI (170) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (178) boot: End of partition table[0m
+D (182) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (188) esp_image: reading image header @ 0x10000[0m
+D (193) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (200) esp_image: image header: 0xe9 0x05 0x02 0x04 403752b0[0m
+V (206) esp_image: loading segment header 0 at offset 0x10018[0m
+V (212) esp_image: segment data length 0xa760 data starts 0x10020[0m
+V (218) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c020020[0m
+[0;32mI (226) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a760h ( 42848) map[0m
+D (235) esp_image: free data page_count 0x00000200[0m
+D (239) bootloader_flash: rodata starts from paddr=0x00010020, size=0xa760, will be mapped to vaddr=0x3c000000[0m
+V (249) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (268) esp_image: loading segment header 1 at offset 0x1a780[0m
+D (268) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (273) esp_image: segment data length 0x2914 data starts 0x1a788[0m
+V (279) esp_image: segment 1 map_segment 0 segment_data_offs 0x1a788 load_addr 0x3fc91b00[0m
+[0;32mI (287) esp_image: segment 1: paddr=0001a788 vaddr=3fc91b00 size=02914h ( 10516) load[0m
+D (296) esp_image: free data page_count 0x00000200[0m
+D (301) bootloader_flash: rodata starts from paddr=0x0001a788, size=0x2914, will be mapped to vaddr=0x3c000000[0m
+V (311) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (324) esp_image: loading segment header 2 at offset 0x1d09c[0m
+D (327) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (334) esp_image: segment data length 0x2f74 data starts 0x1d0a4[0m
+V (340) esp_image: segment 2 map_segment 0 segment_data_offs 0x1d0a4 load_addr 0x40374000[0m
+[0;32mI (349) esp_image: segment 2: paddr=0001d0a4 vaddr=40374000 size=02f74h ( 12148) load[0m
+D (357) esp_image: free data page_count 0x00000200[0m
+D (362) bootloader_flash: rodata starts from paddr=0x0001d0a4, size=0x2f74, will be mapped to vaddr=0x3c000000[0m
+V (372) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (386) esp_image: loading segment header 3 at offset 0x20018[0m
+D (389) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (395) esp_image: segment data length 0x187dc data starts 0x20020[0m
+V (402) esp_image: segment 3 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (410) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=187dch (100316) map[0m
+D (418) esp_image: free data page_count 0x00000200[0m
+D (423) bootloader_flash: rodata starts from paddr=0x00020020, size=0x187dc, will be mapped to vaddr=0x3c000000[0m
+V (433) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (462) esp_image: loading segment header 4 at offset 0x387fc[0m
+D (462) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)[0m
+V (464) esp_image: segment data length 0xaa90 data starts 0x38804[0m
+V (470) esp_image: segment 4 map_segment 0 segment_data_offs 0x38804 load_addr 0x40376f74[0m
+[0;32mI (478) esp_image: segment 4: paddr=00038804 vaddr=40376f74 size=0aa90h ( 43664) load[0m
+D (487) esp_image: free data page_count 0x00000200[0m
+D (491) bootloader_flash: rodata starts from paddr=0x00038804, size=0xaa90, will be mapped to vaddr=0x3c000000[0m
+V (501) bootloader_flash: after mapping, starting from paddr=0x00030000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (522) esp_image: image start 0x00010000 end of last section 0x00043294[0m
+D (522) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+D (526) boot: Calculated hash: f90feb08d9c36287e1d48b713f24d77f79d420ff93b0c65e857c4991b129f98a[0m
+[0;32mI (540) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (541) boot: Disabling RNG early entropy source...[0m
+D (546) boot: Mapping segment 0 as DROM[0m
+D (550) boot: Mapping segment 3 as IROM[0m
+D (554) boot: calling set_cache_and_start_app[0m
+D (558) boot: configure drom and irom and start[0m
+V (563) boot: rodata starts from paddr=0x00010020, vaddr=0x3c020020, size=0xa760[0m
+V (571) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (581) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x187dc[0m
+V (588) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x20000 bytes are mapped[0m
+D (598) boot: start: 0x403752b0[0m
+[0;32mI (613) cpu_start: Multicore app[0m
+[0;32mI (622) cpu_start: Pro cpu start user code[0m
+[0;32mI (622) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (623) app_init: Application information:[0m
+[0;32mI (625) app_init: Project name:     cci_udes[0m
+[0;32mI (630) app_init: App version:      ecf27a0-dirty[0m
+[0;32mI (636) app_init: Compile time:     Jun 15 2024 20:45:11[0m
+[0;32mI (642) app_init: ELF file SHA256:  daa940403...[0m
+[0;32mI (647) app_init: ESP-IDF:          v5.4-dev-421-g4523f2d674[0m
+[0;32mI (653) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (658) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (663) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (668) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (675) heap_init: At 3FC94CD0 len 00054A40 (338 KiB): RAM[0m
+[0;32mI (681) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (687) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (693) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (701) spi_flash: detected chip: generic[0m
+[0;32mI (704) spi_flash: flash io: dio[0m
+[0;32mI (708) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (715) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (723) main_task: Started on CPU0[0m
+[0;32mI (753) main_task: Calling app_main()[0m
+[0;31mE (753) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (753) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (763) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (773) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (783) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (783) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;32mI (793) example: Denoise function init[0m
+Touch Sensor read, the output format is: 
+Touchpad num:[raw data]
+
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 
+T0: [4062706] 

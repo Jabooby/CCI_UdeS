@@ -1,0 +1,5 @@
+[1/4] cd /home/charles/Documents/github/CCI_UdeS/code/build/esp-idf/esptool_py && /home/charles/.espressif/python_env/idf5.4_py3.11_env/bin/python /home/charles/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/charles/Documents/github/CCI_UdeS/code/build/partition_table/partition-table.bin /home/charles/Documents/github/CCI_UdeS/code/build/cci_udes.bin
+cci_udes.bin binary size 0x39bd0 bytes. Smallest app partition is 0x100000 bytes. 0xc6430 bytes (77%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/charles/Documents/github/CCI_UdeS/code/build/bootloader/esp-idf/esptool_py && /home/charles/.espressif/python_env/idf5.4_py3.11_env/bin/python /home/charles/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/charles/Documents/github/CCI_UdeS/code/build/bootloader/bootloader.bin
+Bootloader binary size 0x64d0 bytes. 0x1b30 bytes (21%) free.

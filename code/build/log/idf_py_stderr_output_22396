@@ -1,0 +1,14 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x40376f74: _xt_coproc_exc at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:1143
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752b0: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is cf0b773b5eacef4bf5343e1665f59cc3d28eba55e62e57ca492595f210bcb78f[0m
+[0m

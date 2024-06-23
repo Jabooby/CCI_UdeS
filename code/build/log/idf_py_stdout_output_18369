@@ -1,0 +1,1034 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x23b0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x3270
+entry 0x403c895c
+[0;32mI (27) boot: ESP-IDF v5.4-dev-421-g4523f2d674 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 15 2024 20:45:15[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (32) bootloader_flash: non-XMC chip detected by SFDP Read (5E), skip.[0m
+D (38) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (45) boot: chip revision: v0.2[0m
+D (49) boot.esp32s3: magic e9[0m
+D (52) boot.esp32s3: segments 04[0m
+D (55) boot.esp32s3: spi_mode 02[0m
+D (58) boot.esp32s3: spi_speed 0f[0m
+D (62) boot.esp32s3: spi_size 04[0m
+[0;32mI (65) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (70) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (75) boot.esp32s3: SPI Flash Size : 16MB[0m
+D (79) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+D (89) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (98) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (109) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (115) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (120) boot: Partition Table:[0m
+[0;32mI (124) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (131) boot: load partition table entry 0x3c008000[0m
+D (136) boot: type=1 subtype=2[0m
+[0;32mI (139) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (147) boot: load partition table entry 0x3c008020[0m
+D (152) boot: type=1 subtype=1[0m
+[0;32mI (155) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (162) boot: load partition table entry 0x3c008040[0m
+D (167) boot: type=0 subtype=0[0m
+[0;32mI (170) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (178) boot: End of partition table[0m
+D (182) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (188) esp_image: reading image header @ 0x10000[0m
+D (193) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (200) esp_image: image header: 0xe9 0x05 0x02 0x04 403752b0[0m
+V (206) esp_image: loading segment header 0 at offset 0x10018[0m
+V (212) esp_image: segment data length 0xa760 data starts 0x10020[0m
+V (218) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c020020[0m
+[0;32mI (226) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a760h ( 42848) map[0m
+D (235) esp_image: free data page_count 0x00000200[0m
+D (239) bootloader_flash: rodata starts from paddr=0x00010020, size=0xa760, will be mapped to vaddr=0x3c000000[0m
+V (249) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (268) esp_image: loading segment header 1 at offset 0x1a780[0m
+D (268) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (273) esp_image: segment data length 0x2914 data starts 0x1a788[0m
+V (279) esp_image: segment 1 map_segment 0 segment_data_offs 0x1a788 load_addr 0x3fc91b00[0m
+[0;32mI (287) esp_image: segment 1: paddr=0001a788 vaddr=3fc91b00 size=02914h ( 10516) load[0m
+D (296) esp_image: free data page_count 0x00000200[0m
+D (301) bootloader_flash: rodata starts from paddr=0x0001a788, size=0x2914, will be mapped to vaddr=0x3c000000[0m
+V (311) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (324) esp_image: loading segment header 2 at offset 0x1d09c[0m
+D (327) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (334) esp_image: segment data length 0x2f74 data starts 0x1d0a4[0m
+V (340) esp_image: segment 2 map_segment 0 segment_data_offs 0x1d0a4 load_addr 0x40374000[0m
+[0;32mI (349) esp_image: segment 2: paddr=0001d0a4 vaddr=40374000 size=02f74h ( 12148) load[0m
+D (357) esp_image: free data page_count 0x00000200[0m
+D (362) bootloader_flash: rodata starts from paddr=0x0001d0a4, size=0x2f74, will be mapped to vaddr=0x3c000000[0m
+V (372) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (386) esp_image: loading segment header 3 at offset 0x20018[0m
+D (389) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (395) esp_image: segment data length 0x187dc data starts 0x20020[0m
+V (402) esp_image: segment 3 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (410) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=187dch (100316) map[0m
+D (418) esp_image: free data page_count 0x00000200[0m
+D (423) bootloader_flash: rodata starts from paddr=0x00020020, size=0x187dc, will be mapped to vaddr=0x3c000000[0m
+V (433) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (462) esp_image: loading segment header 4 at offset 0x387fc[0m
+D (462) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)[0m
+V (464) esp_image: segment data length 0xaa90 data starts 0x38804[0m
+V (470) esp_image: segment 4 map_segment 0 segment_data_offs 0x38804 load_addr 0x40376f74[0m
+[0;32mI (478) esp_image: segment 4: paddr=00038804 vaddr=40376f74 size=0aa90h ( 43664) load[0m
+D (487) esp_image: free data page_count 0x00000200[0m
+D (491) bootloader_flash: rodata starts from paddr=0x00038804, size=0xaa90, will be mapped to vaddr=0x3c000000[0m
+V (501) bootloader_flash: after mapping, starting from paddr=0x00030000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (522) esp_image: image start 0x00010000 end of last section 0x00043294[0m
+D (522) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+D (526) boot: Calculated hash: da3a2469cfc9f716d22eee6fa6172f7b709911b0ea4520da80817dcf29e48677[0m
+[0;32mI (540) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (541) boot: Disabling RNG early entropy source...[0m
+D (546) boot: Mapping segment 0 as DROM[0m
+D (550) boot: Mapping segment 3 as IROM[0m
+D (554) boot: calling set_cache_and_start_app[0m
+D (558) boot: configure drom and irom and start[0m
+V (563) boot: rodata starts from paddr=0x00010020, vaddr=0x3c020020, size=0xa760[0m
+V (571) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (581) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x187dc[0m
+V (588) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x20000 bytes are mapped[0m
+D (598) boot: start: 0x403752b0[0m
+[0;32mI (613) cpu_start: Multicore app[0m
+[0;32mI (622) cpu_start: Pro cpu start user code[0m
+[0;32mI (622) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (623) app_init: Application information:[0m
+[0;32mI (625) app_init: Project name:     cci_udes[0m
+[0;32mI (630) app_init: App version:      ecf27a0-dirty[0m
+[0;32mI (636) app_init: Compile time:     Jun 15 2024 20:45:11[0m
+[0;32mI (642) app_init: ELF file SHA256:  f9f7d7ad1...[0m
+[0;32mI (647) app_init: ESP-IDF:          v5.4-dev-421-g4523f2d674[0m
+[0;32mI (653) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (658) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (663) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (668) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (675) heap_init: At 3FC94CD0 len 00054A40 (338 KiB): RAM[0m
+[0;32mI (681) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (687) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (693) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (701) spi_flash: detected chip: generic[0m
+[0;32mI (704) spi_flash: flash io: dio[0m
+[0;32mI (708) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (715) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (723) main_task: Started on CPU0[0m
+[0;32mI (753) main_task: Calling app_main()[0m
+[0;31mE (753) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (753) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (763) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (773) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (783) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;31mE (783) TOUCH_SENSOR: touch_pad_config(267): TOUCH0 is internal denoise channel[0m
+[0;32mI (793) example: Denoise function init[0m
+Touch Sensor read, the output format is: 
+Touchpad num:[raw data]
+
+[0;31mE (903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (1103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (1303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (1503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (1703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (1903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (2103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (2303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (2503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (2703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (2903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (3103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (3303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (3503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (3703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (3903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (4103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (4303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (4503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (4703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (4903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (5103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (5303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (5503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (5703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (5903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (6103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (6303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (6503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (6703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (6903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (7103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (7303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (7503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (7703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (7903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (8103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (8303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (8503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (8703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (8903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (9103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (9303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (9503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (9703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (9903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (10103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (10303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (10503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (10703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (10903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (11103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (11303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (11503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (11703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (11903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (12103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (12303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (12503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (12703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (12903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (13103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (13303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (13503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (13703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (13903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (14103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (14303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (14503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (14703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (14903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (15103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (15303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (15503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (15703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (15903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (16103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (16303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (16503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (16703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (16903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (17103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (17303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (17503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (17703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (17903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (18103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (18303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (18503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (18703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (18903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (19103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (19303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (19503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (19703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (19903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (20103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (20303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (20503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (20703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (20903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (21103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (21303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (21503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (21703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (21903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (22103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (22303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (22503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (22703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (22903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (23103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (23303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (23503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (23703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (23903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (24103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (24303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (24503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (24703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (24903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (25103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (25303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (25503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (25703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (25903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (26103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (26303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (26503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (26703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (26903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (27103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (27303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (27503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (27703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (27903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (28103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (28303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (28503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (28703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (28903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (29103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (29303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (29503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (29703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (29903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (30103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (30303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (30503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (30703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (30903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (31103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (31303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (31503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (31703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (31903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (32103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (32303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (32503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (32703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (32903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (33103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (33303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (33503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (33703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (33903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (34103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (34303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (34503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (34703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (34903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (35103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (35303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (35503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (35703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (35903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (36103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (36303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (36503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (36703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (36903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (37103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (37303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (37503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (37703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (37903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (38103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (38303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (38503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (38703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (38903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (39103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (39303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (39503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (39703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (39903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (40103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (40303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (40503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (40703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (40903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (41103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (41303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (41503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (41703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (41903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (42103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (42303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (42503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (42703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (42903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (43103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (43303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (43503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (43703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (43903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (44103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (44303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (44503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (44703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (44903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (45103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (45303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (45503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (45703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (45903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (46103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (46303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (46503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (46703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (46903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (47103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (47303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (47503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (47703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (47903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (48103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (48303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (48503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (48703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (48903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (49103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (49303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (49503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (49703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (49903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (50103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (50303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (50503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (50703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (50903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (51103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (51303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (51503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (51703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (51903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (52103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (52303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (52503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (52703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (52903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (53103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (53303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (53503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (53703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (53903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (54103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (54303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (54503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (54703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (54903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (55103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (55303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (55503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (55703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (55903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (56103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (56303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (56503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (56703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (56903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (57103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (57303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (57503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (57703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (57903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (58103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (58303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (58503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (58703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (58903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (59103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (59303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (59503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (59703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (59903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (60103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (60303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (60503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (60703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (60903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (61103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (61303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (61503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (61703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (61903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (62103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (62303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (62503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (62703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (62903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (63103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (63303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (63503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (63703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (63903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (64103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (64303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (64503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (64703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (64903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (65103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (65303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (65503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (65703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (65903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (66103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (66303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (66503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (66703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (66903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (67103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (67303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (67503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (67703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (67903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (68103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (68303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (68503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (68703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (68903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (69103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (69303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (69503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (69703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (69903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (70103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (70303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (70503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (70703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (70903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (71103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (71303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (71503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (71703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (71903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (72103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (72303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (72503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (72703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (72903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (73103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (73303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (73503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (73703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (73903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (74103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (74303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (74503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (74703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (74903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (75103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (75303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (75503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (75703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (75903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (76103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (76303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (76503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (76703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (76903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (77103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (77303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (77503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (77703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (77903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (78103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (78303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (78503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (78703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (78903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (79103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (79303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (79503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (79703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (79903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (80103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (80303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (80503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (80703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (80903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (81103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (81303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (81503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (81703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (81903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (82103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (82303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (82503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (82703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (82903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (83103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (83303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (83503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (83703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (83903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (84103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (84303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (84503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (84703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (84903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (85103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (85303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (85503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (85703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (85903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (86103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (86303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (86503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (86703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (86903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (87103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (87303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (87503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (87703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (87903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (88103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (88303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (88503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (88703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (88903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (89103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (89303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (89503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (89703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (89903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (90103) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (90303) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (90503) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (90703) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
+[0;31mE (90903) TOUCH_SENSOR: touch_pad_read_raw_data(315): TOUCH0 is internal denoise channel[0m
+T0: [1006785256] 
