@@ -1,4 +1,4 @@
-# Install script for directory: /home/charles/Documents/cci_udes/managed_components/espressif__esp_tinyusb
+# Install script for directory: /home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

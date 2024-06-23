@@ -11,13 +11,46 @@
 #include "tinyusb.h"
 #include "class/hid/hid_device.h"
 #include "driver/gpio.h"
+#include "driver/touch_pad.h"
 
 #define APP_BUTTON (GPIO_NUM_0) // Use BOOT signal by default
 static const char *TAG = "example";
 
+#define TOUCH_BUTTON_NUM 8
+#define TOUCH_CHANGE_CONFIG 0
+
+static const touch_pad_t button[TOUCH_BUTTON_NUM] = {
+    TOUCH_PAD_NUM1,
+    TOUCH_PAD_NUM2,
+    TOUCH_PAD_NUM3,
+    TOUCH_PAD_NUM4,
+    TOUCH_PAD_NUM5,
+    TOUCH_PAD_NUM6,
+    TOUCH_PAD_NUM7,
+    TOUCH_PAD_NUM8};
+
+static void tp_example_read_task(void *pvParameter)
+{
+    uint32_t touch_value;
+
+    /* Wait touch sensor init done */
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+    printf("Touch Sensor read, the output format is: \nTouchpad num:[raw data]\n\n");
+
+    while (1)
+    {
+        int i = TOUCH_BUTTON_NUM;
+        touch_pad_read_raw_data(TOUCH_BUTTON_NUM, &touch_value); // read raw data.
+        printf("T%d: [%4" PRIu32 "] ", TOUCH_BUTTON_NUM, touch_value);
+
+        printf("\n");
+        vTaskDelay(200 / portTICK_PERIOD_MS);
+    }
+}
+
 /************* TinyUSB descriptors ****************/
 
-#define TUSB_DESC_TOTAL_LEN      (TUD_CONFIG_DESC_LEN + CFG_TUD_HID * TUD_HID_DESC_LEN)
+#define TUSB_DESC_TOTAL_LEN (TUD_CONFIG_DESC_LEN + CFG_TUD_HID * TUD_HID_DESC_LEN)
 
 /**
  * @brief HID report descriptor
@@ -27,19 +60,18 @@ static const char *TAG = "example";
  */
 const uint8_t hid_report_descriptor[] = {
     TUD_HID_REPORT_DESC_KEYBOARD(HID_REPORT_ID(HID_ITF_PROTOCOL_KEYBOARD)),
-    TUD_HID_REPORT_DESC_MOUSE(HID_REPORT_ID(HID_ITF_PROTOCOL_MOUSE))
-};
+    TUD_HID_REPORT_DESC_MOUSE(HID_REPORT_ID(HID_ITF_PROTOCOL_MOUSE))};
 
 /**
  * @brief String descriptor
  */
-const char* hid_string_descriptor[5] = {
+const char *hid_string_descriptor[5] = {
     // array of pointer to string descriptors
-    (char[]){0x09, 0x04},  // 0: is supported language is English (0x0409)
-    "CCI5",             // 1: Manufacturer
+    (char[]){0x09, 0x04},    // 0: is supported language is English (0x0409)
+    "CCI5",                  // 1: Manufacturer
     "Mouse but better",      // 2: Product
-    "1",              // 3: Serials, should use chip ID
-    "Example HID interface",  // 4: HID
+    "1",                     // 3: Serials, should use chip ID
+    "Example HID interface", // 4: HID
 };
 
 /**
@@ -68,26 +100,27 @@ uint8_t const *tud_hid_descriptor_report_cb(uint8_t instance)
 // Invoked when received GET_REPORT control request
 // Application must fill buffer report's content and return its length.
 // Return zero will cause the stack to STALL request
-uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t* buffer, uint16_t reqlen)
+uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t *buffer, uint16_t reqlen)
 {
-    (void) instance;
-    (void) report_id;
-    (void) report_type;
-    (void) buffer;
-    (void) reqlen;
+    (void)instance;
+    (void)report_id;
+    (void)report_type;
+    (void)buffer;
+    (void)reqlen;
 
     return 0;
 }
 
 // Invoked when received SET_REPORT control request or
 // received data on OUT endpoint ( Report ID = 0, Type = 0 )
-void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize)
+void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const *buffer, uint16_t bufsize)
 {
 }
 
 /********* Application ***************/
 
-typedef enum {
+typedef enum
+{
     MOUSE_DIR_RIGHT,
     MOUSE_DIR_DOWN,
     MOUSE_DIR_LEFT,
@@ -95,8 +128,8 @@ typedef enum {
     MOUSE_DIR_MAX,
 } mouse_dir_t;
 
-#define DISTANCE_MAX        125
-#define DELTA_SCALAR        5
+#define DISTANCE_MAX 125
+#define DELTA_SCALAR 5
 
 static void mouse_draw_square_next_delta(int8_t *delta_x_ret, int8_t *delta_y_ret)
 {
@@ -104,16 +137,23 @@ static void mouse_draw_square_next_delta(int8_t *delta_x_ret, int8_t *delta_y_re
     static uint32_t distance = 0;
 
     // Calculate next delta
-    if (cur_dir == MOUSE_DIR_RIGHT) {
+    if (cur_dir == MOUSE_DIR_RIGHT)
+    {
         *delta_x_ret = DELTA_SCALAR;
         *delta_y_ret = 0;
-    } else if (cur_dir == MOUSE_DIR_DOWN) {
+    }
+    else if (cur_dir == MOUSE_DIR_DOWN)
+    {
         *delta_x_ret = 0;
         *delta_y_ret = DELTA_SCALAR;
-    } else if (cur_dir == MOUSE_DIR_LEFT) {
+    }
+    else if (cur_dir == MOUSE_DIR_LEFT)
+    {
         *delta_x_ret = -DELTA_SCALAR;
         *delta_y_ret = 0;
-    } else if (cur_dir == MOUSE_DIR_UP) {
+    }
+    else if (cur_dir == MOUSE_DIR_UP)
+    {
         *delta_x_ret = 0;
         *delta_y_ret = -DELTA_SCALAR;
     }
@@ -121,10 +161,12 @@ static void mouse_draw_square_next_delta(int8_t *delta_x_ret, int8_t *delta_y_re
     // Update cumulative distance for current direction
     distance += DELTA_SCALAR;
     // Check if we need to change direction
-    if (distance >= DISTANCE_MAX) {
+    if (distance >= DISTANCE_MAX)
+    {
         distance = 0;
         cur_dir++;
-        if (cur_dir == MOUSE_DIR_MAX) {
+        if (cur_dir == MOUSE_DIR_MAX)
+        {
             cur_dir = 0;
         }
     }
@@ -143,7 +185,8 @@ static void app_send_hid_demo(void)
     ESP_LOGI(TAG, "Sending Mouse report");
     int8_t delta_x;
     int8_t delta_y;
-    for (int i = 0; i < (DISTANCE_MAX / DELTA_SCALAR) * 4; i++) {
+    for (int i = 0; i < (DISTANCE_MAX / DELTA_SCALAR) * 4; i++)
+    {
         // Get the next x and y delta in the draw square pattern
         mouse_draw_square_next_delta(&delta_x, &delta_y);
         tud_hid_mouse_report(HID_ITF_PROTOCOL_MOUSE, 0x00, delta_x, delta_y, 0, 0);
@@ -153,6 +196,35 @@ static void app_send_hid_demo(void)
 
 void app_main(void)
 {
+
+    /* Initialize touch pad peripheral. */
+    touch_pad_init();
+
+    touch_pad_config(TOUCH_BUTTON_NUM);
+
+    /* Initialize touch pad peripheral. */
+    touch_pad_init();
+    for (int i = 0; i < TOUCH_BUTTON_NUM; i++)
+    {
+        touch_pad_config(button[i]);
+    }
+
+    touch_pad_denoise_t denoise = {
+        /* The bits to be cancelled are determined according to the noise level. */
+        .grade = TOUCH_PAD_DENOISE_BIT4,
+        .cap_level = TOUCH_PAD_DENOISE_CAP_L4,
+    };
+
+    touch_pad_denoise_set_config(&denoise);
+    touch_pad_denoise_enable();
+    ESP_LOGI(TAG, "Denoise function init");
+
+    /* Enable touch sensor clock. Work mode is "timer trigger". */
+    touch_pad_set_fsm_mode(TOUCH_FSM_MODE_TIMER);
+    touch_pad_fsm_start();
+
+    tp_example_read_task(NULL);
+
     // Initialize button that will trigger HID reports
     const gpio_config_t boot_button_config = {
         .pin_bit_mask = BIT64(APP_BUTTON),
@@ -161,6 +233,7 @@ void app_main(void)
         .pull_up_en = true,
         .pull_down_en = false,
     };
+
     ESP_ERROR_CHECK(gpio_config(&boot_button_config));
 
     ESP_LOGI(TAG, "USB initialization");
@@ -181,10 +254,13 @@ void app_main(void)
     ESP_ERROR_CHECK(tinyusb_driver_install(&tusb_cfg));
     ESP_LOGI(TAG, "USB initialization DONE");
 
-    while (1) {
-        if (tud_mounted()) {
+    while (1)
+    {
+        if (tud_mounted())
+        {
             static bool send_hid_data = true;
-            if (send_hid_data) {
+            if (send_hid_data)
+            {
                 app_send_hid_demo();
             }
             send_hid_data = !gpio_get_level(APP_BUTTON);

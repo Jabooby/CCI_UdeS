@@ -1,4 +1,4 @@
-# Install script for directory: /home/charles/Documents/cci_udes/main
+# Install script for directory: /home/charles/Documents/github/CCI_UdeS/code/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
