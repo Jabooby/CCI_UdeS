@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Esp-idf thingies
+/code/build/esp-idf/mbedtls/mbedtls/library/
