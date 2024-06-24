@@ -15,7 +15,7 @@
 
 
 #define APP_BUTTON (GPIO_NUM_0) // Use BOOT signal by default
-static const char *TAG = "example";
+static const char *TAG = "main.c";
 
 /************* TinyUSB descriptors ****************/
 
