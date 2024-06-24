@@ -11,10 +11,13 @@
 #include "driver/gpio.h"
 #include "tinyusb.h"
 #include "class/hid/hid_device.h"
+#include "tusb_cdc_acm.h"
+#include "tusb_console.h"
+#include "sdkconfig.h"
 #include "capacitive.h"
 
-
 #define APP_BUTTON (GPIO_NUM_0) // Use BOOT signal by default
+
 static const char *TAG = "main.c";
 
 /************* TinyUSB descriptors ****************/
@@ -193,7 +196,19 @@ void app_main(void)
     };
 
     ESP_ERROR_CHECK(tinyusb_driver_install(&tusb_cfg));
+
+    tinyusb_config_cdcacm_t acm_cfg = {0}; // the configuration uses default values
+    ESP_ERROR_CHECK(tusb_cdc_acm_init(&acm_cfg));
+
     ESP_LOGI(TAG, "USB initialization DONE");
+
+    esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
+    ESP_LOGI(TAG, "log -> USB");
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    fprintf(stdout, "example: print -> stdout\n");
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    fprintf(stderr, "example: print -> stderr\n");
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
 
     while (1)
     {
