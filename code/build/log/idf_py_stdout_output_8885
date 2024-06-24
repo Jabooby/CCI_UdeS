@@ -1,0 +1,12 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+Processing 3 dependencies:
+[1/3] espressif/esp_tinyusb (1.4.4)
+[2/3] espressif/tinyusb (0.15.0~9)
+[3/3] idf (5.4.0)
+-- Project sdkconfig file /home/charles/Documents/github/CCI_UdeS/code/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Configuring incomplete, errors occurred!
+See also "/home/charles/Documents/github/CCI_UdeS/code/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/charles/Documents/github/CCI_UdeS/code -B/home/charles/Documents/github/CCI_UdeS/code/build

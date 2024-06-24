@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "cci_udes",
-    "project_version":    "ecf27a0-dirty",
+    "project_version":    "7145ba9-dirty",
     "project_path":       "/home/charles/Documents/github/CCI_UdeS/code",
     "idf_path":           "/home/charles/esp-idf",
     "build_dir":          "/home/charles/Documents/github/CCI_UdeS/code/build",
@@ -910,7 +910,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/charles/Documents/github/CCI_UdeS/code/build/esp-idf/esp_system/libesp_system.a",
-            "sources": [ "/home/charles/esp-idf/components/esp_system/esp_err.c", "/home/charles/esp-idf/components/esp_system/crosscore_int.c", "/home/charles/esp-idf/components/esp_system/esp_ipc.c", "/home/charles/esp-idf/components/esp_system/freertos_hooks.c", "/home/charles/esp-idf/components/esp_system/int_wdt.c", "/home/charles/esp-idf/components/esp_system/panic.c", "/home/charles/esp-idf/components/esp_system/esp_system.c", "/home/charles/esp-idf/components/esp_system/startup.c", "/home/charles/esp-idf/components/esp_system/startup_funcs.c", "/home/charles/esp-idf/components/esp_system/system_time.c", "/home/charles/esp-idf/components/esp_system/stack_check.c", "/home/charles/esp-idf/components/esp_system/ubsan.c", "/home/charles/esp-idf/components/esp_system/xt_wdt.c", "/home/charles/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/home/charles/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/home/charles/esp-idf/components/esp_system/port/cpu_start.c", "/home/charles/esp-idf/components/esp_system/port/panic_handler.c", "/home/charles/esp-idf/components/esp_system/port/esp_system_chip.c", "/home/charles/esp-idf/components/esp_system/port/brownout.c", "/home/charles/esp-idf/components/esp_system/port/esp_ipc_isr.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_port.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/highint_hdl.S", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/clk.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/reset_reason.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/cache_err_int.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/apb_backup_dma.c" ],
+            "sources": [ "/home/charles/esp-idf/components/esp_system/esp_err.c", "/home/charles/esp-idf/components/esp_system/crosscore_int.c", "/home/charles/esp-idf/components/esp_system/esp_ipc.c", "/home/charles/esp-idf/components/esp_system/freertos_hooks.c", "/home/charles/esp-idf/components/esp_system/int_wdt.c", "/home/charles/esp-idf/components/esp_system/panic.c", "/home/charles/esp-idf/components/esp_system/esp_system.c", "/home/charles/esp-idf/components/esp_system/startup.c", "/home/charles/esp-idf/components/esp_system/startup_funcs.c", "/home/charles/esp-idf/components/esp_system/system_time.c", "/home/charles/esp-idf/components/esp_system/stack_check.c", "/home/charles/esp-idf/components/esp_system/ubsan.c", "/home/charles/esp-idf/components/esp_system/xt_wdt.c", "/home/charles/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/home/charles/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/home/charles/esp-idf/components/esp_system/port/cpu_start.c", "/home/charles/esp-idf/components/esp_system/port/panic_handler.c", "/home/charles/esp-idf/components/esp_system/port/esp_system_chip.c", "/home/charles/esp-idf/components/esp_system/port/brownout.c", "/home/charles/esp-idf/components/esp_system/port/usb_console.c", "/home/charles/esp-idf/components/esp_system/port/esp_ipc_isr.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_port.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/home/charles/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/highint_hdl.S", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/clk.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/reset_reason.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/cache_err_int.c", "/home/charles/esp-idf/components/esp_system/port/soc/esp32s3/apb_backup_dma.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_timer": {
@@ -940,7 +940,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/charles/Documents/github/CCI_UdeS/code/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
-            "sources": [ "/home/charles/esp-idf/components/esp_vfs_console/vfs_console.c" ],
+            "sources": [ "/home/charles/esp-idf/components/esp_vfs_console/vfs_console.c", "/home/charles/esp-idf/components/esp_vfs_console/vfs_cdcacm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_wifi": {
@@ -985,7 +985,7 @@
             "managed_reqs": [ "espressif__tinyusb" ],
             "managed_priv_reqs": [],
             "file": "/home/charles/Documents/github/CCI_UdeS/code/build/esp-idf/espressif__esp_tinyusb/libespressif__esp_tinyusb.a",
-            "sources": [ "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/descriptors_control.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/tinyusb.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/usb_descriptors.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/tusb_tasks.c" ],
+            "sources": [ "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/descriptors_control.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/tinyusb.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/usb_descriptors.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/tusb_tasks.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/cdc.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/tusb_cdc_acm.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/tusb_console.c", "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb/vfs_tinyusb.c" ],
             "include_dirs": [ "include" ]
         },
         "espressif__tinyusb": {
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp_tinyusb" ],
             "file": "/home/charles/Documents/github/CCI_UdeS/code/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/charles/Documents/github/CCI_UdeS/code/main/main.c" ],
+            "sources": [ "/home/charles/Documents/github/CCI_UdeS/code/main/capacitive.c", "/home/charles/Documents/github/CCI_UdeS/code/main/main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
