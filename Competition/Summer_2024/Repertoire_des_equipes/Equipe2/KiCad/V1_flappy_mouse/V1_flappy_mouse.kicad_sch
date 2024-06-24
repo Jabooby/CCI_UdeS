@@ -24,7 +24,7 @@
 		)
 		(uuid "711b065a-6811-4b16-994b-64dc74ed90f0")
 	)
-	(text "Tâche à faire:\n- Moitier de capacitive touche\n- Esp32-S3 Header\n- Écran (SPI)\n- Microphone*\n- Points de test (Je te rajoute cette section, mets des points de test \noù tu crois ça va nous être utile)"
+	(text "Tâche à faire:\n- Moitier de capacitive touche ❎\n- Esp32-S3 Header ❎\n- Écran (SPI)❎\n- Microphone* ❎\n- Points de test (Je te rajoute cette section, mets des points de test \noù tu crois ça va nous être utile)"
 		(exclude_from_sim no)
 		(at 146.05 28.702 0)
 		(effects

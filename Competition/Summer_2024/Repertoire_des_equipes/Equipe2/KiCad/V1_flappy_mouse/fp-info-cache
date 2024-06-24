@@ -1,4 +1,4 @@
-23647231373158254
+23650669903765107
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64642,10 +64642,17 @@ TouchPad1
 
 
 0
-0
-0
+1
+1
 Librairie_touchpad
 Touchpad_biz_rect
+
+
+0
+1
+1
+Librairie_touchpad
+Touchpad_biz_rect_smaller
 
 
 0
@@ -64660,6 +64667,13 @@ Touchpad_ronde
 1
 Librairie_touchpad
 Touchpad_slider
+
+
+0
+1
+1
+Librairie_touchpad
+Touchpad_slider_smaller
 
 
 0
