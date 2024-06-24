@@ -290,248 +290,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x04_Pin"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04_Pin"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Conn_01x08_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -1918,6 +1676,109 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint_Alt"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Alt"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point (alternative shape)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Alt_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.762 3.302) (xy 0 4.064) (xy 0.762 3.302) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Alt_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:Microphone"
 			(pin_names
 				(offset 0.0254) hide)
@@ -2339,6 +2200,187 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 1.016)
+					(mid -1.2656 0)
+					(end -0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 -1.016)
+					(mid 1.2656 0)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2868,10 +2910,10 @@
 		)
 	)
 	(junction
-		(at 58.42 121.92)
+		(at 57.15 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0231a149-4b7d-4092-a858-06d65408f81c")
+		(uuid "019e1fb0-fd2e-44d9-9b73-4bf1dee1f92a")
 	)
 	(junction
 		(at 99.06 76.2)
@@ -2880,16 +2922,10 @@
 		(uuid "1f501e98-0d7d-4a8a-98da-21fb665ac34d")
 	)
 	(junction
-		(at 58.42 128.27)
+		(at 73.66 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2b40bdcc-a70c-4d0a-bf1a-a122679c838f")
-	)
-	(junction
-		(at 58.42 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30b48250-ab4d-4169-a11a-d2d0e61c96a7")
+		(uuid "3687dff3-a22b-4815-8b73-be3db33791ed")
 	)
 	(junction
 		(at 93.98 140.97)
@@ -2920,6 +2956,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b39cc19e-b235-4bba-8f3c-abc74f15fe05")
+	)
+	(junction
+		(at 57.15 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb1c98bb-d002-479d-b804-5bf191d09e92")
+	)
+	(junction
+		(at 96.52 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d79c6c12-b084-4dfb-86d9-a66377b54258")
+	)
+	(junction
+		(at 57.15 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7f3441c-e6fb-4d4a-b758-ff6140e80877")
 	)
 	(junction
 		(at 73.66 116.84)
@@ -2959,7 +3013,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 128.27) (xy 58.42 129.54)
+			(xy 57.15 128.27) (xy 57.15 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2976,16 +3030,6 @@
 			(type default)
 		)
 		(uuid "11e543ff-1f5c-4640-b04c-5bad8f7bf731")
-	)
-	(wire
-		(pts
-			(xy 93.98 140.97) (xy 58.42 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1387e96f-a48a-4485-9040-b5a4959f86ad")
 	)
 	(wire
 		(pts
@@ -3059,16 +3103,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 121.92) (xy 81.28 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3317e92b-3b7b-48fa-af5e-a6bf206e5f62")
-	)
-	(wire
-		(pts
 			(xy 127 116.84) (xy 127 140.97)
 		)
 		(stroke
@@ -3089,13 +3123,53 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 140.97) (xy 58.42 137.16)
+			(xy 96.52 101.6) (xy 113.03 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41e413e8-e83a-4a4e-8727-95a09c364f37")
+	)
+	(wire
+		(pts
+			(xy 57.15 140.97) (xy 57.15 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "51acdf07-0d50-4d91-b687-d3d7674a1049")
+	)
+	(wire
+		(pts
+			(xy 96.52 114.3) (xy 96.52 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ae9c3d-2807-4581-bab9-f00c8e484f08")
+	)
+	(wire
+		(pts
+			(xy 77.47 106.68) (xy 78.74 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e40b4a-3a26-4027-8f71-8d40e8c95adf")
+	)
+	(wire
+		(pts
+			(xy 96.52 101.6) (xy 96.52 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65eb0d39-5dd4-4462-b95c-c2ac7f592697")
 	)
 	(wire
 		(pts
@@ -3119,7 +3193,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 101.6) (xy 113.03 101.6)
+			(xy 93.98 101.6) (xy 96.52 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3129,7 +3203,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 101.6) (xy 73.66 101.6)
+			(xy 57.15 101.6) (xy 73.66 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3169,7 +3243,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 124.46) (xy 134.62 124.46)
+			(xy 132.08 129.54) (xy 134.62 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3179,7 +3253,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 127) (xy 49.53 140.97)
+			(xy 44.45 127) (xy 44.45 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3189,7 +3263,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 140.97) (xy 58.42 140.97)
+			(xy 44.45 140.97) (xy 57.15 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3199,17 +3273,17 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 128.27) (xy 58.42 128.27)
+			(xy 78.74 106.68) (xy 78.74 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ad8bd73-f470-4a12-a939-5e9c076bfd6e")
+		(uuid "9e2d09aa-f37d-4b0e-9fa7-1719f0445181")
 	)
 	(wire
 		(pts
-			(xy 58.42 121.92) (xy 58.42 128.27)
+			(xy 57.15 121.92) (xy 57.15 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3229,7 +3303,17 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 110.49) (xy 58.42 121.92)
+			(xy 57.15 140.97) (xy 93.98 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a99603ea-ef39-4ceb-a1f0-b203e8873778")
+	)
+	(wire
+		(pts
+			(xy 57.15 111.76) (xy 57.15 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3299,7 +3383,37 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 116.84) (xy 62.23 116.84)
+			(xy 73.66 111.76) (xy 73.66 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2bea0c6-f706-4119-b892-3845c54df32a")
+	)
+	(wire
+		(pts
+			(xy 78.74 111.76) (xy 73.66 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d617aadf-1f72-414d-936e-3535e3282f41")
+	)
+	(wire
+		(pts
+			(xy 57.15 121.92) (xy 81.28 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8be13be-fc35-4e52-84fc-d05ec8ebf366")
+	)
+	(wire
+		(pts
+			(xy 44.45 116.84) (xy 62.23 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3309,7 +3423,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 110.49) (xy 73.66 116.84)
+			(xy 73.66 110.49) (xy 73.66 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3319,7 +3433,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 124.46) (xy 132.08 137.16)
+			(xy 132.08 129.54) (xy 132.08 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3339,7 +3453,17 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 101.6) (xy 58.42 102.87)
+			(xy 57.15 128.27) (xy 80.01 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef486886-3b70-45d9-890a-97e0a73321b0")
+	)
+	(wire
+		(pts
+			(xy 57.15 101.6) (xy 57.15 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3347,15 +3471,93 @@
 		)
 		(uuid "f92f64d6-2a10-48b3-95f1-60ee398d0a3c")
 	)
+	(rectangle
+		(start 204.47 66.04)
+		(end 250.19 93.98)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 145a2446-171c-4c8c-aec7-0508e0d06567)
+	)
+	(rectangle
+		(start 17.78 15.24)
+		(end 132.08 86.36)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4a33c8df-1719-453b-ae79-28de72c18593)
+	)
+	(rectangle
+		(start 135.89 20.32)
+		(end 245.11 48.26)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid bd7f87b2-c8af-4b0d-843b-cc78e4f0586b)
+	)
+	(rectangle
+		(start 40.64 93.98)
+		(end 160.02 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c52c68a0-e992-4731-95a1-489ef5a56e9c)
+	)
 	(text "DC"
 		(exclude_from_sim no)
-		(at 198.882 45.974 0)
+		(at 238.252 82.804 0)
 		(effects
 			(font
 				(size 1.016 1.016)
 			)
 		)
 		(uuid "0d02081a-1157-4534-b89a-16f1ec09a4cd")
+	)
+	(text "8 COUPS D'ENCODEUR MAX PAR SCROLL POUR LA SCROLL WHEEL"
+		(exclude_from_sim no)
+		(at 171.196 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "11a1e2ec-85ca-4a57-af1a-16bd7a5828fc")
+	)
+	(text "CAPACITIVE TOUCH\n"
+		(exclude_from_sim no)
+		(at 145.034 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1cb01324-24bf-4e2b-b2f1-a42d763b755d")
+	)
+	(text "VÉRIFIER SI Y'AURAIT PAS MOYEN DE TUNER MON CIRCUIT POUR\n"
+		(exclude_from_sim no)
+		(at 87.376 158.242 0)
+		(effects
+			(font
+				(size 1.651 1.651)
+			)
+		)
+		(uuid "1d06a638-aff9-4385-b57d-116686dd95de")
 	)
 	(text "PINOUT OF THE TFT DISPLAY (CHIP ST7789)\nGND = GND\nVCC = 3.3V\nSCL = CLK = FSPICLK\nSDA = MOSI = FSPID\nRES = FSPIHD \nDC = FSPIWP\nCS = CS = FSPICS0\nBLK = NOTHING (USELESS)"
 		(exclude_from_sim no)
@@ -3377,19 +3579,19 @@
 		)
 		(uuid "28d29431-4d64-449c-9e6a-f2c3cfd93966")
 	)
-	(text "JE PENSAIS CONNECTER DES PADS DE MÉTAL\nJE SAIS PAS CE QUE TU EN PENSES"
+	(text "TFT DISPLAY\n"
 		(exclude_from_sim no)
-		(at 178.816 91.694 0)
+		(at 211.074 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "4609c8db-3f54-4bf0-b6e3-ef6f35f5f23b")
+		(uuid "468f6e2c-4656-42a3-af9c-7b7ef5a3a679")
 	)
 	(text "SDA(MOSI)\n"
 		(exclude_from_sim no)
-		(at 198.882 40.64 0)
+		(at 238.252 77.47 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3399,7 +3601,7 @@
 	)
 	(text "GND\n"
 		(exclude_from_sim no)
-		(at 199.136 53.594 0)
+		(at 238.506 90.424 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3409,7 +3611,7 @@
 	)
 	(text "VCC (3V3)\n\n"
 		(exclude_from_sim no)
-		(at 199.136 36.576 0)
+		(at 238.506 73.406 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3417,9 +3619,19 @@
 		)
 		(uuid "6de04f1a-b954-4be6-a1de-97f183f9dd29")
 	)
+	(text "AOUT"
+		(exclude_from_sim no)
+		(at 138.43 127.254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "80714e09-a0b7-446d-bbe4-700a73e18d3d")
+	)
 	(text "BLK"
 		(exclude_from_sim no)
-		(at 199.136 51.054 0)
+		(at 238.506 87.884 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3429,7 +3641,7 @@
 	)
 	(text "SCL(CLK)\n"
 		(exclude_from_sim no)
-		(at 198.628 38.354 0)
+		(at 237.998 75.184 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3437,9 +3649,19 @@
 		)
 		(uuid "9708f9a5-4dd3-4e77-810d-309acb924469")
 	)
+	(text "ESP32-S3 PINOUT"
+		(exclude_from_sim no)
+		(at 27.686 84.328 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9f1e1915-0b0c-480f-8857-66e12c265b26")
+	)
 	(text "CS"
 		(exclude_from_sim no)
-		(at 198.882 48.514 0)
+		(at 238.252 85.344 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3447,9 +3669,19 @@
 		)
 		(uuid "bdfc118b-c446-4fc7-99e8-1fcbe3585632")
 	)
+	(text "SOUND SENSOR\n"
+		(exclude_from_sim no)
+		(at 50.292 148.082 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d81ade85-ee79-4154-ae3b-3adb1937fd6a")
+	)
 	(text "RES"
 		(exclude_from_sim no)
-		(at 198.882 43.18 0)
+		(at 238.252 80.01 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3457,9 +3689,29 @@
 		)
 		(uuid "ecd5fc0b-940e-4aff-be42-26a6b747c1d3")
 	)
+	(text "VÉRIFIER SI JE NE PEUX CHANGER LE GPIO36/FSPICLK POUR QQCH D'AUTRE\nOU CELUI DE JACOB \n"
+		(exclude_from_sim no)
+		(at 226.314 100.33 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+		)
+		(uuid "eefb15df-0b3d-45e0-8484-51582db8cfd3")
+	)
+	(text "DOUT"
+		(exclude_from_sim no)
+		(at 137.922 117.348 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fcea340c-196b-42ce-ab3c-0a3bad13b5b8")
+	)
 	(global_label "GPIO47{slash}SPICLK_P"
 		(shape input)
-		(at 189.23 48.26 180)
+		(at 228.6 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3469,7 +3721,7 @@
 		)
 		(uuid "009ac0be-415d-4429-9c5f-8fef4605677b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.1503 48.26 0)
+			(at 212.5203 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3503,7 +3755,7 @@
 	)
 	(global_label "GPIO38{slash}FSPIWP{slash}RGB_LED"
 		(shape bidirectional)
-		(at 189.23 45.72 180)
+		(at 228.6 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3513,7 +3765,7 @@
 		)
 		(uuid "0b21a64b-24c8-410e-9f96-94477580d199")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.2137 45.72 0)
+			(at 205.5837 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3541,6 +3793,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TOUCH7{slash}GPIO7"
+		(shape bidirectional)
+		(at 224.79 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "1923b34d-4342-47ab-8947-613afdc119da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 41.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3699,24 +3973,46 @@
 			)
 		)
 	)
-	(global_label "TOUCH5{slash}GPIO5"
+	(global_label "U1TXD{slash}GPIO17"
 		(shape output)
-		(at 177.8 81.28 0)
+		(at 142.24 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(size 1.016 1.016)
+				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "312745ed-25e4-495d-9b33-f1959062f53c")
+		(uuid "2ce09c52-9214-435c-91dd-4438c0c232a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.751 81.28 0)
+			(at 159.4371 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TOUCH6{slash}GPIO6"
+		(shape bidirectional)
+		(at 194.31 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "30a2531a-2c5c-453c-a51d-e80e4fb937bd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 41.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3855,7 +4151,7 @@
 	)
 	(global_label "GPIO21"
 		(shape input)
-		(at 189.23 50.8 180)
+		(at 228.6 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3865,7 +4161,7 @@
 		)
 		(uuid "50373a0e-6705-40de-965b-c16626a525ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.3267 50.8 0)
+			(at 220.6967 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,24 +4259,24 @@
 			)
 		)
 	)
-	(global_label "DOUT"
-		(shape output)
-		(at 134.62 119.38 0)
+	(global_label "TOUCH5{slash}GPIO5"
+		(shape bidirectional)
+		(at 167.64 26.67 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "7269902f-eb53-4a3b-a8af-2994b8174340")
+		(uuid "7d4db12f-aa94-400a-bef3-3d28700bc2cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.5038 119.38 0)
+			(at 167.64 41.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4009,7 +4305,7 @@
 	)
 	(global_label "GPIO48{slash}SPICLK_N"
 		(shape bidirectional)
-		(at 189.23 43.18 180)
+		(at 228.6 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4019,7 +4315,7 @@
 		)
 		(uuid "9fb0d188-f2a2-4b40-98a4-a1f9cf17e577")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.2129 43.18 0)
+			(at 211.5829 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4073,28 +4369,6 @@
 			)
 		)
 	)
-	(global_label "TOUCH6{slash}GPIO6"
-		(shape output)
-		(at 177.8 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "a8c9b9f2-d132-4cd8-8f0a-c0d7b911d923")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.751 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GPIO1{slash}TOUCH1{slash}ADC1_0{slash}SDA0"
 		(shape bidirectional)
 		(at 97.79 30.48 0)
@@ -4119,7 +4393,7 @@
 	)
 	(global_label "GPIO35{slash}FSPID"
 		(shape bidirectional)
-		(at 189.23 40.64 180)
+		(at 228.6 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4129,7 +4403,7 @@
 		)
 		(uuid "aec761e5-b4a9-4e37-ab4b-f3d1033006d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.019 40.64 0)
+			(at 214.389 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4141,7 +4415,7 @@
 	)
 	(global_label "+3.3V"
 		(shape input)
-		(at 189.23 35.56 180)
+		(at 228.6 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4151,7 +4425,7 @@
 		)
 		(uuid "b74b5cde-4ba2-41e1-8935-6eddb2407756")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.2943 35.56 0)
+			(at 221.6643 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4249,28 +4523,6 @@
 			)
 		)
 	)
-	(global_label "AOUT"
-		(shape output)
-		(at 134.62 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d5691a96-9680-4d3b-8dfb-7a3cfe24eefc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.3224 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "TOUCH8{slash}GPIO8"
 		(shape bidirectional)
 		(at 77.47 50.8 180)
@@ -4339,7 +4591,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 189.23 53.34 180)
+		(at 228.6 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4349,7 +4601,7 @@
 		)
 		(uuid "e4c72967-c8dd-4374-acae-6d527dbfd3ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.7457 53.34 0)
+			(at 223.1157 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,19 +4611,19 @@
 			)
 		)
 	)
-	(global_label "TOUCH4{slash}GPIO4"
+	(global_label "U1RXD{slash}GPIO18"
 		(shape output)
-		(at 177.8 78.74 0)
+		(at 142.24 129.54 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(size 1.016 1.016)
+				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "e52e9492-f211-4c34-a48a-92f4a3086367")
+		(uuid "e6491333-f098-4846-86b9-d5779414f2c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.751 78.74 0)
+			(at 159.7395 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4405,7 +4657,7 @@
 	)
 	(global_label "GPIO36{slash}FSPICLK"
 		(shape input)
-		(at 189.23 38.1 180)
+		(at 228.6 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4415,34 +4667,12 @@
 		)
 		(uuid "ea39e6b8-6f6f-4d62-8510-fb1e4b35d187")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 174.0695 38.1 0)
+			(at 213.4395 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TOUCH7{slash}GPIO7"
-		(shape output)
-		(at 177.8 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "eaab7baf-023a-4d7b-96e9-e80d20d48a5d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.751 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4482,6 +4712,28 @@
 		(uuid "f51f40ea-4960-4f72-a8ea-a077332ddaa2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 62.8236 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TOUCH4{slash}GPIO4"
+		(shape bidirectional)
+		(at 140.97 26.67 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "f62c6c33-229d-416e-bed3-ea1fd05f31d2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.97 41.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4646,6 +4898,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 138.43 119.38 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b27ebb9-f93f-4e6a-90fd-25fcb2555b8f")
+		(property "Reference" "JP2"
+			(at 138.43 122.428 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_DOUT"
+			(at 138.938 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 138.43 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8e08dec-efb0-4d20-9b27-45799b1289ad")
+		)
+		(pin "2"
+			(uuid "39239bc8-93d8-4499-be69-7c4f929bbaca")
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Comparator:LM393")
 		(at 88.9 119.38 0)
 		(mirror x)
@@ -4732,6 +5051,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 138.43 129.54 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "15e3fc2e-f6c8-4ee9-8c9e-9843c9967617")
+		(property "Reference" "JP1"
+			(at 139.7 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_AOUT"
+			(at 139.7 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 138.43 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f254b64-5b91-4f7a-8258-0e1b2b47fc93")
+		)
+		(pin "2"
+			(uuid "7689679a-e09f-469f-9e5f-f98387a601d2")
+		)
+		(instances
+			(project ""
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 96.52 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21ecdca6-367a-4549-8159-75ec454b8c1f")
+		(property "Reference" "R306"
+			(at 99.06 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 99.06 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 94.742 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 96.52 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed1f20ee-c127-45eb-94ef-12e3119b3e12")
+		)
+		(pin "2"
+			(uuid "4a0b85f3-a8de-4451-9b50-14c8c64e699d")
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "R306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 66.04 116.84 90)
 		(unit 1)
@@ -4739,10 +5195,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2bcadb7a-6d07-49d3-9352-c70b82bbc04c")
 		(property "Reference" "R303"
-			(at 66.04 110.49 90)
+			(at 66.04 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4750,7 +5205,7 @@
 			)
 		)
 		(property "Value" "150"
-			(at 66.04 113.03 90)
+			(at 66.294 114.046 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4871,7 +5326,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 106.68 0)
+		(at 57.15 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4880,7 +5335,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cbdd1db-b6d3-4196-ae7a-ac76677eefd3")
 		(property "Reference" "R301"
-			(at 60.96 105.4099 0)
+			(at 59.69 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4889,7 +5344,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 60.96 107.9499 0)
+			(at 59.69 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4898,7 +5353,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 56.642 106.68 90)
+			(at 55.372 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4907,7 +5362,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 106.68 0)
+			(at 57.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +5371,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 106.68 0)
+			(at 57.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5074,86 +5529,6 @@
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
 					(reference "#PWR0308")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 172.72 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5aff3058-f7e8-45cd-95db-d2b490b4b989")
-		(property "Reference" "J303"
-			(at 173.355 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CAPACITIVE"
-			(at 173.355 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 172.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b02cbc5-66f7-41ef-a6fc-ac04ad66b202")
-		)
-		(pin "4"
-			(uuid "a5f73caf-25c4-4d2c-9394-dac9c741c242")
-		)
-		(pin "3"
-			(uuid "6323f985-cf3a-4882-b417-71749e1ec03f")
-		)
-		(pin "2"
-			(uuid "34dc0ba1-0100-4eb3-9f32-5984271b7124")
-		)
-		(instances
-			(project "V1_flappy_mouse"
-				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(reference "J303")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/c53b19f5-20eb-479e-abcd-b286f0e22d52"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -5501,7 +5876,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 133.35 0)
+		(at 57.15 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5510,7 +5885,7 @@
 		(fields_autoplaced yes)
 		(uuid "76989888-db37-4726-a1ba-da7038beea30")
 		(property "Reference" "R302"
-			(at 60.96 132.0799 0)
+			(at 59.69 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,7 +5894,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 60.96 134.6199 0)
+			(at 59.69 134.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5528,7 +5903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 56.642 133.35 90)
+			(at 55.372 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5537,7 +5912,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 133.35 0)
+			(at 57.15 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5546,7 +5921,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 133.35 0)
+			(at 57.15 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,33 +5945,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 194.31 43.18 0)
-		(mirror y)
+		(lib_id "Connector:TestPoint_Alt")
+		(at 140.97 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8f0b8fc4-d183-437a-ba47-c2bce3cc5996")
-		(property "Reference" "J304"
-			(at 193.675 30.48 0)
+		(fields_autoplaced yes)
+		(uuid "77c5608e-f6c3-4f8e-ba43-18333d5d4d5c")
+		(property "Reference" "TP5"
+			(at 143.51 22.0979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x08_Pin"
-			(at 193.675 33.02 0)
+		(property "Value" "Touchpad_click_gauche"
+			(at 143.51 24.6379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
-			(at 194.31 43.18 0)
+		(property "Footprint" "Librairie_touchpad:Touchpad_biz_rect"
+			(at 146.05 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5605,7 +5982,72 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 43.18 0)
+			(at 146.05 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 140.97 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55670ab3-b84c-475d-be78-cd9cee89d04d")
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x08_Pin")
+		(at 233.68 80.01 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f0b8fc4-d183-437a-ba47-c2bce3cc5996")
+		(property "Reference" "J304"
+			(at 233.045 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_TFT_display"
+			(at 233.045 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+			(at 233.68 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +6056,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 194.31 43.18 0)
+			(at 233.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5722,17 +6164,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Microphone")
-		(at 49.53 121.92 0)
+		(lib_id "Connector:TestPoint_Alt")
+		(at 194.31 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "adfaaf3b-7932-4213-a648-7b0f8d12e022")
-		(property "Reference" "MK301"
-			(at 53.34 119.9514 0)
+		(uuid "9fe05509-25d6-486a-9e90-52ce62ccc3ea")
+		(property "Reference" "TP7"
+			(at 196.85 22.0979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5740,8 +6182,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Mic"
-			(at 53.34 122.4914 0)
+		(property "Value" "Touchpad_scroll5"
+			(at 196.85 24.6379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5749,8 +6191,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 49.53 119.38 90)
+		(property "Footprint" "Librairie_touchpad:Touchpad_biz_rect"
+			(at 199.39 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5759,7 +6201,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 119.38 90)
+			(at 199.39 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 194.31 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bd62efe-49c5-4515-a0c3-665c35face1e")
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Microphone")
+		(at 44.45 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adfaaf3b-7932-4213-a648-7b0f8d12e022")
+		(property "Reference" "MK301"
+			(at 48.26 119.9514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mic"
+			(at 48.26 122.4914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5768,7 +6277,7 @@
 			)
 		)
 		(property "Description" "Microphone"
-			(at 49.53 121.92 0)
+			(at 44.45 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5943,6 +6452,73 @@
 			(project "V1_flappy_mouse"
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
 					(reference "D302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 224.79 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1b63fcd-8477-44f6-994e-c037703cdc68")
+		(property "Reference" "TP8"
+			(at 227.33 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Touchpad_scroll6"
+			(at 227.33 24.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Librairie_touchpad:Touchpad_biz_rect"
+			(at 229.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 224.79 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cf9c023-a1a7-421a-9fec-d2948701dfd4")
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -6272,6 +6848,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Alt")
+		(at 167.64 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9c807a1-20b7-4b05-80b6-2476e3739218")
+		(property "Reference" "TP6"
+			(at 170.18 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Touchpad_scroll4"
+			(at 170.18 24.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Librairie_touchpad:Touchpad_biz_rect"
+			(at 172.72 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 167.64 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "842f0691-e719-4424-ba12-e342ecd56b1f")
+		)
+		(instances
+			(project "V1_flappy_mouse"
+				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 93.98 140.97 0)
 		(unit 1)
@@ -6333,157 +6976,6 @@
 				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
 					(reference "#PWR0306")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 162.56 20.32)
-		(size 55.88 39.37)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "38011fd2-8681-44cd-a9a6-def085c55ab3")
-		(property "Sheetname" "TFT_DISPLAY"
-			(at 163.576 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "TFT_DISPLAY.kicad_sch"
-			(at 162.56 60.2746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "V1_flappy_mouse"
-				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 17.78 16.51)
-		(size 128.27 71.12)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "8da9ad59-7512-4456-9860-bdbdb6695e69")
-		(property "Sheetname" "ESP32_Pin_out"
-			(at 17.78 15.7984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "ESP32_Pin_out.kicad_sch"
-			(at 17.78 88.2146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "V1_flappy_mouse"
-				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 41.91 93.98)
-		(size 104.14 54.61)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e2168b0b-961b-4d52-811f-6c1c02bc3003")
-		(property "Sheetname" "SOUND_SENSOR"
-			(at 41.91 93.2684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "SOUND_SENSOR.kicad_sch"
-			(at 41.91 149.1746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "V1_flappy_mouse"
-				(path "/02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c/f86b3f71-a906-482f-8366-32910134182f"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 157.48 66.04)
-		(size 43.18 33.02)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "fb5042cf-cc6b-4da3-9aa0-596af5a24146")
-		(property "Sheetname" "CAPACITIVE_TOUCH"
-			(at 157.48 65.3284 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "CAPACITIVE_TOUCH.kicad_sch"
-			(at 157.48 99.6446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Section_VL"
-				(path "/c53b19f5-20eb-479e-abcd-b286f0e22d52"
-					(page "5")
 				)
 			)
 		)
