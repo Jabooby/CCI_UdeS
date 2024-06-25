@@ -185,7 +185,7 @@ void app_main(void)
         .device_descriptor = NULL,
         .string_descriptor = hid_string_descriptor,
         .string_descriptor_count = sizeof(hid_string_descriptor) / sizeof(hid_string_descriptor[0]),
-        .external_phy = true,
+        .external_phy = false,
 #if (TUD_OPT_HIGH_SPEED)
         .fs_configuration_descriptor = hid_configuration_descriptor, // HID configuration descriptor for full-speed and high-speed are the same
         .hs_configuration_descriptor = hid_configuration_descriptor,
@@ -216,15 +216,13 @@ void app_main(void)
 
     ESP_LOGI(TAG, "switching over to usb console");
 
-    esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
-    ESP_LOGI(TAG, "log -> USB");
-    vTaskDelay(000 / portTICK_PERIOD_MS);
-    fprintf(stdout, "example: print -> stdout\n");
-    vTaskDelay(100 / portTICK_PERIOD_MS);
-    fprintf(stderr, "example: print -> stderr\n");
-    vTaskDelay(100 / portTICK_PERIOD_MS);
-
-    printf("hollo");
+    // esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
+    // ESP_LOGI(TAG, "log -> USB");
+    // vTaskDelay(000 / portTICK_PERIOD_MS);
+    // fprintf(stdout, "example: print -> stdout\n");
+    // vTaskDelay(100 / portTICK_PERIOD_MS);
+    // fprintf(stderr, "example: print -> stderr\n");
+    // vTaskDelay(100 / portTICK_PERIOD_MS);
 
     ESP_LOGI(TAG, "console switched");
 
