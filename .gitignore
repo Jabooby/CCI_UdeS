@@ -52,4 +52,8 @@ Mkfile.old
 dkms.conf
 
 # Esp-idf thingies
-/code/build/esp-idf/mbedtls/mbedtls/library/
+./code/build/esp-idf/mbedtls/mbedtls/library/
+error.c
+psa_crypto_driver_wrappers_no_static.c
+ssl_debug_helpers_generated.c
+version_features.c
