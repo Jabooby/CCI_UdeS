@@ -200,15 +200,15 @@ void app_main(void)
     tinyusb_config_cdcacm_t acm_cfg = {0}; // the configuration uses default values
     ESP_ERROR_CHECK(tusb_cdc_acm_init(&acm_cfg));
 
-    ESP_LOGI(TAG, "USB initialization DONE");
-
     esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
     ESP_LOGI(TAG, "log -> USB");
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(000 / portTICK_PERIOD_MS);
     fprintf(stdout, "example: print -> stdout\n");
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
     fprintf(stderr, "example: print -> stderr\n");
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+
+    ESP_LOGI(TAG, "USB initialization DONE");
 
     while (1)
     {
