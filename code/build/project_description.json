@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "cci_udes",
-    "project_version":    "c9f3fd6-dirty",
+    "project_version":    "d01cf60-dirty",
     "project_path":       "/home/charles/Documents/github/CCI_UdeS/code",
     "idf_path":           "/home/charles/esp-idf",
     "build_dir":          "/home/charles/Documents/github/CCI_UdeS/code/build",
@@ -2784,18 +2784,6 @@
             "managed_priv_reqs": [ "espressif__esp_tinyusb" ],
             "include_dirs": [ "." ]
         },
-        "espressif__esp_tinyusb": {
-            "alias": "idf::espressif__esp_tinyusb",
-            "target": "___idf_espressif__esp_tinyusb",
-            "prefix": "idf",
-            "dir": "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb",
-            "lib": "__idf_espressif__esp_tinyusb",
-            "reqs": [ "fatfs", "vfs", "espressif__tinyusb" ],
-            "priv_reqs": [ "usb" ],
-            "managed_reqs": [ "espressif__tinyusb" ],
-            "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
-        },
         "espressif__tinyusb": {
             "alias": "idf::espressif__tinyusb",
             "target": "___idf_espressif__tinyusb",
@@ -2807,6 +2795,18 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "src/", "/home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/" ]
+        },
+        "espressif__esp_tinyusb": {
+            "alias": "idf::espressif__esp_tinyusb",
+            "target": "___idf_espressif__esp_tinyusb",
+            "prefix": "idf",
+            "dir": "/home/charles/Documents/github/CCI_UdeS/code/managed_components/espressif__esp_tinyusb",
+            "lib": "__idf_espressif__esp_tinyusb",
+            "reqs": [ "fatfs", "vfs", "espressif__tinyusb" ],
+            "priv_reqs": [ "usb" ],
+            "managed_reqs": [ "espressif__tinyusb" ],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": ""
