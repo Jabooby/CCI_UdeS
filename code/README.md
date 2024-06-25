@@ -1,3 +1,3 @@
 # Équipe 5
 
-Bienvenue sur notre branche présentement y'as pas tant de choses.
+Still brewing, trying to add all the necessary usb magic into the mix

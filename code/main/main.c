@@ -200,6 +200,25 @@ void app_main(void)
     tinyusb_config_cdcacm_t acm_cfg = {0}; // the configuration uses default values
     ESP_ERROR_CHECK(tusb_cdc_acm_init(&acm_cfg));
 
+    ESP_LOGI(TAG, "USB HID initialization DONE");
+
+    tinyusb_config_cdcacm_t acm_cfg = {
+        .usb_dev = TINYUSB_USBDEV_0,
+        .cdc_port = TINYUSB_CDC_ACM_0,
+        .rx_unread_buf_sz = 64,
+        .callback_rx = NULL, // the first way to register a callback
+        //.callback_rx = &tinyusb_cdc_rx_callback, // the first way to register a callback
+        .callback_rx_wanted_char = NULL;
+        .callback_line_state_changed = NULL,
+        .callback_line_coding_changed = NULL
+    };
+
+    ESP_ERROR_CHECK(tusb_cdc_acm_init(&acm_cfg));
+
+    ESP_LOGI(TAG, "USB CDC-ACM initialization DONE");
+
+    ESP_LOGI(TAG, "switching over to usb console");
+
     esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
     ESP_LOGI(TAG, "log -> USB");
     vTaskDelay(000 / portTICK_PERIOD_MS);
@@ -208,7 +227,9 @@ void app_main(void)
     fprintf(stderr, "example: print -> stderr\n");
     vTaskDelay(100 / portTICK_PERIOD_MS);
 
-    ESP_LOGI(TAG, "USB initialization DONE");
+    ESP_LOGI(TAG, "console switched");
+
+    ESP_LOGI(TAG, "USB Composite initialization DONE");
 
     while (1)
     {
