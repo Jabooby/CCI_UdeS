@@ -4,7 +4,9 @@
  * SPDX-License-Identifier: Unlicense OR CC0-1.0
  */
 
+#include <stdio.h>
 #include <stdlib.h>
+#include <sys/reent.h>
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
