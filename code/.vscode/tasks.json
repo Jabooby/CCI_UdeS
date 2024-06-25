@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "get_idf; idf.py build",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "flash",
+            "type": "shell",
+            "command": "idf.py flash -p -ttyACM0",
+            "problemMatcher": []
+        },
+        {
+            "label": "monitor",
+            "type": "shell",
+            "command": "idf.py monitor -p -ttyACM0",
+            "problemMatcher": []
+        }
+    ]
+}
