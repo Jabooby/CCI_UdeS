@@ -1,10 +1,3 @@
-/*
- * SPDX-FileCopyrightText: 2022-2024 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: Unlicense OR CC0-1.0
- */
-
-#include <stdio.h>
 #include <stdlib.h>
 #include <sys/reent.h>
 #include "esp_log.h"
@@ -218,13 +211,16 @@ void app_main(void)
 
     ESP_LOGI(TAG, "switching over to usb console");
 
-    // esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
-    // ESP_LOGI(TAG, "log -> USB");
-    // vTaskDelay(000 / portTICK_PERIOD_MS);
-    // fprintf(stdout, "example: print -> stdout\n");
-    // vTaskDelay(100 / portTICK_PERIOD_MS);
-    // fprintf(stderr, "example: print -> stderr\n");
-    // vTaskDelay(100 / portTICK_PERIOD_MS);
+    //not working for the moment but should print
+
+    esp_tusb_init_console(TINYUSB_CDC_ACM_0); // log to usb
+    ESP_LOGI(TAG, "log -> USB");
+    vTaskDelay(000 / portTICK_PERIOD_MS);
+    fprintf(stdout, "example: print -> stdout\n");
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+    fprintf(stderr, "example: print -> stderr\n");
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+    esp_tusb_deinit_console(TINYUSB_CDC_ACM_0); // log to uart
 
     ESP_LOGI(TAG, "console switched");
 

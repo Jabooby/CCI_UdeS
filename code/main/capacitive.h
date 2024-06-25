@@ -15,4 +15,4 @@ static const touch_pad_t button[TOUCH_BUTTON_NUM] = {
     TOUCH_PAD_NUM7,
     TOUCH_PAD_NUM8};
 
-static void capacitive_read_task();
+void capacitive_read_task();

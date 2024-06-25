@@ -7,7 +7,7 @@
 
 static const char *TAG = "capacitive.c";
 
-static void capacitive_read_task()
+void capacitive_read_task()
 {
     uint32_t touch_value;
 
