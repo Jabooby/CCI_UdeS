@@ -1,5 +1,8 @@
 (sym_lib_table
   (version 7)
-  (lib (name "ECS-400-10-37B2-CKY-TR")(type "KiCad")(uri "C:/Users/Jonathan/Downloads/PCBHackerMouse/PCB/Library/ESP32-R8/ECS-400-10-37B2-CKY-TR/ECS-400-10-37B2-CKY-TR.kicad_sym")(options "")(descr ""))
-  (lib (name "W25Q128JVSIM_TR")(type "KiCad")(uri "C:/Users/Jonathan/Downloads/PCBHackerMouse/PCB/Library/ESP32-R8/W25Q128JVSIM_TR/W25Q128JVSIM_TR.kicad_sym")(options "")(descr ""))
+  (lib (name "ECS-400-10-37B2-CKY-TR")(type "KiCad")(uri "${KIPRJMOD}/Library/ESP32-R8/ECS-400-10-37B2-CKY-TR/ECS-400-10-37B2-CKY-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "W25Q128JVSIM_TR")(type "KiCad")(uri "${KIPRJMOD}/Library/ESP32-R8/W25Q128JVSIM_TR/W25Q128JVSIM_TR.kicad_sym")(options "")(descr ""))
+  (lib (name "Header2")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header2/61300211121.kicad_sym")(options "")(descr ""))
+  (lib (name "Header6")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header6/61300611121.kicad_sym")(options "")(descr ""))
+  (lib (name "Header4")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header4/61300411121.kicad_sym")(options "")(descr ""))
 )

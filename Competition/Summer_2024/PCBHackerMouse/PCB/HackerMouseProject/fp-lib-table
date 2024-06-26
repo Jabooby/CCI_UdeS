@@ -2,4 +2,7 @@
   (version 7)
   (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
   (lib (name "ESP32_S3R8")(type "KiCad")(uri "${KIPRJMOD}/Library/ESP32-R8/ESP32_S3R8.pretty")(options "")(descr ""))
+  (lib (name "Header2")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header2")(options "")(descr ""))
+  (lib (name "Header6")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header6")(options "")(descr ""))
+  (lib (name "Header4")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header4")(options "")(descr ""))
 )
