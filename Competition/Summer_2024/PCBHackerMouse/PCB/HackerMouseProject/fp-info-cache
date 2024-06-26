@@ -1,4 +1,4 @@
-23353478333242986
+23365515445937782
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55789,13 +55789,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
-ESP32-S3R8
-QFN40P700X700X90-57N
+ECS-400-10-37B2-CKY-TR
+XTAL_ECS-400-10-37B2-CKY-TR
 
 
 0
-57
-57
+4
+4
 ESP32_S3R8
 QFN40P700X700X90-57N
 
@@ -55803,6 +55803,13 @@ QFN40P700X700X90-57N
 0
 57
 57
+FSM8JH(1)
+SW_FSM8JH
+
+
+0
+4
+4
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -56839,6 +56846,27 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+Header2
+WURTH_61300211121
+
+
+0
+2
+2
+Header4
+WURTH_61300411121
+
+
+0
+4
+4
+Header6
+WURTH_61300611121
+
+
+0
+6
+6
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -63713,6 +63741,13 @@ XTAL_ECS-400-10-37B2-CKY-TR
 0
 4
 4
+MicroUSB_B
+AMPHENOL_10118194-0001LF
+
+
+0
+11
+11
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -93848,6 +93883,13 @@ test point THT pad
 0
 1
 1
+Thumb2765
+SW_2765
+
+
+0
+6
+6
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)
@@ -95416,3 +95458,10 @@ Varistor VF
 0
 2
 2
+W25Q128JVSIM_TR
+SOIC127P790X216-8N
+
+
+0
+8
+8
