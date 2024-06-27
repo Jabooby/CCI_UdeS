@@ -4,9 +4,10 @@
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -11.43 0)
+		(at 0.1 -4.9 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "19c37b0b-e103-43a2-845b-436f5c3ed22a")
 		(effects
 			(font
@@ -67,6 +68,18 @@
 		)
 	)
 	(attr smd)
+	(fp_poly
+		(pts
+			(xy -3.1 -4.1) (xy 0 -4.1) (xy 1.8 -0.5) (xy 0 3.2) (xy -3.2 3.2) (xy -1.2 -0.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "50feba91-4818-4481-b0a9-1411dac5637a")
+	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
@@ -80,24 +93,45 @@
 		)
 	)
 	(pad "1" smd custom
-		(at -1.5 0)
+		(at 0.25 -0.5)
 		(size 2.286 2.286)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_paste_margin -20)
+		(solder_mask_margin -200)
+		(clearance 0.3)
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
 			(anchor circle)
 		)
 		(primitives
+			(gr_rect
+				(start -1.25 -3.5)
+				(end 0.75 3.55)
+				(width 0.2)
+				(fill yes)
+			)
 			(gr_poly
 				(pts
-					(xy -4.5 -3.5) (xy -0.5 -3.5) (xy 1.31 0) (xy -0.5 3.5) (xy -4.5 3.5) (xy -2.5 0)
+					(xy 0.75 -3.5) (xy 2.607645 0.015164) (xy 0.75 3.55)
 				)
-				(width 0.1)
+				(width 0.2)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy -1.25 3.55) (xy -3.285355 3.535355) (xy -1.307587 0)
+				)
+				(width 0.2)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy -3.227768 -3.500003) (xy -1.25 -3.5) (xy -1.307587 0)
+				)
+				(width 0.2)
 				(fill yes)
 			)
 		)
-		(uuid "903ad52e-1edd-4947-afc0-6256b8b7d064")
+		(uuid "01bda2ca-5628-4123-8223-b740448254eb")
 	)
 )

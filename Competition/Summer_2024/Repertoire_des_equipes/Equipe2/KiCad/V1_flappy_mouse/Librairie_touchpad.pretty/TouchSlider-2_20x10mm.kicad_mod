@@ -1,0 +1,110 @@
+(footprint "TouchSlider-2_20x10mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -6.95 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bd93116b-35f2-4cdf-8283-d0176de83706")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TouchSlider-2_20x10mm"
+		(at 0 -5.65 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "730eff61-bfd5-4e04-87b6-726bc31f6f57")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4aec951a-49a2-4192-9032-ac0fba3157c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c8c5fc26-b4e3-4269-9d5f-19ae9694b5f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78db6105-0e46-4ba2-82c4-c37af0cc5ce3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(pad "1" smd rect
+		(at -6.5 0)
+		(size 7.5 10)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin -20)
+		(thermal_bridge_angle 45)
+		(uuid "3705343a-1cdd-4dd0-9961-6c9c736f04fa")
+	)
+	(pad "1" smd trapezoid
+		(at -2.75 -2.5)
+		(size 4.5 5)
+		(rect_delta 0 -4.5)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin -20)
+		(thermal_bridge_angle 45)
+		(uuid "30c345ff-4fec-4401-913e-4a0d40d98e3b")
+	)
+	(pad "1" smd trapezoid
+		(at -2.75 2.5)
+		(size 4.5 5)
+		(rect_delta 0 4.5)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin -20)
+		(thermal_bridge_angle 45)
+		(uuid "5297d50a-1f2b-4501-8672-749acd5a5439")
+	)
+	(pad "2" smd trapezoid
+		(at 0.5 0)
+		(size 4.5 5)
+		(rect_delta -5 0)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin -20)
+		(thermal_bridge_angle 45)
+		(uuid "a37f22b1-622a-4b62-ab0f-b9ad53254796")
+	)
+	(pad "2" smd rect
+		(at 6.5 0)
+		(size 7.5 10)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin -20)
+		(thermal_bridge_angle 45)
+		(uuid "9e07176a-8a74-401b-b674-507484d7c0f1")
+	)
+)

@@ -1,22 +1,28 @@
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'win32'
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.11.5 (main, Jan 19 2024, 08:13:45) [MSC v.1936 64 bit (AMD64)]'
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.1-rc1
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x000002C6775DFC70>
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
-06-27 09:52:25 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
-06-27 09:52:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 830:Reference designator is: R
-06-27 09:52:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 831:Reference number is: 301
-06-27 09:52:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 863:Sorted and filtered list:
-['R301', 'R302', 'R303', 'R304', 'R305', 'R306']
-06-27 09:52:26 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 359:wx.Colour(240, 240, 240, 255)
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 490:'4,5'
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 549:Preparing config for reference matrix
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 556:Saving config file
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 558:Saved the config file
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 901:Footprints to place:
-['R301', 'R302', 'R303', 'R304', 'R305', 'R306']
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.place_footprints 398:Starting placing with matrix layout
-06-27 09:52:33 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 971:Placing complete
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'win32'
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.11.5 (main, Jan 19 2024, 08:13:45) [MSC v.1936 64 bit (AMD64)]'
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.1-rc1
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x0000020F2BB82E60>
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP5 on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint TP12 on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint REF** on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint  on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint  on root level
+06-27 18:41:02 com_github_MitjaNemec_PlaceFootprints.place_footprints 156:Footprint  on root level
+06-27 18:41:03 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 830:Reference designator is: TP
+06-27 18:41:03 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 831:Reference number is: 6
+06-27 18:41:03 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 863:Sorted and filtered list:
+['TP5', 'TP6', 'TP7', 'TP8', 'TP9', 'TP10', 'TP11', 'TP12']
+06-27 18:41:03 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 359:wx.Colour(240, 240, 240, 255)
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 490:'5'
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 536:Preparing config for reference linear
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 556:Saving config file
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 558:Saved the config file
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 901:Footprints to place:
+['TP6', 'TP7', 'TP8', 'TP9', 'TP10', 'TP11']
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.place_footprints 367:Starting placing with linear layout
+06-27 18:41:10 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 942:Placing complete
