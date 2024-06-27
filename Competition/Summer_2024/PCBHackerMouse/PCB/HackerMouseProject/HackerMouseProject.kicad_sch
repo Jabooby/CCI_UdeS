@@ -6487,12 +6487,6 @@
 		(uuid "7a7cf725-b084-4d8a-a862-47ff0f1f7202")
 	)
 	(junction
-		(at 189.23 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81a68c83-4d15-473b-be90-d7698617e3a7")
-	)
-	(junction
 		(at 157.48 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6784,6 +6778,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 148.59) (xy 189.23 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "104e7c01-625c-4cb8-a676-83e7b41d64c0")
+	)
+	(wire
+		(pts
 			(xy 107.95 182.88) (xy 107.95 184.15)
 		)
 		(stroke
@@ -6944,6 +6948,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 135.89) (xy 187.96 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281bdb76-def4-40bf-bdde-4668848a7b22")
+	)
+	(wire
+		(pts
 			(xy 82.55 40.64) (xy 91.44 40.64)
 		)
 		(stroke
@@ -7054,16 +7068,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 146.05) (xy 180.34 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "349c6177-27fe-4da8-bd19-cb145ec520f3")
-	)
-	(wire
-		(pts
 			(xy 82.55 53.34) (xy 91.44 53.34)
 		)
 		(stroke
@@ -7161,6 +7165,16 @@
 			(type default)
 		)
 		(uuid "411a5a66-db9a-442c-a69e-4afe5aad2520")
+	)
+	(wire
+		(pts
+			(xy 180.34 146.05) (xy 182.88 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41d45476-632a-4a9e-8ef6-e43cb0f4152f")
 	)
 	(wire
 		(pts
@@ -7434,16 +7448,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 146.05) (xy 189.23 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "637dfdb8-f2b9-47af-94a6-0503a6b6ebe4")
-	)
-	(wire
-		(pts
 			(xy 167.64 36.83) (xy 167.64 38.1)
 		)
 		(stroke
@@ -7631,6 +7635,16 @@
 			(type default)
 		)
 		(uuid "7c1040de-6d03-4139-a3d3-812c0f4a876e")
+	)
+	(wire
+		(pts
+			(xy 187.96 144.78) (xy 187.96 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca9c10e-cfa6-4a74-a5cd-5d867b8adf98")
 	)
 	(wire
 		(pts
@@ -7971,6 +7985,16 @@
 			(type default)
 		)
 		(uuid "af088cb8-c8fa-478a-ae08-2fea81574fe8")
+	)
+	(wire
+		(pts
+			(xy 180.34 135.89) (xy 180.34 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b008fbaa-7a41-45cd-993e-e3d2baf8a647")
 	)
 	(wire
 		(pts
@@ -9636,6 +9660,76 @@
 			(project "HackerMouseProject"
 				(path "/97558d47-9d67-4b31-b5fa-18b7f4cf0498"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 187.96 140.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b7b140a-6172-4215-8492-833340063ae3")
+		(property "Reference" "R10"
+			(at 190.5 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 190.5 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 189.738 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 187.96 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bc8c0c75-a3a6-4475-8b7f-7b41b1e5ebae")
+		)
+		(pin "1"
+			(uuid "8b0fa201-da24-49d8-b537-1e2fbd87c116")
+		)
+		(instances
+			(project "HackerMouseProject"
+				(path "/97558d47-9d67-4b31-b5fa-18b7f4cf0498"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -12550,6 +12644,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 187.96 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5962df81-99b7-4024-b268-de6f270bea2a")
+		(property "Reference" "#PWR049"
+			(at 187.96 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 187.96 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 187.96 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "628df303-b143-4ffe-afcd-a53ea79ced8e")
+		)
+		(instances
+			(project "HackerMouseProject"
+				(path "/97558d47-9d67-4b31-b5fa-18b7f4cf0498"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 241.3 43.18 0)
 		(unit 1)
@@ -14361,7 +14521,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 180.34 146.05 0)
+		(at 180.34 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14370,7 +14530,7 @@
 		(fields_autoplaced yes)
 		(uuid "87490270-ef56-48e0-a24c-1fd0c5e26cf8")
 		(property "Reference" "#PWR042"
-			(at 180.34 149.86 0)
+			(at 180.34 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14379,7 +14539,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 180.34 140.97 0)
+			(at 180.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14387,7 +14547,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 146.05 0)
+			(at 180.34 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14396,7 +14556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 146.05 0)
+			(at 180.34 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14405,7 +14565,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 180.34 146.05 0)
+			(at 180.34 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16780,7 +16940,7 @@
 		(dnp no)
 		(uuid "c9183d06-f89b-4e93-aa33-7fe9118ad263")
 		(property "Reference" "C17"
-			(at 184.912 148.082 0)
+			(at 176.784 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16789,7 +16949,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 185.166 150.622 0)
+			(at 177.038 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
