@@ -67,18 +67,6 @@
 		)
 	)
 	(attr smd)
-	(fp_poly
-		(pts
-			(xy -6 3.5) (xy -4 0) (xy -6 -3.5) (xy -2.130769 -3.5) (xy -0.130769 0) (xy -2.130769 3.5)
-		)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.SilkS")
-		(uuid "d7376a9f-13d1-43f9-b80a-dec43530b87d")
-	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)

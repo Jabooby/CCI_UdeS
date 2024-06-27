@@ -468,7 +468,7 @@
       "netlist": "",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "V1_flappy_mouse.dsn",
       "step": "",
       "svg": "",
       "vrml": ""
@@ -577,7 +577,7 @@
   "sheets": [
     [
       "02a5dcc7-4b18-4a0b-b9f0-883e5dbce76c",
-      "Root"
+      "Racine"
     ],
     [
       "c9bdbe16-fb84-44c9-b5f6-cb197b4bed59",
