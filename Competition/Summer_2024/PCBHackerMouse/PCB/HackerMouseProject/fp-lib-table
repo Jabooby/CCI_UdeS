@@ -5,4 +5,5 @@
   (lib (name "Header2")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header2")(options "")(descr ""))
   (lib (name "Header6")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header6")(options "")(descr ""))
   (lib (name "Header4")(type "KiCad")(uri "${KIPRJMOD}/Library/HeaderPin/Header4")(options "")(descr ""))
+  (lib (name "Antenna")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty/Antenna.pretty")(options "")(descr ""))
 )
