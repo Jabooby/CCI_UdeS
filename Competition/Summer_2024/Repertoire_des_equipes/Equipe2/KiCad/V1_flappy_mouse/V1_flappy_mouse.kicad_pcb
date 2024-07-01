@@ -787,6 +787,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -799,6 +800,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -811,6 +813,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1383,6 +1386,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1395,6 +1399,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1407,6 +1412,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1656,6 +1662,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1668,6 +1675,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1680,6 +1688,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2006,8 +2015,8 @@
 					(fill yes)
 				)
 				(gr_rect
-					(start 0 -5.115)
-					(end -3.8 5.115)
+					(start -3.8 -5.115)
+					(end 0 5.115)
 					(width 0.2)
 					(fill yes)
 				)
@@ -2802,8 +2811,8 @@
 					(fill yes)
 				)
 				(gr_rect
-					(start 0 -5.115)
-					(end -3.8 5.115)
+					(start -3.8 -5.115)
+					(end 0 5.115)
 					(width 0.2)
 					(fill yes)
 				)
@@ -2863,6 +2872,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2875,6 +2885,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2887,6 +2898,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3186,8 +3198,8 @@
 					(fill yes)
 				)
 				(gr_rect
-					(start 0 -5.115)
-					(end -3.8 5.115)
+					(start -3.8 -5.115)
+					(end 0 5.115)
 					(width 0.2)
 					(fill yes)
 				)
@@ -3247,6 +3259,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3259,6 +3272,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3271,6 +3285,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3546,6 +3561,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3558,6 +3574,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3570,6 +3587,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7010,6 +7028,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7022,6 +7041,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7034,6 +7054,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7283,6 +7304,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7295,6 +7317,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7307,6 +7330,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7556,6 +7580,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7568,6 +7593,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7580,6 +7606,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7663,6 +7690,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7675,6 +7703,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7687,6 +7716,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -8122,7 +8152,7 @@
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "f186fc4a-ed3b-4880-95d6-b4a052c475c1")
+			(uuid "875cedef-7d6b-400a-b51e-53fe82ade2da")
 			(effects
 				(font
 					(size 1 1)
@@ -8135,7 +8165,7 @@
 			(at 0 -1 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "74a66f11-fac0-4b86-aedb-8d5c20cdfa1f")
+			(uuid "cec9a51e-ed57-4676-ab93-8a5b1133d220")
 			(effects
 				(font
 					(size 1 1)
@@ -8198,13 +8228,13 @@
 			)
 			(fill solid)
 			(layer "B.SilkS")
-			(uuid "a3c3bffe-60c2-49d5-9e20-4db8bedeccd5")
+			(uuid "9569661b-758a-44d0-af23-bfc6c8083c77")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -2.5 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "41d07991-6bcb-466a-8546-5051dcef7310")
+			(uuid "ecb62e4a-8224-4c54-bbcb-2c5e43353041")
 			(effects
 				(font
 					(size 1 1)
@@ -8235,8 +8265,8 @@
 					(fill yes)
 				)
 				(gr_rect
-					(start 0 -5.115)
-					(end -3.8 5.115)
+					(start -3.8 -5.115)
+					(end 0 5.115)
 					(width 0.2)
 					(fill yes)
 				)
@@ -8255,7 +8285,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "47f7c253-ad22-44a9-8d8e-347389498b00")
+			(uuid "31300e56-b10c-4dd0-b33d-63bafde401db")
 		)
 	)
 	(footprint "Librairie_touchpad:Touchpad_slider_smaller"
@@ -8374,8 +8404,8 @@
 			)
 			(primitives
 				(gr_rect
-					(start 0.75 -3.55)
-					(end -1.25 3.5)
+					(start -1.25 -3.55)
+					(end 0.75 3.5)
 					(width 0.2)
 					(fill yes)
 				)
@@ -8626,8 +8656,8 @@
 			)
 			(primitives
 				(gr_rect
-					(start 0.75 -3.55)
-					(end -1.25 3.5)
+					(start -1.25 -3.55)
+					(end 0.75 3.5)
 					(width 0.2)
 					(fill yes)
 				)
@@ -8665,7 +8695,7 @@
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "d4456b3e-5edf-4466-b876-9c7d2701b8ab")
+			(uuid "4b62136c-250c-48d1-97a7-4152336e925d")
 			(effects
 				(font
 					(size 1 1)
@@ -8678,7 +8708,7 @@
 			(at 0 -1 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "c06801ee-f457-4dea-8f8d-074e4c5c6f0f")
+			(uuid "2e5428f7-a19a-4e85-94e2-9670edc482ab")
 			(effects
 				(font
 					(size 1 1)
@@ -8741,13 +8771,13 @@
 			)
 			(fill solid)
 			(layer "B.SilkS")
-			(uuid "cabd0c23-bdcc-4a23-bd2d-9643ff30fd35")
+			(uuid "52a177d7-a5ea-4095-9fb8-40162ac0ece4")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -2.5 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "a415dc8d-8a6a-4b3e-93db-584ca80c1fc7")
+			(uuid "7ef27ca8-77fd-408a-a76d-0cd59b4b7367")
 			(effects
 				(font
 					(size 1 1)
@@ -8778,8 +8808,8 @@
 					(fill yes)
 				)
 				(gr_rect
-					(start 0 -5.115)
-					(end -3.8 5.115)
+					(start -3.8 -5.115)
+					(end 0 5.115)
 					(width 0.2)
 					(fill yes)
 				)
@@ -8798,7 +8828,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "05fae1f4-b154-4428-9084-ffa20ae46c53")
+			(uuid "f837a50a-7e1f-4f38-8da3-d453ac2bfa08")
 		)
 	)
 	(footprint ""
@@ -8813,6 +8843,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8825,6 +8856,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8838,6 +8870,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8851,6 +8884,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8864,6 +8898,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8999,8 +9034,8 @@
 			)
 			(primitives
 				(gr_rect
-					(start 0.75 -3.55)
-					(end -1.25 3.5)
+					(start -1.25 -3.55)
+					(end 0.75 3.5)
 					(width 0.2)
 					(fill yes)
 				)
@@ -9038,7 +9073,7 @@
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "328fcbb1-6ac2-4a8c-9643-1bd88e15e7a2")
+			(uuid "542090fa-c43d-472e-b67a-8d70567586ac")
 			(effects
 				(font
 					(size 1 1)
@@ -9051,7 +9086,7 @@
 			(at 0 -1 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "87973625-82b3-46f3-90da-ae37acf0dc87")
+			(uuid "902c10c0-9c78-4583-8cbf-9044fad8a876")
 			(effects
 				(font
 					(size 1 1)
@@ -9114,13 +9149,13 @@
 			)
 			(fill solid)
 			(layer "B.SilkS")
-			(uuid "bc949f7c-5f6e-45dc-8231-92cc52902e7e")
+			(uuid "c5718236-4574-49b9-9f58-6d1edff2ed26")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -2.5 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "df841cc8-0de5-4a13-939a-be92d1dcf5a1")
+			(uuid "7d5636ff-65d3-4672-bb81-0165d78afc24")
 			(effects
 				(font
 					(size 1 1)
@@ -9151,8 +9186,8 @@
 					(fill yes)
 				)
 				(gr_rect
-					(start 0 -5.115)
-					(end -3.8 5.115)
+					(start -3.8 -5.115)
+					(end 0 5.115)
 					(width 0.2)
 					(fill yes)
 				)
@@ -9171,7 +9206,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "cde6b7dd-f282-46b7-9d5a-4799b48466f7")
+			(uuid "261789f0-88cd-43b8-aa76-b117ba598935")
 		)
 	)
 	(footprint "Librairie_touchpad:Touchpad_biz_rect"
@@ -9396,8 +9431,8 @@
 			)
 			(primitives
 				(gr_rect
-					(start 0.75 -3.55)
-					(end -1.25 3.5)
+					(start -1.25 -3.55)
+					(end 0.75 3.5)
 					(width 0.2)
 					(fill yes)
 				)
@@ -9817,8 +9852,8 @@
 			)
 			(primitives
 				(gr_rect
-					(start 0.75 -3.55)
-					(end -1.25 3.5)
+					(start -1.25 -3.55)
+					(end 0.75 3.5)
 					(width 0.2)
 					(fill yes)
 				)
@@ -9963,8 +9998,8 @@
 			)
 			(primitives
 				(gr_rect
-					(start 0.75 -3.55)
-					(end -1.25 3.5)
+					(start -1.25 -3.55)
+					(end 0.75 3.5)
 					(width 0.2)
 					(fill yes)
 				)
@@ -10005,6 +10040,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10017,6 +10053,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10030,6 +10067,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10043,6 +10081,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10056,6 +10095,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10087,6 +10127,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10099,6 +10140,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10112,6 +10154,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10125,6 +10168,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10138,6 +10182,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
