@@ -16928,15 +16928,6 @@
 		(uuid "ce7e0c84-b66e-4214-9638-ce5b36dd2d93")
 	)
 	(via
-		(at 189.75 61.62)
-		(size 0.35)
-		(drill 0.25)
-		(layers "F.Cu" "B.Cu")
-		(locked yes)
-		(net 1)
-		(uuid "cff43e89-80ce-4c1b-bc44-665522e8fe82")
-	)
-	(via
 		(at 183.75 65)
 		(size 0.4)
 		(drill 0.3)
