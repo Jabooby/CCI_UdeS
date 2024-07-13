@@ -1,16 +1,3 @@
-#include <Arduino.h>
-/**
- * TCA9548 I2CScanner.ino -- I2C bus scanner for Arduino
- *
- * Based on https://playground.arduino.cc/Main/I2cScanner/
- *
- */
-
-#include "Wire.h"
-#define SDA_2 5
-#define SCL_2 4
-#define MPU_ADDR 0x68
-
 /***************************************************************************
 * Example sketch for the MPU9250_WE library
 *
@@ -39,7 +26,7 @@ MPU9250_WE myMPU9250 = MPU9250_WE(MPU9250_ADDR);
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin(SDA_2, SCL_2);
+  Wire.begin();
   if(!myMPU9250.init()){
     Serial.println("MPU9250 does not respond");
   }

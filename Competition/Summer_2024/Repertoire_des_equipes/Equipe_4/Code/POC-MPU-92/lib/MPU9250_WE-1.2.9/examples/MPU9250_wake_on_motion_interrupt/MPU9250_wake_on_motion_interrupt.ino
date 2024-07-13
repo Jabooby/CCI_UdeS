@@ -1,21 +1,10 @@
-#include <Arduino.h>
-/**
- * TCA9548 I2CScanner.ino -- I2C bus scanner for Arduino
- *
- * Based on https://playground.arduino.cc/Main/I2cScanner/
- *
- */
-
-#include "Wire.h"
-#define SDA_2 5
-#define SCL_2 4
-#define MPU_ADDR 0x68
-
 /***************************************************************************
 * Example sketch for the MPU9250_WE library
 *
-* This sketch shows how to obtain raw accleration data and g values from 
-* the MPU9250. 
+* This sketch shows how to use the wake-on-motion interrupt. 
+* Interestingly, the MPU9250 does not seem to wake up from power down mode even 
+* when the wake-on-motion conditions are met. To me the name "wake on motion" is 
+* a bit misleading. It's just an acceleration controlled interrupt.
 * 
 * For further information visit my blog:
 *
@@ -28,6 +17,9 @@
 #include <Wire.h>
 #define MPU9250_ADDR 0x68
 
+const int intPin = 2;
+volatile bool motion = false;
+
 /* There are several ways to create your MPU9250 object:
  * MPU9250_WE myMPU9250 = MPU9250_WE()              -> uses Wire / I2C Address = 0x68
  * MPU9250_WE myMPU9250 = MPU9250_WE(MPU9250_ADDR)  -> uses Wire / MPU9250_ADDR
@@ -39,7 +31,7 @@ MPU9250_WE myMPU9250 = MPU9250_WE(MPU9250_ADDR);
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin(SDA_2, SCL_2);
+  Wire.begin();
   if(!myMPU9250.init()){
     Serial.println("MPU9250 does not respond");
   }
@@ -47,7 +39,7 @@ void setup() {
     Serial.println("MPU9250 is connected");
   }
   
-  /* The slope of the curve of acceleration vs measured values fits quite well to the theoretical 
+ /* The slope of the curve of acceleration vs measured values fits quite well to the theoretical 
    * values, e.g. 16384 units/g in the +/- 2g range. But the starting point, if you position the 
    * MPU9250 flat, is not necessarily 0g/0g/1g for x/y/z. The autoOffset function measures offset 
    * values. It assumes your MPU9250 is positioned flat with its x,y-plane. The more you deviate 
@@ -74,13 +66,14 @@ void setup() {
    *  Divider is a number 0...255
    */
   myMPU9250.setSampleRateDivider(5);
-  
-  /*  MPU9250_ACC_RANGE_2G      2 g   
+
+  /*  MPU9250_ACC_RANGE_2G      2 g   (default)
    *  MPU9250_ACC_RANGE_4G      4 g
    *  MPU9250_ACC_RANGE_8G      8 g   
    *  MPU9250_ACC_RANGE_16G    16 g
    */
   myMPU9250.setAccRange(MPU9250_ACC_RANGE_2G);
+
 
   /*  Enable/disable the digital low pass filter for the accelerometer 
    *  If disabled the bandwidth is 1.13 kHz, delay is 0.75 ms, output rate is 4 kHz
@@ -101,31 +94,61 @@ void setup() {
    */
   myMPU9250.setAccDLPF(MPU9250_DLPF_6);
 
-  /*  Set accelerometer output data rate in low power mode (cycle enabled)
-   *   MPU9250_LP_ACC_ODR_0_24          0.24 Hz
-   *   MPU9250_LP_ACC_ODR_0_49          0.49 Hz
-   *   MPU9250_LP_ACC_ODR_0_98          0.98 Hz
-   *   MPU9250_LP_ACC_ODR_1_95          1.95 Hz
-   *   MPU9250_LP_ACC_ODR_3_91          3.91 Hz
-   *   MPU9250_LP_ACC_ODR_7_81          7.81 Hz
-   *   MPU9250_LP_ACC_ODR_15_63        15.63 Hz
-   *   MPU9250_LP_ACC_ODR_31_25        31.25 Hz
-   *   MPU9250_LP_ACC_ODR_62_5         62.5 Hz
-   *   MPU9250_LP_ACC_ODR_125         125 Hz
-   *   MPU9250_LP_ACC_ODR_250         250 Hz
-   *   MPU9250_LP_ACC_ODR_500         500 Hz
+  /*  Set Accelerometer Output Data Rate in Low Power Mode
+   *   MPU9250_LP_ACC_ODR_0_24      0.24 Hz
+   *   MPU9250_LP_ACC_ODR_0_49      0.49 Hz
+   *   MPU9250_LP_ACC_ODR_0_98      0.98 Hz
+   *   MPU9250_LP_ACC_ODR_1_95      1.95 Hz
+   *   MPU9250_LP_ACC_ODR_3_91      3.91 Hz
+   *   MPU9250_LP_ACC_ODR_7_81      7.81 Hz
+   *   MPU9250_LP_ACC_ODR_15_63    15.63 Hz
+   *   MPU9250_LP_ACC_ODR_31_25    31.25 Hz
+   *   MPU9250_LP_ACC_ODR_62_5     62.5 Hz
+   *   MPU9250_LP_ACC_ODR_125     125 Hz
+   *   MPU9250_LP_ACC_ODR_250     250 Hz
+   *   MPU9250_LP_ACC_ODR_500     500 Hz
    */
-  //myMPU9250.setLowPowerAccDataRate(MPU9250_LP_ACC_ODR_500);
+  //myMPU9250.setLowPowerAccDataRate(MPU9250_LP_ACC_ODR_125);
 
-  /* sleep() sends the MPU9250 to sleep or wakes it up. 
-   * Please note that the gyroscope needs 35 milliseconds to wake up.
+   /*  Set the interrupt pin:
+   *  MPU9250_ACT_LOW  = active-low
+   *  MPU9250_ACT_HIGH = active-high (default) 
    */
-  //myMPU9250.sleep(true);
+  myMPU9250.setIntPinPolarity(MPU9250_ACT_HIGH); 
 
- /* If cycle is set, and standby or sleep are not set, the module will cycle between
-   *  sleep and taking a sample at a rate determined by setLowPowerAccDataRate().
+  /*  If latch is enabled the interrupt pin level is held until the interrupt status 
+   *  is cleared. If latch is disabled the interrupt pulse is ~50µs (default).
    */
-  //myMPU9250.enableCycle(true);
+  myMPU9250.enableIntLatch(true);
+
+   /*  The interrupt can be cleared by any read or it will only be cleared if the interrupt 
+   *  status register is read (default).
+   */
+  myMPU9250.enableClearIntByAnyRead(false); 
+
+  /*  Enable/disable interrupts:
+   *  MPU9250_DATA_READY 
+   *  MPU9250_FIFO_OVF   
+   *  MPU9250_WOM_INT    
+   *  
+   *  You can enable all interrupts.
+   */
+  myMPU9250.enableInterrupt(MPU9250_WOM_INT); 
+  //myMPU9250.disableInterrupt(MPU9250_FIFO_OVF);
+
+  /*  Set the Wake On Motion Threshold 
+   *  Choose 1 (= 4 mg) ..... 255 (= 1020 mg); 
+   */
+  myMPU9250.setWakeOnMotionThreshold(128);  // 128 = ~0.5 g
+  
+   /*  Enable/disable wake on motion (WOM) and  WOM mode:
+   *  MPU9250_WOM_DISABLE
+   *  MPU9250_WOM_ENABLE
+   *  ***
+   *  MPU9250_WOM_COMP_DISABLE   // reference is the starting value
+   *  MPU9250_WOM_COMP_ENABLE    // reference is the last value
+   */
+  myMPU9250.enableWakeOnMotion(MPU9250_WOM_ENABLE, MPU9250_WOM_COMP_DISABLE);
 
   /* You can enable or disable the axes for gyroscope and/or accelerometer measurements.
    * By default all axes are enabled. Parameters are:  
@@ -139,39 +162,37 @@ void setup() {
    * MPU9250_ENABLE_000  // all axes disabled
    */
   //myMPU9250.enableAccAxes(MPU9250_ENABLE_XYZ);
+  attachInterrupt(digitalPinToInterrupt(intPin), motionISR, RISING);
+  Serial.println("Turn your MPU9250 and see what happens...");
   
 }
 
 void loop() {
-  xyzFloat accRaw = myMPU9250.getAccRawValues();
-  xyzFloat accCorrRaw = myMPU9250.getCorrectedAccRawValues();
-  xyzFloat gValue = myMPU9250.getGValues();
-  float resultantG = myMPU9250.getResultantG(gValue);
-  
-  Serial.println("Raw acceleration values (x,y,z):");
-  Serial.print(accRaw.x);
-  Serial.print("   ");
-  Serial.print(accRaw.y);
-  Serial.print("   ");
-  Serial.println(accRaw.z);
+  xyzFloat gValue;
 
-  Serial.println("Corrected ('calibrated') acceleration values (x,y,z):");
-  Serial.print(accCorrRaw.x);
-  Serial.print("   ");
-  Serial.print(accCorrRaw.y);
-  Serial.print("   ");
-  Serial.println(accCorrRaw.z);
+  if((millis()%1000) == 0){
+    gValue = myMPU9250.getGValues();
+    
+    Serial.print(gValue.x);
+    Serial.print("   ");
+    Serial.print(gValue.y);
+    Serial.print("   ");
+    Serial.println(gValue.z);
+  }
+  if(motion){
+    byte source = myMPU9250.readAndClearInterrupts();
+    Serial.println("Interrupt!");
+    if(myMPU9250.checkInterrupt(source, MPU9250_WOM_INT)){
+      Serial.println("Interrupt Type: Motion");
+      delay(1000);
+    }
+    motion = false;
+    // if additional interrupts have occured in the meantime:
+    myMPU9250.readAndClearInterrupts(); 
+  }
 
-  Serial.println("g values (x,y,z):");
-  Serial.print(gValue.x);
-  Serial.print("   ");
-  Serial.print(gValue.y);
-  Serial.print("   ");
-  Serial.println(gValue.z);
+}
 
-  Serial.print("Resultant g: ");
-  Serial.println(resultantG); // should always be 1 g if only gravity acts on the sensor.
-  Serial.println();
-  
-  delay(1000);
+void motionISR() {
+  motion = true;
 }

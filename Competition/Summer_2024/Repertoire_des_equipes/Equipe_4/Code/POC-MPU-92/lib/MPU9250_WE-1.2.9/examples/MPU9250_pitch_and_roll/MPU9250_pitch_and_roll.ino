@@ -1,21 +1,8 @@
-#include <Arduino.h>
-/**
- * TCA9548 I2CScanner.ino -- I2C bus scanner for Arduino
- *
- * Based on https://playground.arduino.cc/Main/I2cScanner/
- *
- */
-
-#include "Wire.h"
-#define SDA_2 5
-#define SCL_2 4
-#define MPU_ADDR 0x68
-
 /***************************************************************************
 * Example sketch for the MPU9250_WE library
 *
-* This sketch shows how to obtain raw accleration data and g values from 
-* the MPU9250. 
+* This sketch shows how to measure pitch and roll angles from the MPU9250. 
+* I have also included the corrected angle method for comparison.  
 * 
 * For further information visit my blog:
 *
@@ -39,14 +26,14 @@ MPU9250_WE myMPU9250 = MPU9250_WE(MPU9250_ADDR);
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin(SDA_2, SCL_2);
+  Wire.begin();
   if(!myMPU9250.init()){
     Serial.println("MPU9250 does not respond");
   }
   else{
     Serial.println("MPU9250 is connected");
   }
-  
+ 
   /* The slope of the curve of acceleration vs measured values fits quite well to the theoretical 
    * values, e.g. 16384 units/g in the +/- 2g range. But the starting point, if you position the 
    * MPU9250 flat, is not necessarily 0g/0g/1g for x/y/z. The autoOffset function measures offset 
@@ -67,15 +54,15 @@ void setup() {
    *  Use either autoOffset or setAccOffsets, not both.
    */
   //myMPU9250.setAccOffsets(-14240.0, 18220.0, -17280.0, 15590.0, -20930.0, 12080.0);
-
+  
   /*  Sample rate divider divides the output rate of the gyroscope and accelerometer.
    *  Sample rate = Internal sample rate / (1 + divider) 
    *  It can only be applied if the corresponding DLPF is enabled and 0<DLPF<7!
    *  Divider is a number 0...255
    */
   myMPU9250.setSampleRateDivider(5);
-  
-  /*  MPU9250_ACC_RANGE_2G      2 g   
+
+  /*  MPU9250_ACC_RANGE_2G      2 g    (default)
    *  MPU9250_ACC_RANGE_4G      4 g
    *  MPU9250_ACC_RANGE_8G      8 g   
    *  MPU9250_ACC_RANGE_16G    16 g
@@ -86,6 +73,7 @@ void setup() {
    *  If disabled the bandwidth is 1.13 kHz, delay is 0.75 ms, output rate is 4 kHz
    */
   myMPU9250.enableAccDLPF(true);
+
 
   /*  Digital low pass filter (DLPF) for the accelerometer, if enabled 
    *  MPU9250_DPLF_0, MPU9250_DPLF_2, ...... MPU9250_DPLF_7 
@@ -99,79 +87,33 @@ void setup() {
    *     6             5              66.96           1
    *     7           460               1.94           1
    */
-  myMPU9250.setAccDLPF(MPU9250_DLPF_6);
-
-  /*  Set accelerometer output data rate in low power mode (cycle enabled)
-   *   MPU9250_LP_ACC_ODR_0_24          0.24 Hz
-   *   MPU9250_LP_ACC_ODR_0_49          0.49 Hz
-   *   MPU9250_LP_ACC_ODR_0_98          0.98 Hz
-   *   MPU9250_LP_ACC_ODR_1_95          1.95 Hz
-   *   MPU9250_LP_ACC_ODR_3_91          3.91 Hz
-   *   MPU9250_LP_ACC_ODR_7_81          7.81 Hz
-   *   MPU9250_LP_ACC_ODR_15_63        15.63 Hz
-   *   MPU9250_LP_ACC_ODR_31_25        31.25 Hz
-   *   MPU9250_LP_ACC_ODR_62_5         62.5 Hz
-   *   MPU9250_LP_ACC_ODR_125         125 Hz
-   *   MPU9250_LP_ACC_ODR_250         250 Hz
-   *   MPU9250_LP_ACC_ODR_500         500 Hz
-   */
-  //myMPU9250.setLowPowerAccDataRate(MPU9250_LP_ACC_ODR_500);
-
-  /* sleep() sends the MPU9250 to sleep or wakes it up. 
-   * Please note that the gyroscope needs 35 milliseconds to wake up.
-   */
-  //myMPU9250.sleep(true);
-
- /* If cycle is set, and standby or sleep are not set, the module will cycle between
-   *  sleep and taking a sample at a rate determined by setLowPowerAccDataRate().
-   */
-  //myMPU9250.enableCycle(true);
-
-  /* You can enable or disable the axes for gyroscope and/or accelerometer measurements.
-   * By default all axes are enabled. Parameters are:  
-   * MPU9250_ENABLE_XYZ  //all axes are enabled (default)
-   * MPU9250_ENABLE_XY0  // X, Y enabled, Z disabled
-   * MPU9250_ENABLE_X0Z   
-   * MPU9250_ENABLE_X00
-   * MPU9250_ENABLE_0YZ
-   * MPU9250_ENABLE_0Y0
-   * MPU9250_ENABLE_00Z
-   * MPU9250_ENABLE_000  // all axes disabled
-   */
-  //myMPU9250.enableAccAxes(MPU9250_ENABLE_XYZ);
-  
+  myMPU9250.setAccDLPF(MPU9250_DLPF_6);  
 }
 
 void loop() {
-  xyzFloat accRaw = myMPU9250.getAccRawValues();
-  xyzFloat accCorrRaw = myMPU9250.getCorrectedAccRawValues();
-  xyzFloat gValue = myMPU9250.getGValues();
-  float resultantG = myMPU9250.getResultantG(gValue);
+  xyzFloat angles = myMPU9250.getAngles();
   
-  Serial.println("Raw acceleration values (x,y,z):");
-  Serial.print(accRaw.x);
-  Serial.print("   ");
-  Serial.print(accRaw.y);
-  Serial.print("   ");
-  Serial.println(accRaw.z);
+/* This method provides quite precise values for x/y 
+   angles up 60°. */
+  Serial.print("Angle x = ");
+  Serial.print(angles.x);
+  Serial.print("  |  Angle y = ");
+  Serial.print(angles.y);
+  Serial.print("  |  Angle z = ");
+  Serial.println(angles.z);
 
-  Serial.println("Corrected ('calibrated') acceleration values (x,y,z):");
-  Serial.print(accCorrRaw.x);
-  Serial.print("   ");
-  Serial.print(accCorrRaw.y);
-  Serial.print("   ");
-  Serial.println(accCorrRaw.z);
-
-  Serial.println("g values (x,y,z):");
-  Serial.print(gValue.x);
-  Serial.print("   ");
-  Serial.print(gValue.y);
-  Serial.print("   ");
-  Serial.println(gValue.z);
-
-  Serial.print("Resultant g: ");
-  Serial.println(resultantG); // should always be 1 g if only gravity acts on the sensor.
+/* Pitch and roll consider all axes for calculation. According to my experience
+   it provides more reliable results at higher angles (>60°) */
+  float pitch = myMPU9250.getPitch();
+  float roll  = myMPU9250.getRoll();
+  
+  Serial.print("Pitch   = "); 
+  Serial.print(pitch); 
+  Serial.print("  |  Roll    = "); 
+  Serial.println(roll); 
+  
   Serial.println();
   
   delay(1000);
+  
 }

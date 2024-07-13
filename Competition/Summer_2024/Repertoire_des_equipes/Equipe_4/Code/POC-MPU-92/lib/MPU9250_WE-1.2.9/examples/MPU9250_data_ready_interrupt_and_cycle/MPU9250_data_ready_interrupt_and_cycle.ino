@@ -1,21 +1,11 @@
-#include <Arduino.h>
-/**
- * TCA9548 I2CScanner.ino -- I2C bus scanner for Arduino
- *
- * Based on https://playground.arduino.cc/Main/I2cScanner/
- *
- */
-
-#include "Wire.h"
-#define SDA_2 5
-#define SCL_2 4
-#define MPU_ADDR 0x68
-
 /***************************************************************************
 * Example sketch for the MPU9250_WE library
 *
-* This sketch shows how to obtain raw accleration data and g values from 
-* the MPU9250. 
+* This sketch shows how use the data ready interrupt and the cycle function. 
+* In cycle function the MPU9250 awakes periodically from power down mode, takes 
+* a sample and goes back into sleep mode again. The data ready interrupt informs 
+* new data is available. You see there is no delay in the main loop. The output 
+* rate is cycle controlled.
 * 
 * For further information visit my blog:
 *
@@ -28,6 +18,9 @@
 #include <Wire.h>
 #define MPU9250_ADDR 0x68
 
+const int intPin = 2;
+volatile bool dataReady = false;
+
 /* There are several ways to create your MPU9250 object:
  * MPU9250_WE myMPU9250 = MPU9250_WE()              -> uses Wire / I2C Address = 0x68
  * MPU9250_WE myMPU9250 = MPU9250_WE(MPU9250_ADDR)  -> uses Wire / MPU9250_ADDR
@@ -39,7 +32,7 @@ MPU9250_WE myMPU9250 = MPU9250_WE(MPU9250_ADDR);
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin(SDA_2, SCL_2);
+  Wire.begin();
   if(!myMPU9250.init()){
     Serial.println("MPU9250 does not respond");
   }
@@ -75,7 +68,7 @@ void setup() {
    */
   myMPU9250.setSampleRateDivider(5);
   
-  /*  MPU9250_ACC_RANGE_2G      2 g   
+  /*  MPU9250_ACC_RANGE_2G      2 g   (default)
    *  MPU9250_ACC_RANGE_4G      4 g
    *  MPU9250_ACC_RANGE_8G      8 g   
    *  MPU9250_ACC_RANGE_16G    16 g
@@ -85,21 +78,7 @@ void setup() {
   /*  Enable/disable the digital low pass filter for the accelerometer 
    *  If disabled the bandwidth is 1.13 kHz, delay is 0.75 ms, output rate is 4 kHz
    */
-  myMPU9250.enableAccDLPF(true);
-
-  /*  Digital low pass filter (DLPF) for the accelerometer, if enabled 
-   *  MPU9250_DPLF_0, MPU9250_DPLF_2, ...... MPU9250_DPLF_7 
-   *   DLPF     Bandwidth [Hz]      Delay [ms]    Output rate [kHz]
-   *     0           460               1.94           1
-   *     1           184               5.80           1
-   *     2            92               7.80           1
-   *     3            41              11.80           1
-   *     4            20              19.80           1
-   *     5            10              35.70           1
-   *     6             5              66.96           1
-   *     7           460               1.94           1
-   */
-  myMPU9250.setAccDLPF(MPU9250_DLPF_6);
+  myMPU9250.enableAccDLPF(false);
 
   /*  Set accelerometer output data rate in low power mode (cycle enabled)
    *   MPU9250_LP_ACC_ODR_0_24          0.24 Hz
@@ -115,17 +94,38 @@ void setup() {
    *   MPU9250_LP_ACC_ODR_250         250 Hz
    *   MPU9250_LP_ACC_ODR_500         500 Hz
    */
-  //myMPU9250.setLowPowerAccDataRate(MPU9250_LP_ACC_ODR_500);
+  myMPU9250.setLowPowerAccDataRate(MPU9250_LP_ACC_ODR_0_24);
 
-  /* sleep() sends the MPU9250 to sleep or wakes it up. 
-   * Please note that the gyroscope needs 35 milliseconds to wake up.
+  /*  Set the interrupt pin:
+   *  MPU9250_ACT_LOW  = active-low
+   *  MPU9250_ACT_HIGH = active-high (default) 
    */
-  //myMPU9250.sleep(true);
+  myMPU9250.setIntPinPolarity(MPU9250_ACT_HIGH); 
 
- /* If cycle is set, and standby or sleep are not set, the module will cycle between
+  /*  If latch is enabled the Interrupt Pin Level is held until the Interrupt Status 
+   *  is cleared. If latch is disabled the Interrupt Puls is ~50µs (default).
+   */
+  myMPU9250.enableIntLatch(true);
+
+  /*  The Interrupt can be cleared by any read. Otherwise the Interrupt will only be
+   *  cleared if the Interrupt Status register is read (default).
+   */
+  myMPU9250.enableClearIntByAnyRead(false); 
+
+  /*  Enable/disable interrupts:
+   *  MPU9250_DATA_READY 
+   *  MPU9250_FIFO_OVF   
+   *  MPU9250_WOM_INT    
+   *  
+   *  You can enable all interrupts.
+   */
+  myMPU9250.enableInterrupt(MPU9250_DATA_READY); 
+  //myMPU9250.disableInterrupt(MPU9250_FIFO_OVF);
+
+  /* If cycle is set, and standby or sleep are not set, the module will cycle between
    *  sleep and taking a sample at a rate determined by setLowPowerAccDataRate().
    */
-  //myMPU9250.enableCycle(true);
+  myMPU9250.enableCycle(true);
 
   /* You can enable or disable the axes for gyroscope and/or accelerometer measurements.
    * By default all axes are enabled. Parameters are:  
@@ -139,39 +139,34 @@ void setup() {
    * MPU9250_ENABLE_000  // all axes disabled
    */
   //myMPU9250.enableAccAxes(MPU9250_ENABLE_XYZ);
+  attachInterrupt(digitalPinToInterrupt(intPin), dataReadyISR, RISING);
   
 }
 
 void loop() {
-  xyzFloat accRaw = myMPU9250.getAccRawValues();
-  xyzFloat accCorrRaw = myMPU9250.getCorrectedAccRawValues();
-  xyzFloat gValue = myMPU9250.getGValues();
-  float resultantG = myMPU9250.getResultantG(gValue);
-  
-  Serial.println("Raw acceleration values (x,y,z):");
-  Serial.print(accRaw.x);
-  Serial.print("   ");
-  Serial.print(accRaw.y);
-  Serial.print("   ");
-  Serial.println(accRaw.z);
+  if(dataReady){
+    byte source = myMPU9250.readAndClearInterrupts();
+    Serial.println("Interrupt!");
+    if(myMPU9250.checkInterrupt(source, MPU9250_DATA_READY)){
+      Serial.println("Interrupt Type: Data Ready");
+      printData();
+    }
+    dataReady = false;
+    myMPU9250.readAndClearInterrupts(); // if additional interrupts have occured in the meantime
+  }
+}
 
-  Serial.println("Corrected ('calibrated') acceleration values (x,y,z):");
-  Serial.print(accCorrRaw.x);
-  Serial.print("   ");
-  Serial.print(accCorrRaw.y);
-  Serial.print("   ");
-  Serial.println(accCorrRaw.z);
-
-  Serial.println("g values (x,y,z):");
+void printData(){
+  xyzFloat gValue;
+  gValue = myMPU9250.getGValues();
+    
   Serial.print(gValue.x);
   Serial.print("   ");
   Serial.print(gValue.y);
   Serial.print("   ");
   Serial.println(gValue.z);
+}
 
-  Serial.print("Resultant g: ");
-  Serial.println(resultantG); // should always be 1 g if only gravity acts on the sensor.
-  Serial.println();
-  
-  delay(1000);
+void dataReadyISR() {
+  dataReady = true;
 }
