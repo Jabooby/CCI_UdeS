@@ -1,0 +1,251 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x23b0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x3270
+entry 0x403c895c
+[0;32mI (27) boot: ESP-IDF v5.4-dev-421-g4523f2d674 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 24 2024 18:47:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (32) bootloader_flash: non-XMC chip detected by SFDP Read (5E), skip.[0m
+D (38) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (45) boot: chip revision: v0.2[0m
+D (49) boot.esp32s3: magic e9[0m
+D (52) boot.esp32s3: segments 04[0m
+D (55) boot.esp32s3: spi_mode 02[0m
+D (58) boot.esp32s3: spi_speed 0f[0m
+D (62) boot.esp32s3: spi_size 04[0m
+[0;32mI (65) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (70) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (75) boot.esp32s3: SPI Flash Size : 16MB[0m
+D (79) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (83) boot: Enabling RNG early entropy source...[0m
+D (89) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (98) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (109) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (115) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (120) boot: Partition Table:[0m
+[0;32mI (124) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (131) boot: load partition table entry 0x3c008000[0m
+D (136) boot: type=1 subtype=2[0m
+[0;32mI (139) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (147) boot: load partition table entry 0x3c008020[0m
+D (152) boot: type=1 subtype=1[0m
+[0;32mI (155) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (162) boot: load partition table entry 0x3c008040[0m
+D (167) boot: type=0 subtype=0[0m
+[0;32mI (170) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (178) boot: End of partition table[0m
+D (182) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (188) esp_image: reading image header @ 0x10000[0m
+D (193) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (200) esp_image: image header: 0xe9 0x05 0x02 0x04 403752a8[0m
+V (206) esp_image: loading segment header 0 at offset 0x10018[0m
+V (212) esp_image: segment data length 0xcea0 data starts 0x10020[0m
+V (218) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c020020[0m
+[0;32mI (226) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0cea0h ( 52896) map[0m
+D (235) esp_image: free data page_count 0x00000200[0m
+D (239) bootloader_flash: rodata starts from paddr=0x00010020, size=0xcea0, will be mapped to vaddr=0x3c000000[0m
+V (249) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (270) esp_image: loading segment header 1 at offset 0x1cec0[0m
+D (270) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (273) esp_image: segment data length 0x29c4 data starts 0x1cec8[0m
+V (279) esp_image: segment 1 map_segment 0 segment_data_offs 0x1cec8 load_addr 0x3fc91c00[0m
+[0;32mI (287) esp_image: segment 1: paddr=0001cec8 vaddr=3fc91c00 size=029c4h ( 10692) load[0m
+D (296) esp_image: free data page_count 0x00000200[0m
+D (301) bootloader_flash: rodata starts from paddr=0x0001cec8, size=0x29c4, will be mapped to vaddr=0x3c000000[0m
+V (311) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (324) esp_image: loading segment header 2 at offset 0x1f88c[0m
+D (327) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (334) esp_image: segment data length 0x784 data starts 0x1f894[0m
+V (340) esp_image: segment 2 map_segment 0 segment_data_offs 0x1f894 load_addr 0x40374000[0m
+[0;32mI (348) esp_image: segment 2: paddr=0001f894 vaddr=40374000 size=00784h (  1924) load[0m
+D (357) esp_image: free data page_count 0x00000200[0m
+D (362) bootloader_flash: rodata starts from paddr=0x0001f894, size=0x784, will be mapped to vaddr=0x3c000000[0m
+V (372) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (383) esp_image: loading segment header 3 at offset 0x20018[0m
+D (388) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (395) esp_image: segment data length 0x1e980 data starts 0x20020[0m
+V (402) esp_image: segment 3 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (410) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1e980h (125312) map[0m
+D (418) esp_image: free data page_count 0x00000200[0m
+D (423) bootloader_flash: rodata starts from paddr=0x00020020, size=0x1e980, will be mapped to vaddr=0x3c000000[0m
+V (433) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (467) esp_image: loading segment header 4 at offset 0x3e9a0[0m
+D (467) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0xd3d4 data starts 0x3e9a8[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x3e9a8 load_addr 0x40374784[0m
+[0;32mI (482) esp_image: segment 4: paddr=0003e9a8 vaddr=40374784 size=0d3d4h ( 54228) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x0003e9a8, size=0xd3d4, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00030000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (529) esp_image: image start 0x00010000 end of last section 0x0004bd7c[0m
+D (529) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+D (531) boot: Calculated hash: ff97d2e8c9b9225aed55818087c4ab3a568ed250a1d994b38861cf928de413f2[0m
+[0;32mI (546) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (546) boot: Disabling RNG early entropy source...[0m
+D (552) boot: Mapping segment 0 as DROM[0m
+D (555) boot: Mapping segment 3 as IROM[0m
+D (559) boot: calling set_cache_and_start_app[0m
+D (564) boot: configure drom and irom and start[0m
+V (568) boot: rodata starts from paddr=0x00010020, vaddr=0x3c020020, size=0xcea0[0m
+V (576) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (586) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x1e980[0m
+V (594) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x20000 bytes are mapped[0m
+D (604) boot: start: 0x403752a8[0m
+[0;32mI (618) cpu_start: Multicore app[0m
+[0;32mI (628) cpu_start: Pro cpu start user code[0m
+[0;32mI (628) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (628) app_init: Application information:[0m
+[0;32mI (631) app_init: Project name:     cci_udes[0m
+[0;32mI (636) app_init: App version:      c9f3fd6-dirty[0m
+[0;32mI (641) app_init: Compile time:     Jun 25 2024 01:39:51[0m
+[0;32mI (647) app_init: ELF file SHA256:  8b9661ffc...[0m
+[0;32mI (652) app_init: ESP-IDF:          v5.4-dev-421-g4523f2d674[0m
+[0;32mI (659) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (663) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (668) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (673) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (681) heap_init: At 3FC95798 len 00053F78 (335 KiB): RAM[0m
+[0;32mI (687) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (693) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (699) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (706) spi_flash: detected chip: generic[0m
+[0;32mI (710) spi_flash: flash io: dio[0m
+[0;32mI (714) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (721) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (728) main_task: Started on CPU0[0m
+[0;32mI (758) main_task: Calling app_main()[0m
+[0;32mI (758) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (758) main.c: USB initialization[0m
+[0;33mW (768) tusb_desc: No Device descriptor provided, using default.[0m
+[0;32mI (768) tusb_desc: 
+┌─────────────────────────────────┐
+│  USB Device Descriptor Summary  │
+├───────────────────┬─────────────┤
+│bDeviceClass       │ 239         │
+├───────────────────┼─────────────┤
+│bDeviceSubClass    │ 2           │
+├───────────────────┼─────────────┤
+│bDeviceProtocol    │ 1           │
+├───────────────────┼─────────────┤
+│bMaxPacketSize0    │ 64          │
+├───────────────────┼─────────────┤
+│idVendor           │ 0x303a      │
+├───────────────────┼─────────────┤
+│idProduct          │ 0x4005      │
+├───────────────────┼─────────────┤
+│bcdDevice          │ 0x100       │
+├───────────────────┼─────────────┤
+│iManufacturer      │ 0x1         │
+├───────────────────┼─────────────┤
+│iProduct           │ 0x2         │
+├───────────────────┼─────────────┤
+│iSerialNumber      │ 0x3         │
+├───────────────────┼─────────────┤
+│bNumConfigurations │ 0x1         │
+└───────────────────┴─────────────┘[0m
+USBD init on controller 0
+sizeof(usbd_device_t) = 43
+sizeof(tu_fifo_t) = 20
+sizeof(tu_edpt_stream_t) = 116
+CDC init
+HID init
+dwc2->guid = 0
+dwc2->gsnpsid = 4F54400A
+dwc2->ghwcfg1 = 0
+
+dwc2->ghwcfg2 = 224DD930
+hw_cfg2->op_mode = 0
+hw_cfg2->arch = 0
+hw_cfg2->point2point = 0
+hw_cfg2->hs_phy_type = 0
+hw_cfg2->fs_phy_type = 0
+hw_cfg2->num_dev_ep = 0
+hw_cfg2->num_host_ch = 0
+hw_cfg2->period_channel_support = 0
+hw_cfg2->enable_dynamic_fifo = 0
+hw_cfg2->mul_cpu_int = 0
+hw_cfg2->nperiod_tx_q_depth = 0
+hw_cfg2->host_period_tx_q_depth = 0
+hw_cfg2->dev_token_q_depth = 0
+hw_cfg2->otg_enable_ic_usb = 0
+
+dwc2->ghwcfg3 = C804B5
+hw_cfg3->xfer_size_width = 0
+hw_cfg3->packet_size_width = 0
+hw_cfg3->otg_enable = 0
+hw_cfg3->i2c_enable = 0
+hw_cfg3->vendor_ctrl_itf = 0
+hw_cfg3->optional_feature_removed = 0
+hw_cfg3->synch_reset = 0
+hw_cfg3->otg_adp_support = 0
+hw_cfg3->otg_enable_hsic = 0
+hw_cfg3->battery_charger_support = 0
+hw_cfg3->lpm_mode = 0
+hw_cfg3->total_fifo_size = 0
+
+dwc2->ghwcfg4 = D3F0A030
+hw_cfg4->num_dev_period_in_ep = 0
+hw_cfg4->power_optimized = 0
+hw_cfg4->ahb_freq_min = 0
+hw_cfg4->hibernation = 0
+hw_cfg4->service_interval_mode = 0
+hw_cfg4->ipg_isoc_en = 0
+hw_cfg4->acg_enable = 0
+hw_cfg4->utmi_phy_data_width = 0
+hw_cfg4->dev_ctrl_ep_num = 0
+hw_cfg4->iddg_filter_enabled = 0
+hw_cfg4->vbus_valid_filter_enabled = 0
+hw_cfg4->a_valid_filter_enabled = 0
+hw_cfg4->b_valid_filter_enabled = 0
+hw_cfg4->dedicated_fifos = 0
+hw_cfg4->num_dev_in_eps = 0
+hw_cfg4->dma_desc_enable = 0
+hw_cfg4->dma_dynamic = 0
+Fullspeed PHY init
+[0;32mI (1078) TinyUSB: TinyUSB Driver installed[0m
+[0;32mI (1088) main.c: USB HID initialization DONE[0m
+[0;32mI (1088) main.c: USB CDC-ACM initialization DONE[0m
+[0;32mI (1098) main.c: switching over to usb console[0m
+[0;32mI (681) heap_init: At 3FC95798 len 00053F78 (335 KiB): RAM[0m
+[0;32mI (687) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (693) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (699) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (706) spi_flash: detected chip: generic[0m
+[0;32mI (710) spi_flash: flash io: dio[0m
+[0;32mI (714) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (721) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (728) main_task: Started on CPU0[0m
+[0;32mI (738) main_task: Calling app_main()[0m
+[0;32mI (738) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (748) main.c: USB initialization[0m
+[0;32mI (618) cpu_start: Multicore app[0m
+[0;32mI (628) cpu_start: Pro cpu start user code[0m
+[0;32mI (628) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (628) app_init: Application information:[0m
+[0;32mI (631) app_init: Project name:     cci_udes[0m
+[0;32mI (636) app_init: App version:      c9f3fd6-dirty[0m
+[0;32mI (641) app_init: Compile time:     Jun 25 2024 01:39:51[0m
+[0;32mI (647) app_init: ELF file SHA256:  8b9661ffc...[0m
+[0;32mI (652) app_init: ESP-IDF:          v5.4-dev-421-g4523f2d674[0m
+[0;32mI (659) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (663) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (668) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (673) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (681) heap_init: At 3FC95798 len 00053F78 (335 KiB): RAM[0m
+[0;32mI (687) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (693) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (699) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (706) spi_flash: detected chip: generic[0m
+[0;32mI (710) spi_flash: flash io: dio[0m
+[0;32mI (714) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (721) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (728) main_task: Started on CPU0[0m
+[0;32mI (738) main_task: Calling app_main()[0m
+[0;32mI (738) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (748) main.c: USB initialization[0m

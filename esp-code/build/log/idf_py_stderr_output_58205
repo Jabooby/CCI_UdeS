@@ -1,0 +1,25 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+Exception in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/home/charles/anaconda3/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/home/charles/anaconda3/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_monitor/base/serial_reader.py", line 49, in run
+    self.open_serial(reset=not self.gdb_exit and self.reset)
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_monitor/base/serial_reader.py", line 91, in open_serial
+    self.reset_strategy._setRTS(HIGH)
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/esp_idf_monitor/base/reset.py", line 80, in _setRTS
+    self.serial_instance.setRTS(value)
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/serial/serialutil.py", line 600, in setRTS
+    self.rts = value
+    ^^^^^^^^
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/serial/serialutil.py", line 463, in rts
+    self._update_rts_state()
+  File "/home/charles/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages/serial/serialposix.py", line 708, in _update_rts_state
+    fcntl.ioctl(self.fd, TIOCMBIC, TIOCM_RTS_str)
+TimeoutError: [Errno 110] Connection timed out
+[0m

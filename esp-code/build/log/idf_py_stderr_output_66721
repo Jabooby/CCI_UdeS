@@ -1,0 +1,12 @@
+CMake Error at /home/charles/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:156 (message):
+  Could not create symbolic link for:
+  /home/charles/esp-idf/components/mbedtls/mbedtls/library/error.c --> ln:
+  failed to create symbolic link
+  '/home/charles/Documents/github/CCI_UdeS/code/build/esp-idf/mbedtls/mbedtls/library/error.c':
+  File exists
+
+Call Stack (most recent call first):
+  /home/charles/esp-idf/components/mbedtls/mbedtls/library/CMakeLists.txt:193 (link_to_source)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

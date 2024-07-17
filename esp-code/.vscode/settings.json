@@ -1,0 +1,7 @@
+{
+    "idf.adapterTargetName": "esp32s3",
+    "files.associations": {
+        "capacitive.h": "c"
+    },
+    "cmake.configureOnOpen": false
+}

@@ -1,0 +1,185 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40041a76: ets_delay_us in ROM
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0;33m0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+[0m
+[0;33m0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375966: panic_abort at /home/charles/esp-idf/components/esp_system/panic.c:463
+0x4037998d: esp_system_abort at /home/charles/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037fa61: abort at /home/charles/esp-idf/components/newlib/abort.c:38
+0x40379983: _esp_error_check_failed at /home/charles/esp-idf/components/esp_system/esp_err.c:49
+0x42009027: app_main at /home/charles/Documents/github/CCI_UdeS/code/main/main.c:213 (discriminator 1)
+0x4201dfd7: main_task at /home/charles/esp-idf/components/freertos/app_startup.c:208
+0x4037a421: vPortTaskWrapper at /home/charles/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403758a0: esp_restart_noos at /home/charles/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40374000: _WindowOverflow4 at /home/charles/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x42000020: _stext at ??:?
+[0m
+[0;33m0x403752a8: call_start_cpu0 at /home/charles/esp-idf/components/esp_system/port/cpu_start.c:375
+[0m
+[0m
