@@ -73,6 +73,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -584,7 +585,7 @@
   "sheets": [
     [
       "3d35b564-5845-42c9-844e-b1ab721a1005",
-      "Racine"
+      "Root"
     ]
   ],
   "text_variables": {}

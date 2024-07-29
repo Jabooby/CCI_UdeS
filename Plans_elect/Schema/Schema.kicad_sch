@@ -6,7 +6,6 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "Conn_01x22_1"
-			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -1586,7 +1585,6 @@
 			)
 		)
 		(symbol "Connector_Generic:Conn_01x22"
-			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
