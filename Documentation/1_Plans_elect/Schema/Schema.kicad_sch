@@ -2953,23 +2953,26 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 6.604 0)
+			(property "Reference" "SW3"
+				(at -2.032 8.382 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "RotaryEncoder"
-				(at 0 -6.604 0)
+				(at 6.35 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+					(hide yes)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "footprints:EN10HT_BIT"
 				(at -3.81 4.064 0)
 				(effects
 					(font
@@ -3173,32 +3176,14 @@
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "A"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3209,14 +3194,32 @@
 				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "C"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "C"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6445,7 +6448,7 @@
 			(uuid "0600aa15-2f01-46cc-aac4-50cc686c17a5")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "J1")
 					(unit 1)
@@ -6853,7 +6856,7 @@
 			(uuid "e98751e8-d2a7-4cdc-99ac-d94bb0987d5e")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "SW1")
 					(unit 1)
@@ -6987,17 +6990,17 @@
 				(hide yes)
 			)
 		)
-		(pin "A"
+		(pin "2"
 			(uuid "886604c9-1aa5-4ab8-a294-41d4afebbb34")
 		)
-		(pin "C"
+		(pin "1"
 			(uuid "88d53ffb-80d3-41d0-bcf6-9ef230031126")
 		)
-		(pin "B"
+		(pin "3"
 			(uuid "a29f7a93-246d-4925-9b07-03a86c87d20a")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "SW3")
 					(unit 1)
@@ -7257,7 +7260,7 @@
 			(uuid "aa41055b-c4e4-4eb8-9038-e2496c4bfc9c")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "J2")
 					(unit 1)
@@ -7324,7 +7327,7 @@
 			(uuid "d218008a-6616-416c-b935-3f0942232014")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "R3")
 					(unit 1)
@@ -7637,7 +7640,7 @@
 			(uuid "85c72af0-a487-41ef-b883-5d4f6744aaf6")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "J4")
 					(unit 1)
@@ -7703,7 +7706,7 @@
 			(uuid "2d5a3bc1-2586-42f9-b9b1-8a59f81ac85d")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "#PWR01")
 					(unit 1)
@@ -7850,7 +7853,7 @@
 			(uuid "94755746-aacf-4d9d-b049-6156843544db")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "SW2")
 					(unit 1)
@@ -7920,7 +7923,7 @@
 			(uuid "a91b8c31-1d44-4d78-a9a5-4eed58dfe82d")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "C1")
 					(unit 1)
@@ -8012,7 +8015,7 @@
 			(uuid "9133a417-aac3-4396-a04d-e239aae87974")
 		)
 		(instances
-			(project ""
+			(project "Schema"
 				(path "/3d35b564-5845-42c9-844e-b1ab721a1005"
 					(reference "J3")
 					(unit 1)

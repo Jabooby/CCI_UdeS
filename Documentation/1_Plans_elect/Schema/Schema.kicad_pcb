@@ -203,7 +203,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/6e019bdb-effa-4f27-9ed4-15bfdb129d85")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -416,7 +416,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7a2ee5ac-3170-4237-95f2-b626e28b55ac")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -629,7 +629,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/e05ee684-f816-45db-b3b4-3e9e526efd76")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -842,7 +842,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/94f9d796-3297-4258-a321-54fef54f7dd1")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1055,7 +1055,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b8dfa15c-8480-4f06-87da-c95774b247d1")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1430,7 +1430,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8ad6e5bc-9d3a-4480-a61c-f473163e7d1e")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1604,7 +1604,7 @@
 			(uuid "c9a1f286-8d28-45b9-8d45-9f5b7564fd46")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 6.5 360)
+			(at 0 6.5 0)
 			(layer "F.Fab")
 			(uuid "5a802280-cb66-4c0f-95c0-e79ca7e2a3c2")
 			(effects
@@ -1849,7 +1849,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/30497d2b-fffc-49d8-8ef9-9818b9b5ec53")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2062,7 +2062,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/07646703-818b-4513-a2a6-36090d303258")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2275,7 +2275,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/6387a100-c90d-4d2c-9167-14c4fef18bf4")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2488,7 +2488,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/177d87e7-dba5-4af3-a9d1-dfaf33f30336")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2662,7 +2662,7 @@
 			(uuid "e1375062-8984-4979-9e31-d06f7b3d4144")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 10.5 360)
+			(at 0 10.5 0)
 			(layer "F.Fab")
 			(uuid "6d467377-277d-413b-b706-bb121cb3ae71")
 			(effects
@@ -2995,7 +2995,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/72223bb8-4ae8-47f0-924c-b3f5a3b54a72")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3208,7 +3208,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/b9cddbd3-0840-42f0-9b35-52e28bfb9042")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3421,7 +3421,7 @@
 		)
 		(property ki_fp_filters "RotaryEncoder*Switch*")
 		(path "/417f810a-c289-4e5c-ae09-baa1f3c0897b")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3849,7 +3849,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/862b8a35-84b3-408c-89bf-316feae3276f")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4062,7 +4062,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/0d2a4a09-fd11-4571-a3b2-1acce4e02f62")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4275,7 +4275,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ea832d66-0314-4d8d-b6f7-c2b0f4f1a0bc")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4488,7 +4488,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/43616333-0f15-4026-a322-5ccaedced02f")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4701,7 +4701,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6dffd188-5082-4389-9774-b10406d88d6a")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4875,7 +4875,7 @@
 			(uuid "f325a09a-7faf-4efb-87c5-7fff2553c1a2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 10.5 360)
+			(at 0 10.5 0)
 			(layer "F.Fab")
 			(uuid "792d7633-2e34-461e-b3ef-ca6b3227cd3c")
 			(effects
@@ -5208,7 +5208,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/b3da6c0b-282b-487b-b03e-598864dc0fc9")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5421,7 +5421,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/db6cea42-e6f7-48e2-b4ba-300912859a1c")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5568,13 +5568,13 @@
 	(footprint "footprints:EN10HT_BIT"
 		(layer "F.Cu")
 		(uuid "d6cf4841-52a8-4e1f-94ee-58a3634ef678")
-		(at 186.4909 82 -90)
+		(at 181.55 83.5)
 		(tags "EN10HT1212N5HH3 ")
 		(property "Reference" "SW3"
-			(at 2.5 0 -90)
+			(at 2.5 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "e9a5b4e7-bca6-44c4-808d-0b1ea201ef01")
+			(uuid "36d90ac9-62c7-418b-b38f-e8190803f531")
 			(effects
 				(font
 					(size 1 1)
@@ -5583,10 +5583,10 @@
 			)
 		)
 		(property "Value" "RotaryEncoder"
-			(at 2.5 0 -90)
+			(at 2.5 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "9238e1b0-b03a-4796-91a9-66a47ff18730")
+			(uuid "5b1824ea-d943-4773-b25f-c88f2b24c8ad")
 			(effects
 				(font
 					(size 1 1)
@@ -5595,44 +5595,44 @@
 			)
 		)
 		(property "Footprint" "footprints:EN10HT_BIT"
-			(at 0 0 90)
+			(at 0 0 0)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9b7c1181-975f-48d8-9040-eef972e43955")
+			(uuid "75702016-d654-40e3-9ccc-54fa44670b63")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "acdb321f-ca13-4481-9971-8cdb36cde3e1")
+			(uuid "72feb537-3d43-465c-bc88-8e5dadd4537a")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs"
-			(at 0 0 90)
+			(at 0 0 0)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3b171cf3-ce66-4c6e-9e6d-cb265f48772c")
+			(uuid "35ed612a-6bcd-4633-b761-3a5b1329af1d")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property ki_fp_filters "RotaryEncoder*")
 		(path "/44f049cd-2f99-4568-afc4-2fa5f82a355b")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -5644,47 +5644,7 @@
 			)
 			(fill none)
 			(layer "B.SilkS")
-			(uuid "2162bcfc-14a1-461a-864c-426eaca0195d")
-		)
-		(fp_line
-			(start -2.8213 10.3186)
-			(end 7.8213 10.3186)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7c4facb6-1779-44cb-9dfb-f8c4e7fb74d0")
-		)
-		(fp_line
-			(start 7.8213 10.3186)
-			(end 7.8213 7.394437)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cdaf4015-d51a-4308-8138-c1294002fb3b")
-		)
-		(fp_line
-			(start -2.8213 7.394437)
-			(end -2.8213 10.3186)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c593d77b-e816-47ec-8946-19b78a65c64b")
-		)
-		(fp_line
-			(start 7.8213 3.605561)
-			(end 7.8213 1.073)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c8c38397-7c44-4d23-8583-fb6cdebc641b")
+			(uuid "1ff86f11-53a4-4755-a7b0-769731af3285")
 		)
 		(fp_line
 			(start -2.8213 1.073)
@@ -5694,7 +5654,27 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "24c120c0-a607-417c-90eb-a69211285b0f")
+			(uuid "b78cf1e4-110a-4f2c-99fd-ca36f646a67e")
+		)
+		(fp_line
+			(start -2.8213 7.394437)
+			(end -2.8213 10.3186)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e20c0c24-b124-4b0b-b625-b3d70527f733")
+		)
+		(fp_line
+			(start -2.8213 10.3186)
+			(end 7.8213 10.3186)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "056da0c0-6eae-42c7-882b-24e13db4fa91")
 		)
 		(fp_line
 			(start -0.499675 1.073)
@@ -5704,7 +5684,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "9614c35f-6bbc-4d31-92ee-8aa770c8769f")
+			(uuid "1de35318-5022-4b02-bf76-4e23201439de")
 		)
 		(fp_line
 			(start 2.000325 1.073)
@@ -5714,7 +5694,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "a9805387-26bf-43d7-8827-66546fac39ed")
+			(uuid "9337a32b-1f83-4d0f-911c-92ad51cf300b")
 		)
 		(fp_line
 			(start 4.500325 1.073)
@@ -5724,7 +5704,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "abdbb07a-72ea-435c-a6b1-5f872ea98900")
+			(uuid "afcd0606-7a7c-4401-a094-648020f7c2d0")
 		)
 		(fp_line
 			(start 7.8213 1.073)
@@ -5734,7 +5714,27 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3d50d952-fde1-4f26-b47d-2500d0a554e7")
+			(uuid "7ec46fb0-48ae-4ecc-8581-c665a3b86a03")
+		)
+		(fp_line
+			(start 7.8213 3.605561)
+			(end 7.8213 1.073)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4e376cf6-fedc-4146-b5bb-1e0eb537ae2a")
+		)
+		(fp_line
+			(start 7.8213 10.3186)
+			(end 7.8213 7.394437)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2300f2f4-6bc3-47e7-9248-412596315cf2")
 		)
 		(fp_circle
 			(center -3.4563 0)
@@ -5745,7 +5745,7 @@
 			)
 			(fill none)
 			(layer "F.SilkS")
-			(uuid "261b37b6-13a8-4c94-b1b3-725a2af8601b")
+			(uuid "c525ef44-b3df-4bb2-af91-f3ffcfa352ec")
 		)
 		(fp_line
 			(start -3.025 5.817499)
@@ -5755,7 +5755,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "11aba86a-111f-4366-9166-0b3c94c87f2e")
+			(uuid "92fb02c1-98e8-4711-9adf-0ed042cdd4ec")
 		)
 		(fp_line
 			(start 8.025 5.817499)
@@ -5765,27 +5765,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0b720712-7aa7-4d8b-9ad7-8ee90b285b6a")
-		)
-		(fp_line
-			(start -4.536301 10.4456)
-			(end 9.536301 10.4456)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ae55047e-2578-4d43-9be6-c8905aebe38f")
-		)
-		(fp_line
-			(start 9.536301 10.4456)
-			(end 9.536301 -1.1049)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8779ba0d-84ca-4d43-89a3-453bd65924c5")
+			(uuid "73964412-a973-4589-a387-5a0c7ee3163b")
 		)
 		(fp_line
 			(start -4.536301 -1.1049)
@@ -5795,7 +5775,17 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a04bd98e-69d6-48b0-9156-aa7540287199")
+			(uuid "13540842-5e73-4970-958c-8aefc0bd422e")
+		)
+		(fp_line
+			(start -4.536301 10.4456)
+			(end 9.536301 10.4456)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6e63a861-67b0-4ec0-be8e-7f8859bff87b")
 		)
 		(fp_line
 			(start 9.536301 -1.1049)
@@ -5805,27 +5795,17 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "aed1ce66-6ac7-42b6-9398-c617ee168e32")
+			(uuid "a0138729-66b7-4736-a94f-1bc4a20b2ff8")
 		)
 		(fp_line
-			(start -2.6943 10.1916)
-			(end 7.6943 10.1916)
+			(start 9.536301 10.4456)
+			(end 9.536301 -1.1049)
 			(stroke
-				(width 0.0254)
+				(width 0.1524)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "d34ac7bc-4d73-4048-a2be-8a55129f43bb")
-		)
-		(fp_line
-			(start 7.6943 10.1916)
-			(end 7.6943 1.2)
-			(stroke
-				(width 0.0254)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "35025759-2147-4239-a3b9-436edcb37c63")
+			(layer "F.CrtYd")
+			(uuid "5fafbb0e-b679-4838-af37-d076c690d2a1")
 		)
 		(fp_line
 			(start -2.6943 1.2)
@@ -5835,7 +5815,17 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2c5781fc-8a66-4e01-8bb1-76f997141619")
+			(uuid "4553cde3-f9d6-4620-91ab-2c349e6b0352")
+		)
+		(fp_line
+			(start -2.6943 10.1916)
+			(end 7.6943 10.1916)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a1a0dd9f-22e1-4161-a21e-83ebaec243df")
 		)
 		(fp_line
 			(start 7.6943 1.2)
@@ -5845,7 +5835,17 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2a4b3345-2206-4fdf-bf3a-ae735a53a8ee")
+			(uuid "068d330d-3c56-4eb3-9194-2d4757810ce0")
+		)
+		(fp_line
+			(start 7.6943 10.1916)
+			(end 7.6943 1.2)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "061c1dca-132c-4d29-b51d-ba33bb324524")
 		)
 		(fp_circle
 			(center 0 -1.905)
@@ -5856,13 +5856,13 @@
 			)
 			(fill none)
 			(layer "F.Fab")
-			(uuid "315e4eeb-e5a4-499e-96e5-315814ad8a82")
+			(uuid "f1e89e4f-0207-4f0c-9a10-681499884ee3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 -90)
+			(at 2.5 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "12bd2c7f-d2ec-4bfb-a6ca-7e37a185a223")
+			(uuid "66553bb1-837e-4015-97d3-7064f3df5be4")
 			(effects
 				(font
 					(size 1 1)
@@ -5871,68 +5871,77 @@
 			)
 		)
 		(pad "" np_thru_hole circle
-			(at -3.025 5.182499 270)
+			(at -3.025 5.182499)
 			(size 2.0066 2.0066)
 			(drill 2.0066)
 			(layers "*.Cu" "*.Mask")
-			(uuid "912b88ca-c9e8-4bbd-aabc-d4273da87026")
+			(uuid "7539350b-3da5-430a-bb8c-f5e227a38274")
 		)
 		(pad "" np_thru_hole circle
-			(at -3.025 5.817499 270)
+			(at -3.025 5.817499)
 			(size 2.0066 2.0066)
 			(drill 2.0066)
 			(layers "*.Cu" "*.Mask")
-			(uuid "aa8e8f2d-7e41-497e-8c33-1c7b4aa28197")
+			(uuid "b14c6a30-eb95-4e10-838c-513e53b55224")
 		)
 		(pad "" np_thru_hole circle
-			(at 8.025 5.182499 270)
+			(at 8.025 5.182499)
 			(size 2.0066 2.0066)
 			(drill 2.0066)
 			(layers "*.Cu" "*.Mask")
-			(uuid "47dde756-2c77-4315-a9c4-253c5a5b300d")
+			(uuid "cc7aff02-763b-4a4f-9597-ac939c95b29c")
 		)
 		(pad "" np_thru_hole circle
-			(at 8.025 5.817499 270)
+			(at 8.025 5.817499)
 			(size 2.0066 2.0066)
 			(drill 2.0066)
 			(layers "*.Cu" "*.Mask")
-			(uuid "be992bf0-fda7-4a3b-8261-e338f4720461")
+			(uuid "226b24f7-49bf-45b0-9655-f8124302801e")
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 270)
+			(at 0 0)
 			(size 1.7018 1.7018)
 			(drill 1.1938)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "c1435291-4803-4894-8cfa-3ddd3e7e88d7")
+			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "3b82b3dc-1423-44a7-9b54-fe3debe3f82c")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0 270)
+			(at 2.5 0)
 			(size 1.7018 1.7018)
 			(drill 1.1938)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "db06f84a-2a7d-4d87-a7b9-6f11f7e2c9f0")
+			(net 4 "Net-(C6-Pad1)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "d9d4af19-2009-4380-8292-0deb0094f31e")
 		)
 		(pad "3" thru_hole circle
-			(at 5 0 270)
+			(at 5 0)
 			(size 1.7018 1.7018)
 			(drill 1.1938)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "6adc8f85-d592-4738-8011-cdf019b69704")
+			(net 3 "Net-(C5-Pad1)")
+			(pinfunction "3")
+			(pintype "passive")
+			(uuid "bc45d3c8-6249-4cf2-8e6e-28810891b305")
 		)
 		(pad "4" smd oval
-			(at -3.025 5.499999 270)
+			(at -3.025 5.499999)
 			(size 2.5146 3.1496)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(uuid "ce8dc00c-a6ab-4b97-be56-a1aa5070f7d6")
+			(uuid "b9ef1b4e-db2b-45f6-998d-f796bc17c626")
 		)
 		(pad "5" smd oval
-			(at 8.025 5.499999 270)
+			(at 8.025 5.499999)
 			(size 2.5146 3.1496)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(uuid "3afbc5c2-9a7b-4c80-9c24-c3cc432c6330")
+			(uuid "b440f01c-eddf-4617-ac11-9fae5d47b177")
 		)
 	)
 	(footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
@@ -6004,7 +6013,7 @@
 		)
 		(property ki_fp_filters "RotaryEncoder*Switch*")
 		(path "/b2ebd9e5-c003-4a66-b81d-806ffdb5bcf6")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6432,7 +6441,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/2259c7bf-457c-41e7-9374-a5a46e2b934c")
-		(sheetname "Root")
+		(sheetname "Racine")
 		(sheetfile "Schema.kicad_sch")
 		(attr smd)
 		(fp_line
