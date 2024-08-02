@@ -1,7 +1,7 @@
 M48
-; DRILL file {KiCad 8.0.1-rc1} date 2024-08-02T09:31:45-0400
+; DRILL file {KiCad 8.0.1-rc1} date 2024-08-02T11:20:45-0400
 ; FORMAT={-:-/ absolute / metric / decimal}
-; #@! TF.CreationDate,2024-08-02T09:31:45-04:00
+; #@! TF.CreationDate,2024-08-02T11:20:45-04:00
 ; #@! TF.GenerationSoftware,Kicad,Pcbnew,8.0.1-rc1
 ; #@! TF.FileFunction,NonPlated,1,2,NPTH
 FMAT,2
