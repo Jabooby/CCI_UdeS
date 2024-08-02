@@ -2947,7 +2947,8 @@
 		)
 		(symbol "RotaryEncoder_1"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3172,16 +3173,16 @@
 			)
 			(symbol "RotaryEncoder_1_1_1"
 				(pin passive line
-					(at -7.62 2.54 0)
+					(at -7.62 -2.54 0)
 					(length 2.54)
-					(name "1"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3192,14 +3193,14 @@
 				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "2"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3208,16 +3209,16 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -2.54 0)
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "3"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6352,7 +6353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x22_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical"
 			(at 119.38 72.39 0)
 			(effects
 				(font
@@ -6988,13 +6989,13 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
+		(pin "B"
 			(uuid "886604c9-1aa5-4ab8-a294-41d4afebbb34")
 		)
-		(pin "1"
+		(pin "C"
 			(uuid "88d53ffb-80d3-41d0-bcf6-9ef230031126")
 		)
-		(pin "3"
+		(pin "A"
 			(uuid "a29f7a93-246d-4925-9b07-03a86c87d20a")
 		)
 		(instances
@@ -7164,7 +7165,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x22_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical"
 			(at 127 74.93 0)
 			(effects
 				(font
@@ -7568,7 +7569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x14_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical"
 			(at 115.57 154.94 0)
 			(effects
 				(font
@@ -7955,7 +7956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x10_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
 			(at 48.26 127 0)
 			(effects
 				(font
