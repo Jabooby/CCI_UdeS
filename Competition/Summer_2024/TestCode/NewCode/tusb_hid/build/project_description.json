@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "tusb_hid",
-    "project_version":    "2c41109-dirty",
+    "project_version":    "dcf7895-dirty",
     "project_path":       "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid",
     "idf_path":           "C:/Users/gratt/esp/v5.2.2/esp-idf",
     "build_dir":          "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/build",
@@ -340,7 +340,7 @@
             "managed_reqs": [ "espressif__tinyusb" ],
             "managed_priv_reqs": [],
             "file": "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/build/esp-idf/espressif__esp_tinyusb/libespressif__esp_tinyusb.a",
-            "sources": [ "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/descriptors_control.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tinyusb.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/usb_descriptors.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tusb_tasks.c" ],
+            "sources": [ "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/descriptors_control.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tinyusb.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/usb_descriptors.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tusb_tasks.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/cdc.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tusb_cdc_acm.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tusb_console.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/vfs_tinyusb.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/managed_components/espressif__esp_tinyusb/tusb_msc_storage.c" ],
             "include_dirs": [ "include" ]
         },
         "espressif__tinyusb": {
@@ -475,7 +475,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp_tinyusb" ],
             "file": "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/tusb_hid_example_main.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Mouse.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Keyboard.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/TimeBased.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Macro.c" ],
+            "sources": [ "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/tusb_hid_example_main.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Mouse.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Keyboard.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/TimeBased.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Macro.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/main/Storage.c" ],
             "include_dirs": [ ".", "../includes" ]
         },
         "mbedtls": {

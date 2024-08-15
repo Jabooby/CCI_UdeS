@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "tusb_composite",
-    "project_version":    "2c41109-dirty",
+    "project_version":    "dcf7895-dirty",
     "project_path":       "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice",
     "idf_path":           "C:/Users/gratt/esp/v5.2.2/esp-idf",
     "build_dir":          "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/build",
@@ -471,12 +471,12 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "fatfs", "wear_levelling", "esp_partition", "espressif__esp_tinyusb" ],
+            "priv_reqs": [ "espressif__esp_tinyusb" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp_tinyusb" ],
             "file": "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/tusb_composite_main.c" ],
-            "include_dirs": [ "." ]
+            "sources": [ "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/tusb_composite_main.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/Mouse.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/Keyboard.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/TimeBased.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/Macro.c", "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main/Storage.c" ],
+            "include_dirs": [ ".", "../includes" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -1588,10 +1588,10 @@
             "dir": "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/MSC/tusb_composite_msc_serialdevice/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "fatfs", "wear_levelling", "esp_partition", "espressif__esp_tinyusb" ],
+            "priv_reqs": [ "espressif__esp_tinyusb" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp_tinyusb" ],
-            "include_dirs": [ "." ]
+            "include_dirs": [ ".", "../includes" ]
         },
         "espressif__esp_tinyusb": {
             "alias": "idf::espressif__esp_tinyusb",

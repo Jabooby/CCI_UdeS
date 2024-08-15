@@ -8,6 +8,13 @@
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_partition.h"
+#include <errno.h>
+#include <dirent.h>
+#include <sys/stat.h>
+#include "esp_check.h"
+#include "tusb_msc_storage.h"
+#include "tusb_cdc_acm.h"
 #include "tinyusb.h"
 #include "class/hid/hid_device.h"
 #include "driver/gpio.h"
@@ -17,6 +24,7 @@
 #include "Keyboard.h"
 #include "TimeBased.h"
 #include "Macro.h"
+#include "Storage.h"
 
 #define VENDOR_ID 0x303A
 #define PRODUCT_ID 0x4004
@@ -30,7 +38,7 @@ void MouseStuff();
 void KeyBoardStuff();
 /************* TinyUSB descriptors ****************/
 
-#define TUSB_DESC_TOTAL_LEN      (TUD_CONFIG_DESC_LEN + CFG_TUD_HID * TUD_HID_DESC_LEN)
+#define TUSB_DESC_TOTAL_LEN      (TUD_CONFIG_DESC_LEN + CFG_TUD_HID * TUD_HID_DESC_LEN + TUD_MSC_DESC_LEN)
 
 /**
  * @brief HID report descriptor
@@ -52,6 +60,31 @@ const char* hid_string_descriptor[5] = {
     "Example HID interface",  // 4: HID
 };
 
+#define BASE_PATH "/usb" // base path to mount the partition
+
+static esp_err_t storage_init_spiflash(wl_handle_t *wl_handle)
+{
+
+    const esp_partition_t *data_partition = esp_partition_find_first(ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_FAT, NULL);
+    if (data_partition == NULL) {
+        return ESP_ERR_NOT_FOUND;
+    }
+
+    return wl_mount(data_partition, wl_handle);
+}
+
+void InitializeStorage()
+{
+    static wl_handle_t wl_handle = WL_INVALID_HANDLE;
+    ESP_ERROR_CHECK(storage_init_spiflash(&wl_handle));
+
+    const tinyusb_msc_spiflash_config_t config_spi = {
+        .wl_handle = wl_handle
+    };
+    ESP_ERROR_CHECK(tinyusb_msc_storage_init_spiflash(&config_spi));
+    ESP_ERROR_CHECK(tinyusb_msc_storage_mount(BASE_PATH));
+}
+
 /**
  * @brief Configuration descriptor
  *
@@ -59,12 +92,14 @@ const char* hid_string_descriptor[5] = {
  */
 static const uint8_t hid_configuration_descriptor[] = {
     // Configuration number, interface count, string index, total length, attribute, power in mA
-    TUD_CONFIG_DESCRIPTOR(1, 1, 0, TUSB_DESC_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_REMOTE_WAKEUP, 100),
+    TUD_CONFIG_DESCRIPTOR(1, 2, 0, TUSB_DESC_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_REMOTE_WAKEUP, 100),
 
     // Interface number, string index, boot protocol, report descriptor len, EP In address, size & polling interval
     TUD_HID_DESCRIPTOR(0, 4, false, sizeof(hid_report_descriptor), 0x81, 16, 10),
-};
 
+    // MSC Interface number, string index, EP Out & EP In address, EP size
+    TUD_MSC_DESCRIPTOR(1, 5, 0x02, 0x82, 64),
+};
 
 /********* TinyUSB HID callbacks ***************/
 
@@ -99,37 +134,37 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
     gpio_set_level(BLINK_GPIO, LEDValue);
     
 }
-
-/********* Application ***************/
-
-// static void app_send_hid_demo(void)
-// {
-//     // Keyboard output: Send key 'a/A' pressed and released
-//     ESP_LOGI(TAG, "Sending Keyboard report");
-//     uint8_t keycode[6] = {HID_KEY_A};
-//     tud_hid_keyboard_report(HID_ITF_PROTOCOL_KEYBOARD, 0, keycode);
-//     vTaskDelay(pdMS_TO_TICKS(50));
-//     tud_hid_keyboard_report(HID_ITF_PROTOCOL_KEYBOARD, 0, NULL);
-// }
-
-
-
 int8_t Counter = 0;
+
+static tusb_desc_device_t descriptor_config = {
+    .bLength = sizeof(descriptor_config),
+    .bDescriptorType = TUSB_DESC_DEVICE,
+    .bcdUSB = 0x0200,
+    .bDeviceClass = TUSB_CLASS_MISC,
+    .bDeviceSubClass = MISC_SUBCLASS_COMMON,
+    .bDeviceProtocol = MISC_PROTOCOL_IAD,
+    .bMaxPacketSize0 = CFG_TUD_ENDPOINT0_SIZE,
+    .idVendor = 0x303A, // This is Espressif VID. This needs to be changed according to Users / Customers
+    .idProduct = 0x4002,
+    .bcdDevice = 0x100,
+    .iManufacturer = 0x01,
+    .iProduct = 0x02,
+    .iSerialNumber = 0x03,
+    .bNumConfigurations = 0x01
+};
 
 void app_main(void)
 {
     SetupGPIOMouse();
     SetupGPIOKeyboard();   
     serviceBaseDeTemps_initialise();
-    
     TimeBasedTasks[0] = MouseStuff;
     gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
-    
-    
+    InitializeStorage();
 
     ESP_LOGI(TAG, "USB initialization");
     const tinyusb_config_t tusb_cfg = {
-        .device_descriptor = NULL,
+        .device_descriptor = &descriptor_config,
         .string_descriptor = hid_string_descriptor,
         .string_descriptor_count = sizeof(hid_string_descriptor) / sizeof(hid_string_descriptor[0]),
         .external_phy = false,
@@ -140,61 +175,31 @@ void app_main(void)
     ESP_LOGI(TAG, "USB initialization DONE");
 
     InitializeTimer();
-    static bool active = false;
+    
 
     while (1) {
-        // WriteASCII('H');
-        // while (!tud_hid_ready());
-        // WriteASCII('e');
-        // while (!tud_hid_ready());
-        // WriteASCII('l');
-        // while (!tud_hid_ready());
-        // WriteASCII('l');
-        // while (!tud_hid_ready());
-        // WriteASCII('o');
-        // while (!tud_hid_ready());
-        // WriteASCII(' ');
-        // while (!tud_hid_ready());
-        // WriteASCII('W');
-        // while (!tud_hid_ready());
-        // WriteASCII('o');
-        // while (!tud_hid_ready());
-        // WriteASCII('r');
-        // while (!tud_hid_ready());
-        // WriteASCII('l');
-        // while (!tud_hid_ready());
-        // WriteASCII('d');
-        // while (!tud_hid_ready());
-        // WriteASCII('\n');
-        // while (!tud_hid_ready());
-        // WriteASCII(NULL);
-        // while (!tud_hid_ready());
-        if(gpio_get_level(GPIO_NUM_0) == 0 && !active)
-        {
-            active = true;
-            GetRickRolled();
-            
-        }
-
-        if(gpio_get_level(GPIO_NUM_0) == 1 && active)
-        {
-            active = false;
-            
-        }
         
-        
-        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
 
 void MouseStuff()
 {
+    static bool active = false;
+    if(gpio_get_level(GPIO_NUM_0) == 0 && !active)
+        {
+            active = true;
+            GetRickRolled();
+        }
+        if(gpio_get_level(GPIO_NUM_0) == 1 && active)
+        {
+            active = false;
+        }
+
     Counter++;
     if(Counter < 110)
         return;
     Counter = 0;
     MouseControl();
-
     TimeBasedTasks[0] = KeyBoardStuff;
 }
 
@@ -205,8 +210,5 @@ void KeyBoardStuff()
     if(Counter < 110)
         return;
     Counter = 0;
-
-    
-
     TimeBasedTasks[0] = MouseStuff;
 }
