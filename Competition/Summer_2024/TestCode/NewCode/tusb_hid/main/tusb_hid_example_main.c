@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
+#include "esp_random.h"
 #include "freertos/task.h"
 #include "esp_partition.h"
 #include <errno.h>
@@ -29,13 +30,21 @@
 #define VENDOR_ID 0x303A
 #define PRODUCT_ID 0x4004
 #define BLINK_GPIO 33
+#define BASE_PATH "" // base path to mount the partition
 
 static const char *TAG = "example";
 uint8_t ReceivedValue = 0;
 bool LEDValue = false;
+bool HackingEnabled = false;
+
+const char *filename = BASE_PATH "/Hack/Mystery1.bat\0";
+const char *filename1 = BASE_PATH "/Hack/Mystery2.bat\0";
+const char *filename2 = BASE_PATH "/Hack/Mystery3.bat\0";
+const char *filename3 = BASE_PATH "/Hack/Mystery4.bat\0";
+const char *filename4 = "/ESP/TEST.TXT\0";
 
 void MouseStuff();
-void KeyBoardStuff();
+void OpenFileHack();
 /************* TinyUSB descriptors ****************/
 
 #define TUSB_DESC_TOTAL_LEN      (TUD_CONFIG_DESC_LEN + CFG_TUD_HID * TUD_HID_DESC_LEN + TUD_MSC_DESC_LEN)
@@ -59,31 +68,6 @@ const char* hid_string_descriptor[5] = {
     "123456",              // 3: Serials, should use chip ID
     "Example HID interface",  // 4: HID
 };
-
-#define BASE_PATH "/usb" // base path to mount the partition
-
-static esp_err_t storage_init_spiflash(wl_handle_t *wl_handle)
-{
-
-    const esp_partition_t *data_partition = esp_partition_find_first(ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_FAT, NULL);
-    if (data_partition == NULL) {
-        return ESP_ERR_NOT_FOUND;
-    }
-
-    return wl_mount(data_partition, wl_handle);
-}
-
-void InitializeStorage()
-{
-    static wl_handle_t wl_handle = WL_INVALID_HANDLE;
-    ESP_ERROR_CHECK(storage_init_spiflash(&wl_handle));
-
-    const tinyusb_msc_spiflash_config_t config_spi = {
-        .wl_handle = wl_handle
-    };
-    ESP_ERROR_CHECK(tinyusb_msc_storage_init_spiflash(&config_spi));
-    ESP_ERROR_CHECK(tinyusb_msc_storage_mount(BASE_PATH));
-}
 
 /**
  * @brief Configuration descriptor
@@ -134,7 +118,7 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
     gpio_set_level(BLINK_GPIO, LEDValue);
     
 }
-int8_t Counter = 0;
+
 
 static tusb_desc_device_t descriptor_config = {
     .bLength = sizeof(descriptor_config),
@@ -159,6 +143,7 @@ void app_main(void)
     SetupGPIOKeyboard();   
     serviceBaseDeTemps_initialise();
     TimeBasedTasks[0] = MouseStuff;
+    TimeBasedTasks[1] = OpenFileHack;
     gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
     InitializeStorage();
 
@@ -176,7 +161,8 @@ void app_main(void)
 
     InitializeTimer();
     
-
+    //fopen(filename4, "r");
+    
     while (1) {
         
     }
@@ -185,30 +171,63 @@ void app_main(void)
 void MouseStuff()
 {
     static bool active = false;
-    if(gpio_get_level(GPIO_NUM_0) == 0 && !active)
-        {
-            active = true;
-            GetRickRolled();
-        }
-        if(gpio_get_level(GPIO_NUM_0) == 1 && active)
-        {
-            active = false;
-        }
-
-    Counter++;
-    if(Counter < 110)
+    static uint32_t counter = 0;
+    
+    counter++;
+    if(counter < 250)
         return;
-    Counter = 0;
+    counter = 0;
+
+    if(gpio_get_level(GPIO_NUM_0) == 0 && !active)
+    {
+        active = true;
+        HackingEnabled = !HackingEnabled;
+        OpenDocument(filename);
+        GetRickRolled();
+    }
+    if(gpio_get_level(GPIO_NUM_0) == 1 && active)
+    {
+        active = false;
+    }
+
     MouseControl();
-    TimeBasedTasks[0] = KeyBoardStuff;
 }
 
-void KeyBoardStuff()
+void OpenFileHack()
 {
-    //static bool active = false;
-    Counter++;
-    if(Counter < 110)
+    static uint32_t counter = 0;
+    counter++;
+    if(counter < 100)
         return;
-    Counter = 0;
-    TimeBasedTasks[0] = MouseStuff;
+    counter = 0;
+    //OpenDocument(filename2);
+
+    if(!HackingEnabled)
+    {
+        return;
+    }
+
+    uint32_t random_value = esp_random() % 101;
+
+    switch (random_value)
+    {
+    case 21:
+        OpenDocument(filename);
+        break;
+
+    case 73:
+        OpenDocument(filename1);
+        break;
+
+    case 54:
+        OpenDocument(filename2);
+        break;
+
+    case 32:
+        OpenDocument(filename3);
+        break;
+    
+    default:
+        break;
+    }
 }

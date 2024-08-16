@@ -9,6 +9,7 @@
   "idf.flashType": "UART",
   "files.associations": {
     "storage.h": "c",
-    "tinyusb.h": "c"
+    "tinyusb.h": "c",
+    "esp_random.h": "c"
   }
 }

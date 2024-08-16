@@ -24,13 +24,9 @@ void InitializeStorage()
     };
     ESP_ERROR_CHECK(tinyusb_msc_storage_init_spiflash(&config_spi));
     ESP_ERROR_CHECK(tinyusb_msc_storage_mount(BASE_PATH));
+}
 
-    const tinyusb_config_t tusb_cfg = {
-        .device_descriptor = NULL,
-        .string_descriptor = NULL,
-        .string_descriptor_count = 0,
-        .external_phy = false,
-        .configuration_descriptor = NULL,
-    };
-    ESP_ERROR_CHECK(tinyusb_driver_install(&tusb_cfg));
+void OpenDocument(const char* fileName)
+{
+    fopen(fileName, "r");
 }

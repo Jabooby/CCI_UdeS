@@ -10,5 +10,7 @@
 #include "tusb_msc_storage.h"
 #include "tusb_cdc_acm.h"
 
+void InitializeStorage();
+void OpenDocument(const char* fileName);
 
 #endif

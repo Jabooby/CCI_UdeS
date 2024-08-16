@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "tusb_hid",
-    "project_version":    "dcf7895-dirty",
+    "project_version":    "b93b936-dirty",
     "project_path":       "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid",
     "idf_path":           "C:/Users/gratt/esp/v5.2.2/esp-idf",
     "build_dir":          "C:/Users/gratt/Documents/GitHub/CCI_UdeS/Competition/Summer_2024/TestCode/NewCode/tusb_hid/build",
