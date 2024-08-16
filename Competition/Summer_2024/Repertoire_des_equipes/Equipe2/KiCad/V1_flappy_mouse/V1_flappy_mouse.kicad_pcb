@@ -11143,6 +11143,138 @@
 			(justify left bottom)
 		)
 	)
+	(dimension
+		(type aligned)
+		(layer "User.1")
+		(uuid "1f72fcb2-02d8-48b1-8611-05e04a6dde95")
+		(pts
+			(xy 162 58) (xy 162 147)
+		)
+		(height -12.775)
+		(gr_text "89,0000 mm"
+			(at 173.625 102.5 90)
+			(layer "User.1")
+			(uuid "1f72fcb2-02d8-48b1-8611-05e04a6dde95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.1")
+		(uuid "3184cf0e-1581-4e98-b15a-0772a3abbc45")
+		(pts
+			(xy 132.5 55) (xy 132.5 150)
+		)
+		(height -49.025)
+		(gr_text "95,0000 mm"
+			(at 180.375 102.5 90)
+			(layer "User.1")
+			(uuid "3184cf0e-1581-4e98-b15a-0772a3abbc45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.1")
+		(uuid "773c6883-4976-4df4-934c-58c82c66e080")
+		(pts
+			(xy 100 57) (xy 165 57)
+		)
+		(height -27.15)
+		(gr_text "65,0000 mm"
+			(at 132.5 28.7 0)
+			(layer "User.1")
+			(uuid "773c6883-4976-4df4-934c-58c82c66e080")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.1")
+		(uuid "9825b102-dda7-484f-ad7c-8a4ee4545ce9")
+		(pts
+			(xy 103 58) (xy 162 58)
+		)
+		(height -20.475)
+		(gr_text "59,0000 mm"
+			(at 132.5 36.375 0)
+			(layer "User.1")
+			(uuid "9825b102-dda7-484f-ad7c-8a4ee4545ce9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
 	(segment
 		(start 133.8269 145.5263)
 		(end 134.7237 145.5263)
