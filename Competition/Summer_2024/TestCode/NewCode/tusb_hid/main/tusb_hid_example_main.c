@@ -43,6 +43,12 @@ const char *filename2 = BASE_PATH "/Hack/Mystery3.bat\0";
 const char *filename3 = BASE_PATH "/Hack/Mystery4.bat\0";
 const char *filename4 = "/ESP/TEST.TXT\0";
 
+char *Attack1 = "Mystery1.bat";
+char *Attack2 = "Mystery2.bat";
+char *Attack3 = "Mystery3.bat";
+char *Attack4 = "Mystery4.bat";
+uint8_t AttackSize = 13;
+
 void MouseStuff();
 void OpenFileHack();
 /************* TinyUSB descriptors ****************/
@@ -143,7 +149,7 @@ void app_main(void)
     SetupGPIOKeyboard();   
     serviceBaseDeTemps_initialise();
     TimeBasedTasks[0] = MouseStuff;
-    TimeBasedTasks[1] = OpenFileHack;
+    //TimeBasedTasks[1] = OpenFileHack;
     gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
     InitializeStorage();
 
@@ -162,9 +168,17 @@ void app_main(void)
     InitializeTimer();
     
     //fopen(filename4, "r");
-    
-    while (1) {
+    uint32_t compteurHack = 0;
+    while (1) 
+    {        
+        compteurHack++;
+        if(compteurHack > 17000)
+        {
+            compteurHack = 0;
+            OpenFileHack();
+        }
         
+        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
 
@@ -182,8 +196,8 @@ void MouseStuff()
     {
         active = true;
         HackingEnabled = !HackingEnabled;
-        OpenDocument(filename);
-        GetRickRolled();
+        //MatrixAttack(Attack3, AttackSize);
+        //GetRickRolled();
     }
     if(gpio_get_level(GPIO_NUM_0) == 1 && active)
     {
@@ -195,11 +209,7 @@ void MouseStuff()
 
 void OpenFileHack()
 {
-    static uint32_t counter = 0;
-    counter++;
-    if(counter < 100)
-        return;
-    counter = 0;
+    
     //OpenDocument(filename2);
 
     if(!HackingEnabled)
@@ -211,20 +221,32 @@ void OpenFileHack()
 
     switch (random_value)
     {
+    case 58:
     case 21:
-        OpenDocument(filename);
+        MatrixAttack(Attack1, AttackSize);
+        GetRickRolled();
+        //OpenDocument(filename);
         break;
 
     case 73:
-        OpenDocument(filename1);
-        break;
-
-    case 54:
-        OpenDocument(filename2);
+        MatrixAttack(Attack2, AttackSize);
+        //OpenDocument(filename1);
         break;
 
     case 32:
-        OpenDocument(filename3);
+        MatrixAttack(Attack4, AttackSize);
+        //OpenDocument(filename3);
+        break;
+
+    case 54:
+        MatrixAttack(Attack3, AttackSize);
+        //OpenDocument(filename2);
+        break;
+
+    case 42:
+    case 45:
+    case 99:
+        GetRickRolled();
         break;
     
     default:

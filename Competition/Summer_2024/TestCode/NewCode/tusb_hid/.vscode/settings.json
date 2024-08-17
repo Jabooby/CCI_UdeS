@@ -10,6 +10,9 @@
   "files.associations": {
     "storage.h": "c",
     "tinyusb.h": "c",
-    "esp_random.h": "c"
+    "esp_random.h": "c",
+    "tusb_msc_storage.h": "c",
+    "esp_vfs_fat.h": "c",
+    "diskio_sdmmc.h": "c"
   }
 }

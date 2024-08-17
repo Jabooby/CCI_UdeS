@@ -15,5 +15,6 @@ void OpenCMD();
 void OpenNotePad();
 void WriteThis();
 void GetRickRolled();
+void MatrixAttack(char *str, uint8_t size);
 
 #endif
