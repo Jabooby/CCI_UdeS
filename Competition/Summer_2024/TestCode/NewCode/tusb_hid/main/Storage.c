@@ -17,6 +17,7 @@ static esp_err_t storage_init_spiflash(wl_handle_t *wl_handle)
 void InitializeStorage()
 {
     static wl_handle_t wl_handle = WL_INVALID_HANDLE;
+    
     ESP_ERROR_CHECK(storage_init_spiflash(&wl_handle));
 
     const tinyusb_msc_spiflash_config_t config_spi = {

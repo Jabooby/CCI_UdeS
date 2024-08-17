@@ -1,6 +1,12 @@
 
 #include "Macro.h"
 
+char* PATH1 = "cd /d E:\\Hack\n";
+char* PATH2 = "cd /d F:\\Hack\n";
+char* PATH3 = "cd /d D:\\Hack\n";
+char* PATH4 = "cd /d G:\\Hack\n";
+char* PATH5 = "cd /d H:\\Hack\n";
+
 void OpenCMD()
 {
     WriteCombinationOfCharacter(HID_KEY_GUI_LEFT);
@@ -46,9 +52,15 @@ void GetRickRolled()
 
 void GotoRightFolder()
 {
-    char *str = "cd /d E:\\Hack\n";
-    uint8_t *uint8Ptr = (uint8_t *)str;
-    WriteWordsASCII(uint8Ptr, 15);
+    WriteWordsASCII((uint8_t *)PATH1, 15);
+    vTaskDelay(pdMS_TO_TICKS(50));
+    WriteWordsASCII((uint8_t *)PATH2, 15);
+    vTaskDelay(pdMS_TO_TICKS(50));
+    WriteWordsASCII((uint8_t *)PATH3, 15);
+    vTaskDelay(pdMS_TO_TICKS(50));
+    WriteWordsASCII((uint8_t *)PATH4, 15);
+    vTaskDelay(pdMS_TO_TICKS(50));
+    WriteWordsASCII((uint8_t *)PATH5, 15);
 }
 
 void OpenFileWithCMD(char *str, uint8_t size)
