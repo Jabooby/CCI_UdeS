@@ -44,7 +44,25 @@ void GetRickRolled()
     WriteWordsASCII(uint8Ptr, 56);
 }
 
-void MatrixAttack()
+void GotoRightFolder()
 {
-    
+    char *str = "cd /d E:\\Hack\n";
+    uint8_t *uint8Ptr = (uint8_t *)str;
+    WriteWordsASCII(uint8Ptr, 15);
+}
+
+void OpenFileWithCMD(char *str, uint8_t size)
+{
+    uint8_t *uint8Ptr = (uint8_t *)str;
+    WriteWordsASCII(uint8Ptr, size);
+}
+
+void MatrixAttack(char *str, uint8_t size)
+{
+    OpenCMD();
+    vTaskDelay(pdMS_TO_TICKS(500));
+    GotoRightFolder();
+    vTaskDelay(pdMS_TO_TICKS(100));
+    OpenFileWithCMD(str, size);
+    WriteCharacter(HID_KEY_ENTER);
 }
