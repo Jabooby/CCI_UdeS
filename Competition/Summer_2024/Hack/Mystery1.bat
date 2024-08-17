@@ -1,0 +1,6 @@
+@echo off
+echo Critical System Error Detected...
+echo Attempting to resolve...
+ping localhost -n 3 >nul
+start chrome --start-fullscreen --app=https://fakebsod.com/windows-8-and-10/
+exit
