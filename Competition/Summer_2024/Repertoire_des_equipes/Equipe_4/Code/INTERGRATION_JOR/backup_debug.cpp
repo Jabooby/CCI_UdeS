@@ -5,12 +5,11 @@
  * Based on https://playground.arduino.cc/Main/I2cScanner/
  *
  */
-
+/**
 #include "Wire.h"
 #include "SPI.h"
 #include <Adafruit_ILI9341.h>
 #include <dragon.h>
-#include "Adafruit_TinyUSB.h"
 #define LCD_PIN_CS 14
 #define LCD_PIN_RESET 13
 #define LCD_PIN_DC 12
@@ -35,8 +34,6 @@
 #define SCROLL_WHEEL_PIN_A 38
 #define SCROLL_WHEEL_PIN_B 37
 
-bool activeState = false;
-static uint32_t ms = 0;
 
 volatile int encoderPosLeft = 0;  // a counter for the dial
 unsigned int lastReportedPosLeft = 1;   // change management
@@ -60,40 +57,20 @@ boolean B_set_right = false;
 boolean A_set_scroll = false;
 boolean B_set_scroll = false;
 
-// HID report descriptor using TinyUSB's template
-// Single Report (no ID) descriptor
-uint8_t const desc_hid_report[] = {
-    TUD_HID_REPORT_DESC_MOUSE()
-};
-
 Adafruit_ILI9341 tft = Adafruit_ILI9341(LCD_PIN_CS, LCD_PIN_DC, LCD_PIN_SDI, LCD_PIN_SCK, LCD_PIN_RESET, LCD_PIN_SDO);
 MPU9250_WE myMPU9250 = MPU9250_WE(MPU_ADDR);
-Adafruit_USBD_HID usb_hid;
 
 void doEncoderALeft();
 void doEncoderBLeft();
 void doEncoderARight();
 void doEncoderBRight();
-
 void doEncoderAScroll();
 void doEncoderBScroll();
 
 void setup() {
-  if (!TinyUSBDevice.isInitialized()) {
-    TinyUSBDevice.begin(0);
-  }
-
-  // Set up HID
-  usb_hid.setBootProtocol(HID_ITF_PROTOCOL_MOUSE);
-  usb_hid.setPollInterval(2);
-  usb_hid.setReportDescriptor(desc_hid_report, sizeof(desc_hid_report));
-  usb_hid.setStringDescriptor("TinyUSB Mouse");
-
-  usb_hid.begin();
+  tft.begin();
 
   Serial.begin(115200);
-  Serial.println("Adafruit TinyUSB HID Mouse example");
-  tft.begin();
   Wire.begin(BNO_SDA, BNO_SCL);
   if(!myMPU9250.init()){
     Serial.println("MPU9250 does not respond");
@@ -142,27 +119,8 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(SCROLL_WHEEL_PIN_A), doEncoderAScroll, CHANGE);
   // encoder pin on interrupt 1 (pin 3)
   attachInterrupt(digitalPinToInterrupt(SCROLL_WHEEL_PIN_B), doEncoderBScroll, CHANGE);
-}
 
-void process_hid() {
-  // Whether button is pressed
-  bool btn_pressed = (digitalRead(ENCODER_LEFT_PIN_BUTTON) == activeState);
-
-  // nothing to do if button is not pressed
-  if (!btn_pressed) return;
-
-  // Remote wakeup
-  if (TinyUSBDevice.suspended()) {
-    // Wake up host if we are in suspend mode
-    // and REMOTE_WAKEUP feature is enabled by host
-    TinyUSBDevice.remoteWakeup();
-  }
-
-  if (usb_hid.ready()) {
-    uint8_t const report_id = 0; // no ID
-    int8_t const delta = 5;
-    usb_hid.mouseMove(report_id, encoderPosRight, encoderPosLeft); // right + down
-  }
+  Serial.begin(115200);
 }
 
 void doEncoderAScroll(){
@@ -327,16 +285,8 @@ void printScrollEncoder() {
 }
 
 void loop(void) {
-
-  if (!TinyUSBDevice.mounted()) {
-    Serial.println("not mounted");
-    return;
-  }
-  Serial.println("Loop");
-  // poll gpio once each 10 ms
-  if (millis() - ms > 10) {
-    ms = millis();
-    process_hid();
-  }
+  printScrollEncoder();
+  delay(500);
 }
 
+*/
