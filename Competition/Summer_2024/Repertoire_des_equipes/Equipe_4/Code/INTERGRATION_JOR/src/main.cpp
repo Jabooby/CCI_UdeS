@@ -23,10 +23,36 @@
 #define BNO_SCL 1
 #define MPU_ADDR 0x68
 
+#define ENCODER_LEFT_PIN_A 41
+#define ENCODER_LEFT_PIN_B 42
+#define ENCODER_LEFT_PIN_BUTTON 48
 
+#define ENCODER_RIGHT_PIN_A 39
+#define ENCODER_RIGHT_PIN_B 40
+#define ENCODER_RIGHT_PIN_BUTTON 47
+
+volatile int encoderPosLeft = 0;  // a counter for the dial
+unsigned int lastReportedPosLeft = 1;   // change management
+static boolean rotatingLeft=false;      // debounce management
+
+volatile int encoderPosRight = 0;  // a counter for the dial
+unsigned int lastReportedPosRight = 1;   // change management
+static boolean rotatingRight=false;      // debounce management
+
+// interrupt service routine vars
+boolean A_set_left = false;              
+boolean B_set_left = false;
+
+boolean A_set_right = false;
+boolean B_set_right = false;
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(LCD_PIN_CS, LCD_PIN_DC, LCD_PIN_SDI, LCD_PIN_SCK, LCD_PIN_RESET, LCD_PIN_SDO);
 MPU9250_WE myMPU9250 = MPU9250_WE(MPU_ADDR);
+
+void doEncoderALeft();
+void doEncoderBLeft();
+void doEncoderARight();
+void doEncoderBRight();
 
 void setup() {
   tft.begin();
@@ -51,7 +77,84 @@ void setup() {
   myMPU9250.enableAccDLPF(true);
   myMPU9250.setAccDLPF(MPU9250_DLPF_6);
 
+  // Left nob
+  pinMode(ENCODER_LEFT_PIN_A, INPUT);
+  pinMode(ENCODER_LEFT_PIN_B, INPUT);
+  pinMode(ENCODER_LEFT_PIN_BUTTON, INPUT);
 
+  // Right nob
+  pinMode(ENCODER_RIGHT_PIN_A, INPUT);
+  pinMode(ENCODER_RIGHT_PIN_B, INPUT);
+  pinMode(ENCODER_RIGHT_PIN_BUTTON, INPUT);
+
+
+  // encoder pin on interrupt 0 (pin 2)
+  attachInterrupt(digitalPinToInterrupt(ENCODER_LEFT_PIN_A), doEncoderALeft, CHANGE);
+  // encoder pin on interrupt 1 (pin 3)
+  attachInterrupt(digitalPinToInterrupt(ENCODER_LEFT_PIN_B), doEncoderBLeft, CHANGE);
+
+  // encoder pin on interrupt 0 (pin 2)
+  attachInterrupt(digitalPinToInterrupt(ENCODER_RIGHT_PIN_A), doEncoderARight, CHANGE);
+  // encoder pin on interrupt 1 (pin 3)
+  attachInterrupt(digitalPinToInterrupt(ENCODER_RIGHT_PIN_B), doEncoderBRight, CHANGE);
+
+  Serial.begin(115200);
+}
+
+void doEncoderALeft(){
+  // debounce
+  if ( rotatingLeft ) delay (1);  // wait a little until the bouncing is done
+
+  // Test transition, did things really change? 
+  if( digitalRead(ENCODER_LEFT_PIN_A) != A_set_left ) {  // debounce once more
+    A_set_left = !A_set_left;
+
+    // adjust counter + if A leads B
+    if ( A_set_left && !B_set_left ) 
+      encoderPosLeft += 1;
+
+    rotatingLeft = false;  // no more debouncing until loop() hits again
+  }
+}
+
+void doEncoderBLeft(){
+  if ( rotatingLeft ) delay (1);
+  if( digitalRead(ENCODER_LEFT_PIN_B) != B_set_left ) {
+    B_set_left = !B_set_left;
+    //  adjust counter - 1 if B leads A
+    if( B_set_left && !A_set_left ) 
+      encoderPosLeft -= 1;
+
+    rotatingLeft = false;
+  }
+}
+
+void doEncoderARight(){
+  // debounce
+  if ( rotatingRight ) delay (1);  // wait a little until the bouncing is done
+
+  // Test transition, did things really change? 
+  if( digitalRead(ENCODER_RIGHT_PIN_A) != A_set_right ) {  // debounce once more
+    A_set_right = !A_set_right;
+
+    //adjust counter + if A leads B
+    if ( A_set_right && !B_set_right ) 
+      encoderPosRight += 1;
+
+    rotatingRight = false;  // no more debouncing until loop() hits again
+  }
+}
+
+void doEncoderBRight(){
+  if ( rotatingRight ) delay (1);
+  if( digitalRead(ENCODER_RIGHT_PIN_B) != B_set_right ) {
+    B_set_right = !B_set_right;
+    //  adjust counter - 1 if B leads A
+    if( B_set_right && !A_set_right ) 
+      encoderPosRight -= 1;
+
+    rotatingRight = false;
+  }
 }
 
 void printBno() {
@@ -86,10 +189,8 @@ void printBno() {
   Serial.println();
 }
 
-void loop(void) {
-  printBno();
-
-  for(uint8_t r=0; r<4; r++) {
+void screenLoop() {
+for(uint8_t r=0; r<4; r++) {
     tft.setRotation(r);
     tft.fillScreen(ILI9341_BLACK);
     for(uint8_t j=0; j<20; j++) {
@@ -111,5 +212,26 @@ void loop(void) {
     }
     delay(3000);
   }
+}
+
+void printLeftEncoder() {
+  Serial.print("Left Encoder: ");
+  Serial.println(digitalRead(ENCODER_LEFT_PIN_BUTTON));
+  Serial.println(encoderPosLeft);
+  lastReportedPosLeft = encoderPosLeft;
+}
+
+void printRightEncoder() {
+  Serial.print("Right Encoder: ");
+  Serial.println(digitalRead(ENCODER_RIGHT_PIN_BUTTON));
+  Serial.println(encoderPosRight);
+  lastReportedPosRight = encoderPosRight;
+}
+
+void loop(void) {
+  printBno();
+  printLeftEncoder();
+  printRightEncoder();
+  delay(500);
 }
 
