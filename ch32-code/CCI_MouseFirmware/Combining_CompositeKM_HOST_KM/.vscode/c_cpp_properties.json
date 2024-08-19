@@ -1,0 +1,66 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/include",
+                "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/src",
+                "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/CONFIG",
+                "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/USB-Driver/include",
+                "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/USB-Driver/src",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Core/ch32v20x",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/inc",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/src",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Startup",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/System/ch32v20x",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Debug/ch32v20x",
+                "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/USB_Host",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/include",
+                    "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/src",
+                    "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/CONFIG",
+                    "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/USB-Driver/include",
+                    "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/USB-Driver/src",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Core/ch32v20x",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/inc",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/src",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Startup",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/System/ch32v20x",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Debug/ch32v20x",
+                    "c:/Repos/CCI_Mouse_E5/CCI_MouseFirmware/Combining_CompositeKM_HOST_KM/lib/USB_Host",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60115",
+                "CH32V203C8",
+                "CH32V20X",
+                "CH32V20x",
+                "CH32V203",
+                "CH32V20x_D6",
+                "__PIO_CPP_SUPPORT__",
+                ""
+            ],
+            "cStandard": "gnu99",
+            "cppStandard": "gnu++17",
+            "compilerPath": "C:/Users/Renaud/.platformio/packages/toolchain-riscv/bin/riscv-none-embed-gcc.exe",
+            "compilerArgs": [
+                "-msmall-data-limit=8",
+                "-msave-restore",
+                "-march=rv32imacxw",
+                "-mabi=ilp32",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

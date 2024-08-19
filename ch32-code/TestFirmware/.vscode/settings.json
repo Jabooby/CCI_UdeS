@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "ch32v20x.h": "c",
+        "usb_lib.h": "c",
+        "ch32v20x_spi.h": "c",
+        "ch32v20x_gpio.h": "c",
+        "neopixel.h": "c",
+        "ch32v20x_conf.h": "c",
+        "debug.h": "c",
+        "ch32v20x_rcc.h": "c"
+    },
+    "cmake.configureOnOpen": false,
+    "C_Cpp.errorSquiggles": "enabled"
+}

@@ -1,0 +1,49 @@
+Added Component: Designator=MT1(MEC SCREW 4-40 LOOSE)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Essentra Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-4-2-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RPC4506-ND"; VariantName = "[No Variations]"
+Added Component: Designator=MT2(MEC SCREW 4-40 LOOSE)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Essentra Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-4-2-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RPC4506-ND"; VariantName = "[No Variations]"
+Added Component: Designator=MT3(MEC SCREW 4-40 LOOSE)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Essentra Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-4-2-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RPC4506-ND"; VariantName = "[No Variations]"
+Added Component: Designator=MT4(MEC SCREW 4-40 LOOSE)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Essentra Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-4-2-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RPC4506-ND"; VariantName = "[No Variations]"
+Added Component: Designator=MT5(MEC SCREW 4-40 LOOSE)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Essentra Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-4-2-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RPC4506-ND"; VariantName = "[No Variations]"
+Added Component: Designator=MT6(MEC SCREW 4-40 LOOSE)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Essentra Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-4-2-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RPC4506-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=MT3-1
+Added Pin To Net: NetName=GND Pin=MT4-1
+Added Pin To Net: NetName=GND Pin=MT5-1
+Added Pin To Net: NetName=GND Pin=MT6-1
+Added Pin To Net: NetName=NetMT1_1 Pin=MT1-1
+Added Pin To Net: NetName=NetMT1_1 Pin=MT2-1
+Added Net: Name=NetMT1_1
+Added Member To Class: ClassName=Sheet1 Member=Component MT1 4-40
+Added Member To Class: ClassName=Sheet1 Member=Component MT2 4-40
+Added Member To Class: ClassName=Sheet1 Member=Component MT3 4-40
+Added Member To Class: ClassName=Sheet1 Member=Component MT4 4-40
+Added Member To Class: ClassName=Sheet1 Member=Component MT5 4-40
+Added Member To Class: ClassName=Sheet1 Member=Component MT6 4-40

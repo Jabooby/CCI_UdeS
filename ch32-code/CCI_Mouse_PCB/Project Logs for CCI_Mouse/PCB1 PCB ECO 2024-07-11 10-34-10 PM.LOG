@@ -1,0 +1,24 @@
+Added Component: Designator=D10(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=D11(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD9_3 Pin=D10-1
+Added Pin To Net: NetName=+5 Pin=D10-2
+Added Pin To Net: NetName=NetD10_3 Pin=D10-3
+Added Pin To Net: NetName=GND Pin=D10-4
+Added Pin To Net: NetName=NetD10_3 Pin=D11-1
+Added Pin To Net: NetName=+5 Pin=D11-2
+Added Pin To Net: NetName=NetD11_3 Pin=D11-3
+Added Pin To Net: NetName=GND Pin=D11-4
+Added Member To Class: ClassName=Sheet2 Member=Component D10 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D11 WS2812B

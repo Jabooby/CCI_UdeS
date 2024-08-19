@@ -1,0 +1,112 @@
+Removed Pin From Net: NetName=NEO_END Pin=D11-3
+Removed Pin From Net: NetName=NEO_END Pin=NEO_END-TP
+Removed Member From Class: ClassName=Sheet1 Member=D2
+Removed Member From Class: ClassName=Sheet1 Member=D3
+Removed Member From Class: ClassName=Sheet1 Member=D4
+Removed Member From Class: ClassName=Sheet1 Member=D5
+Removed Member From Class: ClassName=Sheet1 Member=D6
+Removed Member From Class: ClassName=Sheet1 Member=D7
+Removed Member From Class: ClassName=Sheet1 Member=D8
+Removed Member From Class: ClassName=Sheet1 Member=D9
+Removed Member From Class: ClassName=Sheet1 Member=D10
+Removed Member From Class: ClassName=Sheet1 Member=D11
+Removed Member From Class: ClassName=Sheet1 Member=NEO_END
+Added Component: Designator=D13(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=D14(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=D15(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=D16(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=D17(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=D18(WS2812B4020)
+Add component (AddParameter): Name = "JLC PartNumber"; Value = "C3647024"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Worldsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "DIO4020-RYIG4M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "WS2812B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "C2761795"; VariantName = "[No Variations]"
+Added Component: Designator=NEO_END1(TP2020)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "JMP-RTZL7I"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "5015 TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "36-5015TR-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=D13-2
+Added Pin To Net: NetName=GND Pin=D13-4
+Added Pin To Net: NetName=+5 Pin=D14-2
+Added Pin To Net: NetName=GND Pin=D14-4
+Added Pin To Net: NetName=+5 Pin=D15-2
+Added Pin To Net: NetName=GND Pin=D15-4
+Added Pin To Net: NetName=+5 Pin=D16-2
+Added Pin To Net: NetName=GND Pin=D16-4
+Added Pin To Net: NetName=+5 Pin=D17-2
+Added Pin To Net: NetName=GND Pin=D17-4
+Added Pin To Net: NetName=+5 Pin=D18-2
+Added Pin To Net: NetName=NEO_END Pin=D18-3
+Added Pin To Net: NetName=GND Pin=D18-4
+Added Pin To Net: NetName=NEO_END Pin=NEO_END1-TP
+Change Net Name : Old Net Name=NEO_ROW2 New Net Name=NetD6_3
+Change Net Name : Old Net Name=NetD8_3 New Net Name=NEO_ROW2
+Added Pin To Net: NetName=NEO_ROW3 Pin=D16-3
+Added Pin To Net: NetName=NEO_ROW3 Pin=D17-1
+Added Net: Name=NEO_ROW3
+Added Pin To Net: NetName=NetD11_3 Pin=D11-3
+Added Pin To Net: NetName=NetD11_3 Pin=D13-1
+Added Net: Name=NetD11_3
+Added Pin To Net: NetName=NetD13_3 Pin=D13-3
+Added Pin To Net: NetName=NetD13_3 Pin=D14-1
+Added Net: Name=NetD13_3
+Added Pin To Net: NetName=NetD14_3 Pin=D14-3
+Added Pin To Net: NetName=NetD14_3 Pin=D15-1
+Added Net: Name=NetD14_3
+Added Pin To Net: NetName=NetD15_3 Pin=D15-3
+Added Pin To Net: NetName=NetD15_3 Pin=D16-1
+Added Net: Name=NetD15_3
+Added Pin To Net: NetName=NetD17_3 Pin=D17-3
+Added Pin To Net: NetName=NetD17_3 Pin=D18-1
+Added Net: Name=NetD17_3
+Added Member To Class: ClassName=Sheet2 Member=Component D2 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D3 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D4 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D5 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D6 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D7 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D8 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D9 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D10 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D11 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D13 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D14 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D15 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D16 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D17 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component D18 WS2812B
+Added Member To Class: ClassName=Sheet2 Member=Component NEO_END1 TestPoint

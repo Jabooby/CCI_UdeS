@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=Spare1 NewDesignator=Sp1
+Change Component Designator: OldDesignator=Spare2 NewDesignator=Sp2
+Change Component Designator: OldDesignator=Spare3 NewDesignator=Sp3
+Change Component Designator: OldDesignator=Spare4 NewDesignator=Sp4
+Change Component Designator: OldDesignator=Spare5 NewDesignator=Sp5
+Change Component Designator: OldDesignator=Spare6 NewDesignator=Sp6
+Change Component Designator: OldDesignator=Spare7 NewDesignator=Sp7
+Change Component Designator: OldDesignator=SWCLK NewDesignator=SK
+Change Component Designator: OldDesignator=SWDIO NewDesignator=SO
+Change Net Name : Old Net Name=NetSpare1_TP New Net Name=NetSp1_TP
+Change Net Name : Old Net Name=NetSpare2_TP New Net Name=NetSp2_TP
+Change Net Name : Old Net Name=NetSpare3_TP New Net Name=NetSp3_TP
+Change Net Name : Old Net Name=NetSpare4_TP New Net Name=NetSp4_TP
+Change Net Name : Old Net Name=NetSpare5_TP New Net Name=NetSp5_TP
+Change Net Name : Old Net Name=NetSpare6_TP New Net Name=NetSp6_TP
+Change Net Name : Old Net Name=NetSpare7_TP New Net Name=NetSp7_TP
+Change Net Name : Old Net Name=NetSWCLK_TP New Net Name=NetSK_TP
+Change Net Name : Old Net Name=NetSWDIO_TP New Net Name=NetSO_TP

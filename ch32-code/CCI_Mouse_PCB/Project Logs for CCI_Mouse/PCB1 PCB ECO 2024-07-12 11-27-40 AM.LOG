@@ -1,0 +1,24 @@
+Added Component: Designator=+3.3(TP2020)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "JMP-RTZL7I"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "5015 TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "36-5015TR-ND"; VariantName = "[No Variations]"
+Added Component: Designator=+5(TP2020)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "JMP-RTZL7I"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "5015 TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "36-5015TR-ND"; VariantName = "[No Variations]"
+Added Component: Designator=GND(TP2020)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "JMP-RTZL7I"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "5015 TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "36-5015TR-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3 Pin=+3.3-TP
+Added Pin To Net: NetName=+5 Pin=+5-TP
+Added Pin To Net: NetName=GND Pin=GND-TP
+Added Member To Class: ClassName=Sheet1 Member=Component +3.3 TestPoint
+Added Member To Class: ClassName=Sheet1 Member=Component +5 TestPoint
+Added Member To Class: ClassName=Sheet1 Member=Component GND TestPoint

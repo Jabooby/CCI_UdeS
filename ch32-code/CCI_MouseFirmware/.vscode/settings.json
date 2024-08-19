@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "usbd_composite_km.h": "c",
+        "usb_host_config.h": "c",
+        "joystick.h": "c"
+    }
+}

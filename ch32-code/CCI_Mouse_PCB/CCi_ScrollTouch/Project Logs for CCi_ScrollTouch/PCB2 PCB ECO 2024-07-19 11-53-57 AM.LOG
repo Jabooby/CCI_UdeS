@@ -1,0 +1,16 @@
+Added Component: Designator=J1(4 pin header)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Sullins Connector Solutions"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "4PinHeader"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "4 pin header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "S7002-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Touch1 Pin=J1-1
+Added Net: Name=Touch1
+Added Pin To Net: NetName=Touch2 Pin=J1-2
+Added Net: Name=Touch2
+Added Pin To Net: NetName=Touch3 Pin=J1-3
+Added Net: Name=Touch3
+Added Pin To Net: NetName=Touch4 Pin=J1-4
+Added Net: Name=Touch4
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

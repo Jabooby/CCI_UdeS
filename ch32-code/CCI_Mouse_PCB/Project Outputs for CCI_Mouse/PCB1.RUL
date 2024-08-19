@@ -1,0 +1,13 @@
+DRC Rules Export File for PCB: C:\Users\VM\Desktop\AltiumProjects\CCI_Mouse\PCB1.PcbDoc
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=ShortCircuit|RuleName=ShortCircuit_USBN|Scope=Board|Allowed=1
+RuleKind=ShortCircuit|RuleName=ShortCircuit_USBP|Scope=Board|Allowed=1
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.87
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance_12N|Scope=Board|Minimum=0.00
+RuleKind=Clearance|RuleName=Clearance_12P|Scope=Board|Minimum=0.00
+RuleKind=Clearance|RuleName=Clearance_13N|Scope=Board|Minimum=0.00
+RuleKind=Clearance|RuleName=Clearance_23N|Scope=Board|Minimum=0.00
+RuleKind=Clearance|RuleName=Clearance_13P|Scope=Board|Minimum=0.00
+RuleKind=Clearance|RuleName=Clearance_23P|Scope=Board|Minimum=0.00

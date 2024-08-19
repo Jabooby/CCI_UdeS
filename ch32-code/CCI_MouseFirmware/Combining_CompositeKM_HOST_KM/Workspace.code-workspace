@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ch32v20x_conf.h": "c",
+			"ch32v20x_usart.h": "c",
+			"usb_lib.h": "c",
+			"hw_config.h": "c"
+		}
+	}
+}

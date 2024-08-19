@@ -1,0 +1,20 @@
+Added Component: Designator=MT1(M3_MT_HOLE)
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-M3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "M3"; VariantName = "[No Variations]"
+Added Component: Designator=MT2(M3_MT_HOLE)
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-M3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "M3"; VariantName = "[No Variations]"
+Added Component: Designator=MT3(M3_MT_HOLE)
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-M3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "M3"; VariantName = "[No Variations]"
+Added Component: Designator=MT4(M3_MT_HOLE)
+Add component (AddParameter): Name = "Part Number"; Value = "NSP-M3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "M3"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=MT1-1
+Added Pin To Net: NetName=GND Pin=MT2-1
+Added Pin To Net: NetName=GND Pin=MT3-1
+Added Pin To Net: NetName=GND Pin=MT4-1
+Added Member To Class: ClassName=Sheet1 Member=Component MT1 M3
+Added Member To Class: ClassName=Sheet1 Member=Component MT2 M3
+Added Member To Class: ClassName=Sheet1 Member=Component MT3 M3
+Added Member To Class: ClassName=Sheet1 Member=Component MT4 M3

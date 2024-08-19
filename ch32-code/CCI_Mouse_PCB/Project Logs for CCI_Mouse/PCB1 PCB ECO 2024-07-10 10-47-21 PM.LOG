@@ -1,0 +1,10 @@
+Add Component: Footprint Not Found 2 pin header
+Add Component: Footprint Not Found TP5015
+Add Component: Footprint Not Found TP5015
+Add Pin To Net: Unknown Pin: Pin M1-1
+Add Pin To Net: Unknown Pin: Pin M1-2
+Add Pin To Net: Unknown Pin: Pin SWCLK1-TP
+Add Pin To Net: Unknown Pin: Pin SWDIO1-TP
+Add Class Member: Failed to add class member : Component M1 motor
+Add Class Member: Failed to add class member : Component SWCLK1 TestPoint
+Add Class Member: Failed to add class member : Component SWDIO1 TestPoint

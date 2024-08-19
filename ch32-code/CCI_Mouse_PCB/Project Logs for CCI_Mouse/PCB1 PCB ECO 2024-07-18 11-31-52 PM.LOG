@@ -1,0 +1,8 @@
+Added Component: Designator=NEOPX(TP2020)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "JMP-RTZL7I"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "5015 TestPoint"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "36-5015TR-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NEOPX Pin=NEOPX-TP
+Added Member To Class: ClassName=Sheet1 Member=Component NEOPX TestPoint

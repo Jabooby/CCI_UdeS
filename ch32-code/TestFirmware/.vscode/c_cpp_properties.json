@@ -1,0 +1,80 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/include",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/src",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/USB_Host",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Core/ch32v20x",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/inc",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/src",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Startup",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/System/ch32v20x",
+                "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Debug/ch32v20x",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/AccelStepper",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/CH32V203_USB",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_DisplayProcess",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_LEDs",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_Motors",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_Oled",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/timing",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/wiring",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/.pio/libdeps/genericCH32V203C8T6/Unity/src",
+                "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/.pio/libdeps/genericCH32V203C8T6/lib",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/include",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/src",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/USB_Host",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Core/ch32v20x",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/inc",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Peripheral/ch32v20x/src",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Startup",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/System/ch32v20x",
+                    "C:/Users/Renaud/.platformio/packages/framework-wch-noneos-sdk/Debug/ch32v20x",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/AccelStepper",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/CH32V203_USB",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_DisplayProcess",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_LEDs",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_Motors",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/PCluster_Oled",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/timing",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/lib/wiring",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/.pio/libdeps/genericCH32V203C8T6/Unity/src",
+                    "c:/Users/Renaud/Documents/CCI_tests/PClusterFirmware/.pio/libdeps/genericCH32V203C8T6/lib",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60115",
+                "CH32V203C8",
+                "CH32V20X",
+                "CH32V20x",
+                "CH32V203",
+                "CH32V20x_D6",
+                "__PIO_CPP_SUPPORT__",
+                ""
+            ],
+            "cStandard": "gnu99",
+            "cppStandard": "gnu++17",
+            "compilerPath": "C:/Users/Renaud/.platformio/packages/toolchain-riscv/bin/riscv-none-embed-gcc.exe",
+            "compilerArgs": [
+                "-msmall-data-limit=8",
+                "-msave-restore",
+                "-march=rv32imacxw",
+                "-mabi=ilp32",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

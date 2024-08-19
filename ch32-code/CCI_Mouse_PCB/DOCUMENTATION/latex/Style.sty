@@ -1,0 +1,123 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = pdflatex
+% !TEX root = Main.tex
+%% Configuration de base pour l'encodage et pour la langue:
+%% version du 2014/06/21 pour babel-french
+%% \usepackage{francais-utf8}
+
+% pour commenter sans ajouter des % à chaque lignes
+\usepackage{comment}
+
+% Encodage caractère et fonte
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Langue: français	
+\usepackage[french]{babel}
+\frenchbsetup{og=«,fg=»}
+\usepackage{xspace}
+
+% Utilisation de \nombre
+\usepackage[autolanguage]{numprint} 
+%% Fin pour encodage et langue
+
+\usepackage[automark,markcase=upper]{scrlayer-scrpage}
+\usepackage[protrusion=true,expansion]{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,tabularx}
+\usepackage{arydshln}
+\usepackage{dashrule}
+\usepackage[squaren,cdot,textstyle,unit]{SIunits}
+\usepackage{ccicons}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{placeins}
+\usepackage{tikz}
+\usepackage{time}
+\usepackage{matlab-prettifier}
+\usepackage{float}
+\usepackage{xcolor, soul}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\usepackage{xcolor}
+\definecolor{mysectionred}{rgb}{.7,.13,.13}
+\definecolor{mysubsectionred}{rgb}{.55,.13,.13}
+\definecolor{mysubsubsectionred}{rgb}{.50,.13,.13}
+\definecolor{myred}{rgb}{.7,.13,.13}
+\definecolor{myyellow}{rgb}{1,1,.79}
+\definecolor{monbleu}{rgb}{.2,.6,.8}
+
+\definecolor{vertUdS}{RGB}{0,119,73} % Pantone vert 3415
+\definecolor{bleuTetrad}{RGB}{0,45,117} % Pantone Tetrad
+\definecolor{rougTetrad}{RGB}{117,0,45} % Pantone Tetrad
+\definecolor{oranTetrad}{RGB}{117,72,0} % Pantone Tetrad
+
+% Sérif: lining figures in math, osf in text
+\usepackage[scaled=.98,sups]{XCharter}% 
+% Sans sérif:
+\usepackage[scaled=0.90]{helvet}%
+% Mono:
+\usepackage[scaled=0.85]{beramono}
+% Math:
+\usepackage[charter,bigdelims,vvarbb,scaled=1.07]{newtxmath}
+\usepackage[cal=boondoxo]{mathalfa} % doc à regarder: intéressant.
+
+% Math: autre \usepackage[osf,sc]{mathpazo}
+
+\linespread{1.1}
+
+% À voir:
+%\DeclareFixedFont{\FonteTitre}{T1}{phv}{b}{n}{48pt}
+\usepackage{pifont}
+\usepackage[os=mac]{menukeys}
+
+%% Dimension de la page:
+%\setlength{\textheight}{672pt}
+%\setlength{\footskip}{24pt}
+
+% Réglage de certaine apparence:
+% Caption
+\setkomafont{caption}{\sffamily}
+\setkomafont{captionlabel}{\bfseries}
+\setcapindent{0em}
+% titre: section et autre
+\addtokomafont{section}{%
+	\color{mysectionred}%
+	\usesizeofkomafont{subsection}%
+	}%
+ \addtokomafont{subsection}{%
+	\color{mysubsectionred}%
+        \hspace{10mm}
+	}%
+  \addtokomafont{subsubsection}{%
+	\color{mysubsectionred}%
+        \hspace{20mm}
+	}%
+% line spacing
+\onehalfspacing
+% Entête et pied de page:
+\ihead{}
+\chead{}
+\ohead{\sffamily\scriptsize\scshape\textls[150]{\headmark}}
+\ifoot{\rule{\linewidth}{.8pt} \\Poulin-Bergevin,Charles, Pouc1302  }
+\cfoot{}
+\ofoot{\normalfont\sffamily\small\thepage}
+
+\sethlcolor{red}
+
+\renewcommand*{\sectionmarkformat}{}% pas de numéro de section
+
+% Pas d'indentation
+\setlength{\parindent}{0pt}
+\footheight=55pt
+\DeclareUnicodeCharacter{2212}{-}
+%\documentclass[DIV=15,paper=letter,titlepage=true,fontsize=12pt,headings=normal,captions=nooneline]{scrartcl}

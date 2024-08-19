@@ -1,0 +1,26 @@
+Les contraintes technologiques du projet sont les suivantes:
+\begin{enumerate}
+\item La première vient du fait que notre micro-controlleur
+doit agir comme un host et une device usb en même temps. L'origine de la contrainte est
+que le capteur optique utilisé est déjà interfacé en usb. Donc si nous voulons rajouter/
+personnaliser des fonctionnalitées, il faut que le microcontrolleur lise les données du
+capteur et les modifie avec les siennes avant de les transmettre à l'ordinateur toujours
+sous forme de souris HID. Cela veut dire que l'on doit se restraindre à une device qui
+possède 2 interfaces usb.
+
+\item La deuxième provient du fait que pour scroll avec nos boutons il faut utiliser des io du
+microcontrolleur qui lisent du capacitive touch et qui ne sont pas désactivées lorsque
+ses deux interfaces usb sont utilisées.
+
+\item Troisièmement il faut encore 2 io analogues pour le joystick qui ne soit pas bloqués
+par les deux autres contraintes précédentes.
+\end{enumerate}
+
+Les contraintes de temps et de budget sont les suivantes:
+\begin{enumerate}
+\item Une première version de démonstration doit être disponible pour la fin de la saison
+d'été du CCI.
+\item Un budget en dessous de 20$ est nécessaire afin de garder le design accessible.
+Par contre, la cible à viser est 10$.
+\item La date butoir pour le design complet et finit de la souris est le 25 décembre 2024.
+\begin{enumerate}

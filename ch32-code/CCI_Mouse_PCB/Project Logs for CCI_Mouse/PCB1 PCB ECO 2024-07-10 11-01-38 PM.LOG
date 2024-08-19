@@ -1,0 +1,21 @@
+Added Component: Designator=M1(2 pin header)
+Add component (AddParameter): Name = "Manufacturer"; Value = "ChingChong"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "VibrationMotor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "Vibrator"; VariantName = "[No Variations]"
+Added Component: Designator=U3(PAW3515DB)
+Add component (AddParameter): Name = "Part Number"; Value = "PAW3515DB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SCH_Comment"; Value = "PAW3515DB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Aliexpress"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "https://fr.aliexpress.com/item/4001098948441.html"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=M1-1
+Added Pin To Net: NetName=NetM1_2 Pin=M1-2
+Added Pin To Net: NetName=NetD12_A Pin=U3-1
+Added Pin To Net: NetName=+5 Pin=U3-2
+Added Pin To Net: NetName=NetE1_1 Pin=U3-3
+Added Pin To Net: NetName=NetE1_2 Pin=U3-4
+Added Pin To Net: NetName=NetR7_1 Pin=U3-5
+Added Pin To Net: NetName=GND Pin=U3-6
+Added Pin To Net: NetName=D-_mouse Pin=U3-7
+Added Pin To Net: NetName=D+_mouse Pin=U3-8
+Added Member To Class: ClassName=Sheet1 Member=Component M1 motor
+Added Member To Class: ClassName=Sheet2 Member=Component U3 PAW3515DB
