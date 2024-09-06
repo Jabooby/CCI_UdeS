@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 37,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -64,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "00690ba_80000007",
-    "zone_display_mode": 0
+    "visible_layers": "08812a0_00000001",
+    "zone_display_mode": 1
   },
   "git": {
     "repo_password": "",
@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "V1_flappy_mouse.kicad_prl",
+    "filename": "Ruler_CCI_V1.kicad_prl",
     "version": 3
   },
   "project": {

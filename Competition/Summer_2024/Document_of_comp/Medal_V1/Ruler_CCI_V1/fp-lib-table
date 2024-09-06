@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CCI")(type "KiCad")(uri "${KIPRJMOD}/CCI.pretty")(options "")(descr ""))
+)
